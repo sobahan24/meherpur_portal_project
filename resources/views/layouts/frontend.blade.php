@@ -56,7 +56,33 @@
         @include('layouts.partials.frontend.header')
 
         <div id="contents" class="sixteen columns menu">
-            @yield('contant')
+            <div class="twelve columns" id="left-content">
+                @yield('contant')
+            </div>
+
+            <div class="four columns right-side-bar" id="right-content">
+                <!-- Current Date -->
+                <!-- office_attachment_application_form -->
+                <div class="column block">
+                    <h5 class="bk-org title">
+                        জরুরি হটলাইন
+                    </h5>
+                    <p><img alt="জরুরি হটলাইন" src="{{ asset('frontend/images/National-Helpline.jpg') }}" style="height:100%; width:220px"></p>
+                </div>
+
+
+                <div class="column block">
+                    <h5 class="bk-org title">
+                        জাতীয় সংগীত
+                    </h5>
+                    <audio controls="" style="width:100%">
+                        <source
+                            src="http://cabinet.portal.gov.bd/sites/default/files/files/cabinet.portal.gov.bd/page/e5f25d4e_f0a7_4b2a_a07c_3ec69a793516/bd_national_anthem.mp3"
+                            type="audio/mp3">
+                    </audio>
+                </div>
+
+            </div>
         </div>
 
         @include('layouts.partials.frontend.footer')

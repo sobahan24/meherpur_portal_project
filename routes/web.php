@@ -24,6 +24,11 @@ Auth::routes();
 
 Route::get('/', [App\Http\Controllers\Frontend\FrontendController::class, 'index'])->name('home');
 
+
+
+
+
+// backend start
 Route::middleware(['auth','isAdmin'])->group(function () {
     Route::get('/dashboard', function () {
         return "This is Admin Panel";
