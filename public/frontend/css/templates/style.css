@@ -562,6 +562,7 @@ table.bordered table td:first-child {
 
 #printable_area > div {
   overflow: hidden;
+  text-align: justify;
 }
 
 table {

@@ -124,7 +124,7 @@
                 <ul class="meganizr mzr-slide mzr-responsive">
                     <!-- Build The Menu -->
                     <li class="col0"><a title="Home" href="{{ url('/') }}"
-                            style="background-image: url({{ asset('frontend/images') }}/home_dark.png);margin-top:5px;"></a>
+                            style="background-image: url('{{ asset('frontend/images/home_dark.png') }}');margin-top:5px;"></a>
                     </li>
                     <li class="col1 mzr-drop"><a title="জেলা সম্পর্কিত" href="javascript:;">জেলা
                             সম্পর্কিত</a>
@@ -133,77 +133,65 @@
                                 <h6>জেলা পরিচিতি</h6>
                                 <ul class="mzr-links">
                                     <li><a title="এক নজরে জেলা"
-                                            href="site/page/07b25377-1c4b-11e7-8f57-286ed488c766/%e0%a6%8f%e0%a6%95%20%e0%a6%a8%e0%a6%9c%e0%a6%b0%e0%a7%87%20%e0%a6%9c%e0%a7%87%e0%a6%b2%e0%a6%be.html">এক
+                                            href="{{ url('/site/এক-নজরে') }}">এক
                                             নজরে জেলা</a></li>
                                     <li><a title="জেলার পটভুমি"
-                                            href="site/page/07b2689a-1c4b-11e7-8f57-286ed488c766/%e0%a6%9c%e0%a7%87%e0%a6%b2%e0%a6%be%e0%a6%b0%20%e0%a6%aa%e0%a6%9f%e0%a6%ad%e0%a7%81%e0%a6%ae%e0%a6%bf.html">জেলার
+                                            href="{{ url('/site/পটভুমি') }}">জেলার
                                             পটভুমি</a></li>
                                     <li><a title="ভৌগলিক পরিচিতি"
-                                            href="site/page/fd276881-1c4a-11e7-8f57-286ed488c766/%e0%a6%ad%e0%a7%8c%e0%a6%97%e0%a6%b2%e0%a6%bf%e0%a6%95%20%e0%a6%aa%e0%a6%b0%e0%a6%bf%e0%a6%9a%e0%a6%bf%e0%a6%a4%e0%a6%bf.html">ভৌগলিক
+                                            href="{{ url('/site/ভৌগলিক-পরিচিতি') }}">ভৌগলিক
                                             পরিচিতি</a></li>
                                     <li><a title="মানচিত্রে জেলা"
-                                            href="site/page/b2695489-40ec-488d-935f-3a79d597c93a/%e0%a6%ae%e0%a6%be%e0%a6%a8%e0%a6%9a%e0%a6%bf%e0%a6%a4%e0%a7%8d%e0%a6%b0%e0%a7%87%20%e0%a6%9c%e0%a7%87%e0%a6%b2%e0%a6%be.html">মানচিত্রে
+                                            href="{{ url('/site/মানচিত্রে-জেলা') }}">মানচিত্রে
                                             জেলা</a></li>
                                     <li><a title="উপজেলা ও ইউনিয়ন"
-                                            href="site/page/079c208e-1c4b-11e7-8f57-286ed488c766/%e0%a6%89%e0%a6%aa%e0%a6%9c%e0%a7%87%e0%a6%b2%e0%a6%be%20%e0%a6%93%20%e0%a6%87%e0%a6%89%e0%a6%a8%e0%a6%bf%e0%a6%af%e0%a6%bc%e0%a6%a8.html">উপজেলা
+                                            href="{{ url('/site/উপজেলা-ও-ইউনিয়ন') }}">উপজেলা
                                             ও ইউনিয়ন</a></li>
-                                    <li><a title="জেলা পরিসংখ্যান ২০১১"
-                                            href="site/page/e5fa2bee-531f-4611-a431-caeef2dda84d/%e0%a6%9c%e0%a7%87%e0%a6%b2%e0%a6%be%20%e0%a6%aa%e0%a6%b0%e0%a6%bf%e0%a6%b8%e0%a6%82%e0%a6%96%e0%a7%8d%e0%a6%af%e0%a6%be%e0%a6%a8%20%e0%a7%a8%e0%a7%a6%e0%a7%a7%e0%a7%a7.html">জেলা
-                                            পরিসংখ্যান ২০১১</a></li>
                                 </ul>
                             </div>
                             <div class="one-col">
                                 <h6>ইতিহাস ও ঐতিহ্য</h6>
                                 <ul class="mzr-links">
                                     <li><a title="খেলাধুলা ও বিনোদন"
-                                            href="site/page/07b38cb5-1c4b-11e7-8f57-286ed488c766/%e0%a6%96%e0%a7%87%e0%a6%b2%e0%a6%be%e0%a6%a7%e0%a7%81%e0%a6%b2%e0%a6%be%20%e0%a6%93%20%e0%a6%ac%e0%a6%bf%e0%a6%a8%e0%a7%8b%e0%a6%a6%e0%a6%a8.html">খেলাধুলা
+                                            href="{{ url('/site/খেলাধুলা-ও-বিনোদন') }}">খেলাধুলা
                                             ও বিনোদন</a></li>
                                     <li><a title="জেলার ঐতিহ্য"
-                                            href="site/page/07b34d6f-1c4b-11e7-8f57-286ed488c766/%e0%a6%9c%e0%a7%87%e0%a6%b2%e0%a6%be%e0%a6%b0%20%e0%a6%90%e0%a6%a4%e0%a6%bf%e0%a6%b9%e0%a7%8d%e0%a6%af.html">জেলার
+                                            href="{{ url('/site/জেলার-ঐতিহ্য') }}">জেলার
                                             ঐতিহ্য</a></li>
                                     <li><a title="দর্শনীয় স্থান"
-                                            href="site/view/tourist_spot/%e0%a6%a6%e0%a6%b0%e0%a7%8d%e0%a6%b6%e0%a6%a8%e0%a7%80%e0%a6%af%e0%a6%bc%20%e0%a6%b8%e0%a7%8d%e0%a6%a5%e0%a6%be%e0%a6%a8.html">দর্শনীয়
+                                            href="{{ url('/site/দর্শনীয়-স্থান') }}">দর্শনীয়
                                             স্থান</a></li>
-                                    <li><a title="পুরাকীর্তির সংক্ষিপ্ত বর্ণনা"
-                                            href="site/page/201ff392-1c4b-11e7-8f57-286ed488c766/%e0%a6%aa%e0%a7%81%e0%a6%b0%e0%a6%be%e0%a6%95%e0%a7%80%e0%a6%b0%e0%a7%8d%e0%a6%a4%e0%a6%bf%e0%a6%b0%20%e0%a6%b8%e0%a6%82%e0%a6%95%e0%a7%8d%e0%a6%b7%e0%a6%bf%e0%a6%aa%e0%a7%8d%e0%a6%a4%20%e0%a6%ac%e0%a6%b0%e0%a7%8d%e0%a6%a3%e0%a6%a8%e0%a6%be.html">পুরাকীর্তির
-                                            সংক্ষিপ্ত বর্ণনা</a></li>
                                     <li><a title="প্রখ্যাত ব্যক্তিত্ব"
-                                            href="site/page/07b377e9-1c4b-11e7-8f57-286ed488c766/%e0%a6%aa%e0%a7%8d%e0%a6%b0%e0%a6%96%e0%a7%8d%e0%a6%af%e0%a6%be%e0%a6%a4%20%e0%a6%ac%e0%a7%8d%e0%a6%af%e0%a6%95%e0%a7%8d%e0%a6%a4%e0%a6%bf%e0%a6%a4%e0%a7%8d%e0%a6%ac.html">প্রখ্যাত
+                                            href="{{ url('/site/প্রখ্যাত-ব্যক্তিত্ব') }}">প্রখ্যাত
                                             ব্যক্তিত্ব</a></li>
                                     <li><a title="ভাষা ও সংস্কৃতি"
-                                            href="site/page/07b37f68-1c4b-11e7-8f57-286ed488c766/%e0%a6%ad%e0%a6%be%e0%a6%b7%e0%a6%be%20%e0%a6%93%20%e0%a6%b8%e0%a6%82%e0%a6%b8%e0%a7%8d%e0%a6%95%e0%a7%83%e0%a6%a4%e0%a6%bf.html">ভাষা
+                                            href="{{ url('/site/ভাষা-ও-সংস্কৃতি') }}">ভাষা
                                             ও সংস্কৃতি</a></li>
                                     <li><a title="মুক্তিযুদ্ধ ও মুক্তিযোদ্ধাদের তালিকা"
-                                            href="site/page/201ff971-1c4b-11e7-8f57-286ed488c766/%e0%a6%ae%e0%a7%81%e0%a6%95%e0%a7%8d%e0%a6%a4%e0%a6%bf%e0%a6%af%e0%a7%81%e0%a6%a6%e0%a7%8d%e0%a6%a7%20%e0%a6%93%20%e0%a6%ae%e0%a7%81%e0%a6%95%e0%a7%8d%e0%a6%a4%e0%a6%bf%e0%a6%af%e0%a7%8b%e0%a6%a6%e0%a7%8d%e0%a6%a7%e0%a6%be%e0%a6%a6%e0%a7%87%e0%a6%b0%20%e0%a6%a4%e0%a6%be%e0%a6%b2%e0%a6%bf%e0%a6%95%e0%a6%be.html">মুক্তিযুদ্ধ
+                                            href="{{ url('/site/মুক্তিযুদ্ধ-ও-মুক্তিযোদ্ধাদের-তালিকা') }}">মুক্তিযুদ্ধ
                                             ও মুক্তিযোদ্ধাদের তালিকা</a></li>
-                                    <li><a title="বিশেষ অর্জন"
-                                            href="site/page/1613e830-1c4b-11e7-8f57-286ed488c766.html">বিশেষ
-                                            অর্জন</a></li>
                                 </ul>
                             </div>
                             <div class="one-col">
                                 <h6>ভৌগোলিক ও অর্থনৈতিক</h6>
                                 <ul class="mzr-links">
                                     <li><a title="হোটেল ও আবাসন"
-                                            href="site/view/hotel/%e0%a6%b9%e0%a7%8b%e0%a6%9f%e0%a7%87%e0%a6%b2%20%e0%a6%93%20%e0%a6%86%e0%a6%ac%e0%a6%be%e0%a6%b8%e0%a6%a8.html">হোটেল
+                                            href="{{ url('/site/হোটেল-ও-আবাসন') }}">হোটেল
                                             ও আবাসন</a></li>
                                     <li><a title="ভৌগোলিক অবস্থান,গঠন ও আয়তন"
-                                            href="site/page/1b279ff4-1c4b-11e7-8f57-286ed488c766/%e0%a6%ad%e0%a7%8c%e0%a6%97%e0%a7%8b%e0%a6%b2%e0%a6%bf%e0%a6%95%20%e0%a6%85%e0%a6%ac%e0%a6%b8%e0%a7%8d%e0%a6%a5%e0%a6%be%e0%a6%a8%2c%e0%a6%97%e0%a6%a0%e0%a6%a8%20%e0%a6%93%20%e0%a6%86%e0%a6%af%e0%a6%bc%e0%a6%a4%e0%a6%a8.html">ভৌগোলিক
+                                            href="{{ url('/site/অবস্থান-গঠন-ও-আয়তন') }}">ভৌগোলিক
                                             অবস্থান,গঠন ও আয়তন</a></li>
                                     <li><a title="শিল্প ও বাণিজ্য"
-                                            href="site/page/1f92334c-1c4b-11e7-8f57-286ed488c766/%e0%a6%b6%e0%a6%bf%e0%a6%b2%e0%a7%8d%e0%a6%aa%20%e0%a6%93%20%e0%a6%ac%e0%a6%be%e0%a6%a3%e0%a6%bf%e0%a6%9c%e0%a7%8d%e0%a6%af.html">শিল্প
+                                            href="{{ url('/site/শিল্প-ও-বাণিজ্য') }}">শিল্প
                                             ও বাণিজ্য</a></li>
-                                    <li><a title="প্রাকৃতিক সম্পদ"
-                                            href="site/page/202013de-1c4b-11e7-8f57-286ed488c766/%e0%a6%aa%e0%a7%8d%e0%a6%b0%e0%a6%be%e0%a6%95%e0%a7%83%e0%a6%a4%e0%a6%bf%e0%a6%95%20%e0%a6%b8%e0%a6%ae%e0%a7%8d%e0%a6%aa%e0%a6%a6.html">প্রাকৃতিক
-                                            সম্পদ</a></li>
                                     <li><a title="নদ-নদী"
-                                            href="site/page/20201a46-1c4b-11e7-8f57-286ed488c766/%e0%a6%a8%e0%a6%a6-%e0%a6%a8%e0%a6%a6%e0%a7%80.html">নদ-নদী</a>
+                                            href="{{ url('/site/নদ-নদী') }}">নদ-নদী</a>
                                     </li>
                                     <li><a title="হাটবাজার"
-                                            href="site/view/hat_bazar_list/%e0%a6%b9%e0%a6%be%e0%a6%9f%e0%a6%ac%e0%a6%be%e0%a6%9c%e0%a6%be%e0%a6%b0.html">হাটবাজার</a>
+                                            href="{{ url('/site/হাটবাজার') }}">হাটবাজার</a>
                                     </li>
                                     <li><a title="যোগাযোগ ব্যবস্থা"
-                                            href="site/page/160631cd-1c4b-11e7-8f57-286ed488c766/%e0%a6%af%e0%a7%8b%e0%a6%97%e0%a6%be%e0%a6%af%e0%a7%8b%e0%a6%97%20%e0%a6%ac%e0%a7%8d%e0%a6%af%e0%a6%ac%e0%a6%b8%e0%a7%8d%e0%a6%a5%e0%a6%be.html">যোগাযোগ
+                                            href="{{ url('/site/যোগাযোগ-ব্যবস্থা') }}">যোগাযোগ
                                             ব্যবস্থা</a></li>
                                 </ul>
                             </div>
@@ -211,19 +199,19 @@
                                 <h6>অন্যান্য</h6>
                                 <ul class="mzr-links">
                                     <li><a title="জন প্রতিনিধি"
-                                            href="site/page/ff477aa7-7cfd-4098-a9d8-81a4abc6cc10/%e0%a6%9c%e0%a6%a8%20%e0%a6%aa%e0%a7%8d%e0%a6%b0%e0%a6%a4%e0%a6%bf%e0%a6%a8%e0%a6%bf%e0%a6%a7%e0%a6%bf.html">জন
+                                            href="{{ url('/site/জন-প্রতিনিধি') }}">জন
                                             প্রতিনিধি</a></li>
                                     <li><a title="ইউপি চেয়ারম্যান ও সচিবগণের নামের তালিকা"
-                                            href="site/page/1b27b52e-1c4b-11e7-8f57-286ed488c766/%e0%a6%87%e0%a6%89%e0%a6%aa%e0%a6%bf%20%e0%a6%9a%e0%a7%87%e0%a6%af%e0%a6%bc%e0%a6%be%e0%a6%b0%e0%a6%ae%e0%a7%8d%e0%a6%af%e0%a6%be%e0%a6%a8%20%e0%a6%93%20%e0%a6%b8%e0%a6%9a%e0%a6%bf%e0%a6%ac%e0%a6%97%e0%a6%a3%e0%a7%87%e0%a6%b0%20%e0%a6%a8%e0%a6%be%e0%a6%ae%e0%a7%87%e0%a6%b0%20%e0%a6%a4%e0%a6%be%e0%a6%b2%e0%a6%bf%e0%a6%95%e0%a6%be.html">ইউপি
+                                            href="{{ url('/site/ইউপি-চেয়ারম্যান-ও-সচিবগণের-নামের-তালিকা') }}">ইউপি
                                             চেয়ারম্যান ও সচিবগণের নামের তালিকা</a></li>
                                     <li><a title="ইউনিয়ন ডিজিটাল সেন্টারের উদ্যোক্তাদের তালিকা"
-                                            href="site/page/1b2810c8-1c4b-11e7-8f57-286ed488c766/%e0%a6%87%e0%a6%89%e0%a6%a8%e0%a6%bf%e0%a6%af%e0%a6%bc%e0%a6%a8%20%e0%a6%a1%e0%a6%bf%e0%a6%9c%e0%a6%bf%e0%a6%9f%e0%a6%be%e0%a6%b2%20%e0%a6%b8%e0%a7%87%e0%a6%a8%e0%a7%8d%e0%a6%9f%e0%a6%be%e0%a6%b0%e0%a7%87%e0%a6%b0%20%e0%a6%89%e0%a6%a6%e0%a7%8d%e0%a6%af%e0%a7%8b%e0%a6%95%e0%a7%8d%e0%a6%a4%e0%a6%be%e0%a6%a6%e0%a7%87%e0%a6%b0%20%e0%a6%a4%e0%a6%be%e0%a6%b2%e0%a6%bf%e0%a6%95%e0%a6%be.html">ইউনিয়ন
+                                            href="{{ url('/site/ইউনিয়ন-ডিজিটাল-সেন্টারের-উদ্যোক্তাদের-তালিকা') }}">ইউনিয়ন
                                             ডিজিটাল সেন্টারের উদ্যোক্তাদের তালিকা</a></li>
                                     <li><a title="পত্রপত্রিকা"
-                                            href="site/page/1f922bbf-1c4b-11e7-8f57-286ed488c766/%e0%a6%aa%e0%a6%a4%e0%a7%8d%e0%a6%b0%e0%a6%aa%e0%a6%a4%e0%a7%8d%e0%a6%b0%e0%a6%bf%e0%a6%95%e0%a6%be.html">পত্রপত্রিকা</a>
+                                            href="{{ url('/site/পত্রপত্রিকা') }}">পত্রপত্রিকা</a>
                                     </li>
                                     <li><a title="ICT তে বর্ষসেরা পুরস্কার প্রাপ্তদের তালিকা"
-                                            href="site/page/42850e37-1c4b-11e7-8f57-286ed488c766/ICT%20%e0%a6%a4%e0%a7%87%20%e0%a6%ac%e0%a6%b0%e0%a7%8d%e0%a6%b7%e0%a6%b8%e0%a7%87%e0%a6%b0%e0%a6%be%20%e0%a6%aa%e0%a7%81%e0%a6%b0%e0%a6%b8%e0%a7%8d%e0%a6%95%e0%a6%be%e0%a6%b0%20%e0%a6%aa%e0%a7%8d%e0%a6%b0%e0%a6%be%e0%a6%aa%e0%a7%8d%e0%a6%a4%e0%a6%a6%e0%a7%87%e0%a6%b0%20%e0%a6%a4%e0%a6%be%e0%a6%b2%e0%a6%bf%e0%a6%95%e0%a6%be.html">ICT
+                                            href="{{ url('/site/ICT-তে-বর্ষসেরা-পুরস্কার-প্রাপ্তদের-তালিকা') }}">ICT
                                             তে বর্ষসেরা পুরস্কার প্রাপ্তদের তালিকা</a></li>
                                 </ul>
                             </div>
