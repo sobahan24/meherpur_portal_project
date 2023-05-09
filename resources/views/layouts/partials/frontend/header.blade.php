@@ -223,16 +223,16 @@
                                 <h6>জেলা প্রশাসক</h6>
                                 <ul class="mzr-links">
                                     <li><a title="জেলা প্রশাসকের বার্তা"
-                                            href="site/page/1be5bc65-1c4b-11e7-8f57-286ed488c766/%e0%a6%9c%e0%a7%87%e0%a6%b2%e0%a6%be%20%e0%a6%aa%e0%a7%8d%e0%a6%b0%e0%a6%b6%e0%a6%be%e0%a6%b8%e0%a6%95%e0%a7%87%e0%a6%b0%20%e0%a6%ac%e0%a6%be%e0%a6%b0%e0%a7%8d%e0%a6%a4%e0%a6%be.html">জেলা
+                                            href="{{ url('/site/officer_list/জেলা-প্রশাসকের-বার্তা') }}">জেলা
                                             প্রশাসকের বার্তা</a></li>
                                     <li><a title="প্রোফাইল"
-                                            href="site/officer_list/d8bb181e-1c4b-11e7-8f57-286ed488c766/%e0%a6%aa%e0%a7%8d%e0%a6%b0%e0%a7%8b%e0%a6%ab%e0%a6%be%e0%a6%87%e0%a6%b2.html">প্রোফাইল</a>
+                                            href="{{ url('/site/officer_list/প্রোফাইল') }}">প্রোফাইল</a>
                                     </li>
                                     <li><a title="মাসিক কর্মসূচী"
-                                            href="site/page/6d78399a-963c-4abd-82b8-659ca5a8fbba/%e0%a6%ae%e0%a6%be%e0%a6%b8%e0%a6%bf%e0%a6%95%20%e0%a6%95%e0%a6%b0%e0%a7%8d%e0%a6%ae%e0%a6%b8%e0%a7%82%e0%a6%9a%e0%a7%80.html">মাসিক
+                                            href="{{ url('/site/officer_list/মাসিক-কর্মসূচী') }}">মাসিক
                                             কর্মসূচী</a></li>
                                     <li><a title="পুর্বতন জেলা প্রশাসক ও মহুকুমা প্রশাসকগণের তালিকা"
-                                            href="site/page/1950470c-1c4b-11e7-8f57-286ed488c766/%e0%a6%aa%e0%a7%81%e0%a6%b0%e0%a7%8d%e0%a6%ac%e0%a6%a4%e0%a6%a8%20%e0%a6%9c%e0%a7%87%e0%a6%b2%e0%a6%be%20%e0%a6%aa%e0%a7%8d%e0%a6%b0%e0%a6%b6%e0%a6%be%e0%a6%b8%e0%a6%95%20%e0%a6%93%20%e0%a6%ae%e0%a6%b9%e0%a7%81%e0%a6%95%e0%a7%81%e0%a6%ae%e0%a6%be%20%e0%a6%aa%e0%a7%8d%e0%a6%b0%e0%a6%b6%e0%a6%be%e0%a6%b8%e0%a6%95%e0%a6%97%e0%a6%a3%e0%a7%87%e0%a6%b0%20%e0%a6%a4%e0%a6%be%e0%a6%b2%e0%a6%bf%e0%a6%95%e0%a6%be.html">পুর্বতন
+                                            href="{{ url('/site/officer_list/পুর্বতন-জেলা-প্রশাসক-ও-মহুকুমা-প্রশাসকগণের-তালিকা') }}">পুর্বতন
                                             জেলা প্রশাসক ও মহুকুমা প্রশাসকগণের তালিকা</a></li>
                                 </ul>
                             </div>
@@ -240,42 +240,39 @@
                                 <h6>জেলা প্রশাসকের কার্যালয়</h6>
                                 <ul class="mzr-links">
                                     <li><a title="জেলা প্রশাসনের পটভূমি"
-                                            href="site/page/079c0fbe-1c4b-11e7-8f57-286ed488c766/%e0%a6%9c%e0%a7%87%e0%a6%b2%e0%a6%be%20%e0%a6%aa%e0%a7%8d%e0%a6%b0%e0%a6%b6%e0%a6%be%e0%a6%b8%e0%a6%a8%e0%a7%87%e0%a6%b0%20%e0%a6%aa%e0%a6%9f%e0%a6%ad%e0%a7%82%e0%a6%ae%e0%a6%bf.html">জেলা
+                                            href="{{ url('/site/officer_list/জেলা-প্রশাসনের-পটভূমি') }}">জেলা
                                             প্রশাসনের পটভূমি</a></li>
                                     <li><a title="সার্কিট হাউজ"
-                                            href="site/page/161bae6b-1c4b-11e7-8f57-286ed488c766/%e0%a6%b8%e0%a6%be%e0%a6%b0%e0%a7%8d%e0%a6%95%e0%a6%bf%e0%a6%9f%20%e0%a6%b9%e0%a6%be%e0%a6%89%e0%a6%9c.html">সার্কিট
+                                            href="{{ url('/site/officer_list/সার্কিট-হাউজ') }}">সার্কিট
                                             হাউজ</a></li>
                                     <li><a title="যোগাযোগ"
-                                            href="site/page/1b09c894-1c4b-11e7-8f57-286ed488c766/%e0%a6%af%e0%a7%8b%e0%a6%97%e0%a6%be%e0%a6%af%e0%a7%8b%e0%a6%97.html">যোগাযোগ</a>
+                                            href="{{ url('/site/officer_list/যোগাযোগ') }}">যোগাযোগ</a>
                                     </li>
                                     <li><a title="সাংগনিক কাঠামো"
-                                            href="site/page/1be5e26e-1c4b-11e7-8f57-286ed488c766/%e0%a6%b8%e0%a6%be%e0%a6%82%e0%a6%97%e0%a6%a8%e0%a6%bf%e0%a6%95%20%e0%a6%95%e0%a6%be%e0%a6%a0%e0%a6%be%e0%a6%ae%e0%a7%8b.html">সাংগনিক
+                                            href="{{ url('/site/officer_list/সাংগনিক-কাঠামো') }}">সাংগনিক
                                             কাঠামো</a></li>
                                     <li><a title="সম্পদ ও লজিস্টিকস"
-                                            href="site/page/1f790fc5-1c4b-11e7-8f57-286ed488c766/%e0%a6%b8%e0%a6%ae%e0%a7%8d%e0%a6%aa%e0%a6%a6%20%e0%a6%93%20%e0%a6%b2%e0%a6%9c%e0%a6%bf%e0%a6%b8%e0%a7%8d%e0%a6%9f%e0%a6%bf%e0%a6%95%e0%a6%b8.html">সম্পদ
+                                            href="{{ url('/site/officer_list/সম্পদ-ও-লজিস্টিকস') }}">সম্পদ
                                             ও লজিস্টিকস</a></li>
-                                    <li><a title="ফ্রন্ট ডেস্ক"
-                                            href="site/page/201febd8-1c4b-11e7-8f57-286ed488c766/%e0%a6%ab%e0%a7%8d%e0%a6%b0%e0%a6%a8%e0%a7%8d%e0%a6%9f%20%e0%a6%a1%e0%a7%87%e0%a6%b8%e0%a7%8d%e0%a6%95.html">ফ্রন্ট
-                                            ডেস্ক</a></li>
                                 </ul>
                             </div>
                             <div class="one-col">
                                 <h6>উপ-পরিচালক/অতিরিক্ত জেলা প্রশাসক</h6>
                                 <ul class="mzr-links">
                                     <li><a title="উপপরিচালক, স্থানীয় সরকার"
-                                            href="site/officer_list/9b42007b-2acb-40e6-9e54-6831d6743539/%e0%a6%89%e0%a6%aa%e0%a6%aa%e0%a6%b0%e0%a6%bf%e0%a6%9a%e0%a6%be%e0%a6%b2%e0%a6%95%2c%20%e0%a6%b8%e0%a7%8d%e0%a6%a5%e0%a6%be%e0%a6%a8%e0%a7%80%e0%a6%af%e0%a6%bc%20%e0%a6%b8%e0%a6%b0%e0%a6%95%e0%a6%be%e0%a6%b0.html">উপপরিচালক,
+                                            href="{{ url('/site/officer_list/উপ-পরিচালক-স্থানীয়-সরকার') }}">উপপরিচালক,
                                             স্থানীয় সরকার</a></li>
                                     <li><a title="অতিরিক্ত জেলা প্রশাসক (রাজস্ব)"
-                                            href="site/adc/ea81d65a-1c4f-11e7-8f57-286ed488c766/%e0%a6%85%e0%a6%a4%e0%a6%bf%e0%a6%b0%e0%a6%bf%e0%a6%95%e0%a7%8d%e0%a6%a4%20%e0%a6%9c%e0%a7%87%e0%a6%b2%e0%a6%be%20%e0%a6%aa%e0%a7%8d%e0%a6%b0%e0%a6%b6%e0%a6%be%e0%a6%b8%e0%a6%95%20(%e0%a6%b0%e0%a6%be%e0%a6%9c%e0%a6%b8%e0%a7%8d%e0%a6%ac).html">অতিরিক্ত
+                                            href="{{ url('/site/officer_list/অতিরিক্ত-জেলা-প্রশাসক-রাজস্ব') }}">অতিরিক্ত
                                             জেলা প্রশাসক (রাজস্ব)</a></li>
                                     <li><a title="অতিরিক্ত জেলাপ্রশাসক (সার্বিক)"
-                                            href="site/adc/af2382cd-f7a1-4665-9a3f-e38ee0ab1821/%e0%a6%85%e0%a6%a4%e0%a6%bf%e0%a6%b0%e0%a6%bf%e0%a6%95%e0%a7%8d%e0%a6%a4%20%e0%a6%9c%e0%a7%87%e0%a6%b2%e0%a6%be%e0%a6%aa%e0%a7%8d%e0%a6%b0%e0%a6%b6%e0%a6%be%e0%a6%b8%e0%a6%95%20(%e0%a6%b8%e0%a6%be%e0%a6%b0%e0%a7%8d%e0%a6%ac%e0%a6%bf%e0%a6%95).html">অতিরিক্ত
+                                            href="{{ url('/site/officer_list/অতিরিক্ত-জেলা-প্রশাসক-সার্বিক') }}">অতিরিক্ত
                                             জেলাপ্রশাসক (সার্বিক)</a></li>
                                     <li><a title="অতিরিক্ত জেলা ম্যাজিস্ট্রেট"
-                                            href="site/adc/ea81a57b-1c4f-11e7-8f57-286ed488c766/%e0%a6%85%e0%a6%a4%e0%a6%bf%e0%a6%b0%e0%a6%bf%e0%a6%95%e0%a7%8d%e0%a6%a4%20%e0%a6%9c%e0%a7%87%e0%a6%b2%e0%a6%be%20%e0%a6%ae%e0%a7%8d%e0%a6%af%e0%a6%be%e0%a6%9c%e0%a6%bf%e0%a6%b8%e0%a7%8d%e0%a6%9f%e0%a7%8d%e0%a6%b0%e0%a7%87%e0%a6%9f.html">অতিরিক্ত
+                                            href="{{ url('/site/officer_list/অতিরিক্ত-জেলা-ম্যাজিস্ট্রেট') }}">অতিরিক্ত
                                             জেলা ম্যাজিস্ট্রেট</a></li>
                                     <li><a title="অতিরিক্ত জেলা প্রশাসক (শিক্ষা ও আইসিটি)"
-                                            href="site/adc/39048c3d-9be0-40d6-ad66-4db72fe34022/%e0%a6%85%e0%a6%a4%e0%a6%bf%e0%a6%b0%e0%a6%bf%e0%a6%95%e0%a7%8d%e0%a6%a4%20%e0%a6%9c%e0%a7%87%e0%a6%b2%e0%a6%be%20%e0%a6%aa%e0%a7%8d%e0%a6%b0%e0%a6%b6%e0%a6%be%e0%a6%b8%e0%a6%95%20(%e0%a6%b6%e0%a6%bf%e0%a6%95%e0%a7%8d%e0%a6%b7%e0%a6%be%20%e0%a6%93%20%e0%a6%86%e0%a6%87%e0%a6%b8%e0%a6%bf%e0%a6%9f%e0%a6%bf).html">অতিরিক্ত
+                                            href="{{ url('/site/officer_list/অতিরিক্ত-জেলা-প্রশাসক-আইসিটি') }}">অতিরিক্ত
                                             জেলা প্রশাসক (শিক্ষা ও আইসিটি)</a></li>
                                 </ul>
                             </div>
@@ -283,16 +280,16 @@
                                 <h6>কর্মকর্তা ও কর্মচারীবৃন্দ</h6>
                                 <ul class="mzr-links">
                                     <li><a title="জেলা প্রশাসনের কর্মকর্তাবৃন্দ"
-                                            href="site/view/dc_officers/%e0%a6%9c%e0%a7%87%e0%a6%b2%e0%a6%be%20%e0%a6%aa%e0%a7%8d%e0%a6%b0%e0%a6%b6%e0%a6%be%e0%a6%b8%e0%a6%a8%e0%a7%87%e0%a6%b0%20%e0%a6%95%e0%a6%b0%e0%a7%8d%e0%a6%ae%e0%a6%95%e0%a6%b0%e0%a7%8d%e0%a6%a4%e0%a6%be%e0%a6%ac%e0%a7%83%e0%a6%a8%e0%a7%8d%e0%a6%a6.html">জেলা
+                                            href="{{ url('/site/officer_list/') }}">জেলা
                                             প্রশাসনের কর্মকর্তাবৃন্দ</a></li>
                                     <li><a title="উপজেলা নির্বাহী অফিসার"
-                                            href="site/page/1be5ab9b-1c4b-11e7-8f57-286ed488c766/%e0%a6%89%e0%a6%aa%e0%a6%9c%e0%a7%87%e0%a6%b2%e0%a6%be%20%e0%a6%a8%e0%a6%bf%e0%a6%b0%e0%a7%8d%e0%a6%ac%e0%a6%be%e0%a6%b9%e0%a7%80%20%e0%a6%85%e0%a6%ab%e0%a6%bf%e0%a6%b8%e0%a6%be%e0%a6%b0.html">উপজেলা
+                                            href="{{ url('/site/officer_list/') }}">উপজেলা
                                             নির্বাহী অফিসার</a></li>
                                     <li><a title="জেলা প্রশাসনের কর্মচারীবৃন্দ"
-                                            href="site/view/staff_dc/%e0%a6%9c%e0%a7%87%e0%a6%b2%e0%a6%be%20%e0%a6%aa%e0%a7%8d%e0%a6%b0%e0%a6%b6%e0%a6%be%e0%a6%b8%e0%a6%a8%e0%a7%87%e0%a6%b0%20%e0%a6%95%e0%a6%b0%e0%a7%8d%e0%a6%ae%e0%a6%9a%e0%a6%be%e0%a6%b0%e0%a7%80%e0%a6%ac%e0%a7%83%e0%a6%a8%e0%a7%8d%e0%a6%a6.html">জেলা
+                                            href="{{ url('/site/officer_list/') }}">জেলা
                                             প্রশাসনের কর্মচারীবৃন্দ</a></li>
                                     <li><a title="সহকারী কমিশনার (ভূমি)"
-                                            href="site/page/8a608f6b-d971-4d75-9158-2862aa83e0a3/%e0%a6%b8%e0%a6%b9%e0%a6%95%e0%a6%be%e0%a6%b0%e0%a7%80%20%e0%a6%95%e0%a6%ae%e0%a6%bf%e0%a6%b6%e0%a6%a8%e0%a6%be%e0%a6%b0%20(%e0%a6%ad%e0%a7%82%e0%a6%ae%e0%a6%bf).html">সহকারী
+                                            href="{{ url('/site/officer_list/') }}">সহকারী
                                             কমিশনার (ভূমি)</a></li>
                                 </ul>
                             </div>

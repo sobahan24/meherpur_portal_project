@@ -57,6 +57,33 @@ Route::get('/site/ICT-তে-বর্ষসেরা-পুরস্কার-�
 
 
 
+// section 2
+// জেলা প্রশাসকের বার্তা
+Route::get('/site/officer_list/জেলা-প্রশাসকের-বার্তা', [App\Http\Controllers\Frontend\FrontendController::class, 'জেলা_প্রশাসকের_বার্তা']);
+Route::get('/site/officer_list/প্রোফাইল', [App\Http\Controllers\Frontend\FrontendController::class, 'প্রোফাইল']);
+Route::get('/site/officer_list/মাসিক-কর্মসূচী', [App\Http\Controllers\Frontend\FrontendController::class, 'মাসিক_কর্মসূচী']);
+Route::get('/site/officer_list/পুর্বতন-জেলা-প্রশাসক-ও-মহুকুমা-প্রশাসকগণের-তালিকা', [App\Http\Controllers\Frontend\FrontendController::class, 'পুর্বতন_জেলা_প্রশাসক_ও_মহুকুমা_প্রশাসকগণের_তালিকা']);
+Route::get('/site/officer_list/জেলা-প্রশাসনের-পটভূমি', [App\Http\Controllers\Frontend\FrontendController::class, 'জেলা_প্রশাসনের_পটভূমি']);
+Route::get('/site/officer_list/সার্কিট-হাউজ', [App\Http\Controllers\Frontend\FrontendController::class, 'সার্কিট_হাউজ']);
+Route::get('/site/officer_list/যোগাযোগ', [App\Http\Controllers\Frontend\FrontendController::class, 'যোগাযোগ']);
+Route::get('/site/officer_list/সাংগনিক-কাঠামো', [App\Http\Controllers\Frontend\FrontendController::class, 'সাংগনিক_কাঠামো']);
+Route::get('/site/officer_list/সম্পদ-ও-লজিস্টিকস', [App\Http\Controllers\Frontend\FrontendController::class, 'সম্পদ_ও_লজিস্টিকস']);
+
+
+// section 3
+// উপপরিচালক, স্থানীয় সরকার
+Route::get('/site/officer_list/উপ-পরিচালক-স্থানীয়-সরকার', [App\Http\Controllers\Frontend\FrontendController::class, 'উপ_পরিচালক_স্থানীয়_সরকার']);
+Route::get('/site/officer_list/অতিরিক্ত-জেলা-প্রশাসক-রাজস্ব', [App\Http\Controllers\Frontend\FrontendController::class, 'অতিরিক্ত_জেলা_প্রশাসক']);
+Route::get('/site/officer_list/অতিরিক্ত-জেলা-প্রশাসক-সার্বিক', [App\Http\Controllers\Frontend\FrontendController::class, 'অতিরিক্ত_জেলা_প্রশাসক_সার্বিক']);
+Route::get('/site/officer_list/অতিরিক্ত-জেলা-ম্যাজিস্ট্রেট', [App\Http\Controllers\Frontend\FrontendController::class, 'অতিরিক্ত_জেলা_ম্যাজিস্ট্রেট']);
+Route::get('/site/officer_list/অতিরিক্ত-জেলা-প্রশাসক-আইসিটি', [App\Http\Controllers\Frontend\FrontendController::class, 'অতিরিক্ত_জেলা_প্রশাসক_আইসিটি']);
+
+
+
+
+
+
+
 
 // backend start
 Route::middleware(['auth','isAdmin'])->group(function () {

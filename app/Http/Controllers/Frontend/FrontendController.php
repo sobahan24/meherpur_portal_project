@@ -99,4 +99,61 @@ class FrontendController extends Controller
     {
         return view('frontend.জেলা_সম্পর্কিত.ICT_তে_বর্ষসেরা_পুরস্কার_প্রাপ্তদের_তালিকা');
     }
+    public function জেলা_প্রশাসকের_বার্তা()
+    {
+        return view('frontend.জেলা_প্রশাসন.জেলা_প্রশাসকের_বার্তা');
+    }
+    public function প্রোফাইল()
+    {
+        return view('frontend.জেলা_প্রশাসন.প্রোফাইল');
+    }
+    public function মাসিক_কর্মসূচী()
+    {
+        return view('frontend.জেলা_প্রশাসন.মাসিক_কর্মসূচী');
+    }
+    public function পুর্বতন_জেলা_প্রশাসক_ও_মহুকুমা_প্রশাসকগণের_তালিকা()
+    {
+        return view('frontend.জেলা_প্রশাসন.পুর্বতন_জেলা_প্রশাসক_ও_মহুকুমা_প্রশাসকগণের_তালিকা');
+    }
+    public function জেলা_প্রশাসনের_পটভূমি()
+    {
+        return view('frontend.জেলা_প্রশাসন.জেলা_প্রশাসনের_পটভূমি');
+    }
+    public function সার্কিট_হাউজ()
+    {
+        return view('frontend.জেলা_প্রশাসন.সার্কিট_হাউজ');
+    }
+    public function যোগাযোগ()
+    {
+        return view('frontend.জেলা_প্রশাসন.যোগাযোগ');
+    }
+    public function সাংগনিক_কাঠামো()
+    {
+        return view('frontend.জেলা_প্রশাসন.সাংগনিক_কাঠামো');
+    }
+    public function সম্পদ_ও_লজিস্টিকস()
+    {
+        return view('frontend.জেলা_প্রশাসন.সম্পদ_ও_লজিস্টিকস');
+    }
+    public function উপ_পরিচালক_স্থানীয়_সরকার()
+    {
+        return view('frontend.উপ_পরিচালক_অতিরিক্ত_জেলা_প্রশাসক.উপ_পরিচালক_স্থানীয়_সরকার');
+    }
+    public function অতিরিক্ত_জেলা_প্রশাসক()
+    {
+        return view('frontend.উপ_পরিচালক_অতিরিক্ত_জেলা_প্রশাসক.অতিরিক্ত_জেলা_প্রশাসক');
+    }
+    public function অতিরিক্ত_জেলা_প্রশাসক_সার্বিক()
+    {
+        return view('frontend.উপ_পরিচালক_অতিরিক্ত_জেলা_প্রশাসক.অতিরিক্ত_জেলা_প্রশাসক_সার্বিক');
+    }
+    public function অতিরিক্ত_জেলা_ম্যাজিস্ট্রেট()
+    {
+        return view('frontend.উপ_পরিচালক_অতিরিক্ত_জেলা_প্রশাসক.অতিরিক্ত_জেলা_ম্যাজিস্ট্রেট');
+    }
+    public function অতিরিক্ত_জেলা_প্রশাসক_আইসিটি()
+    {
+        return view('frontend.উপ_পরিচালক_অতিরিক্ত_জেলা_প্রশাসক.অতিরিক্ত_জেলা_প্রশাসক_আইসিটি');
+    }
+    
 }
