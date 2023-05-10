@@ -6,50 +6,7 @@
                 মেহেরপুর তথ্য বাতায়ন
             </a>
         </div>
-        <div class="two columns" style=" display: inline-block; padding: 5px;">
-            <select class="chzn-select" title="বিভাগ নির্বাচন করতে এখানে ক্লিক করুন">
-                <option>খুলনা বিভাগ</option>
-                <option value='-'>---</option>
-                <option value="//www.sylhetdiv.gov.bd">সিলেট বিভাগ</option>
-                <option value="//www.dhakadiv.gov.bd">ঢাকা বিভাগ</option>
-                <option value="//www.chittagongdiv.gov.bd">চট্রগ্রাম বিভাগ</option>
-                <option value="//www.rajshahidiv.gov.bd">রাজশাহী বিভাগ</option>
-                <option value="//www.mymensinghdiv.gov.bd">ময়মনসিংহ বিভাগ</option>
-                <option value="//www.rangpurdiv.gov.bd">রংপুর বিভাগ</option>
-                <option value="//www.barisaldiv.gov.bd">বরিশাল বিভাগ</option>
-                <option value="//www.khulnadiv.gov.bd">খুলনা বিভাগ</option>
-            </select>
-        </div>
-        <div class="two columns" style=" display: inline-block; padding: 5px;">
-            <select class="chzn-select" title="জেলা নির্বাচন করতে এখানে ক্লিক করুন">
-                <option>মেহেরপুর </option>
-                <option value='-'>---</option>
-                <option value="//www.jessore.gov.bd">যশোর </option>
-                <option value="//www.satkhira.gov.bd">সাতক্ষীরা </option>
-                <option value="//www.meherpur.gov.bd">মেহেরপুর </option>
-                <option value="//www.narail.gov.bd">নড়াইল </option>
-                <option value="//www.chuadanga.gov.bd">চুয়াডাঙ্গা </option>
-                <option value="//www.kushtia.gov.bd">কুষ্টিয়া </option>
-                <option value="//www.magura.gov.bd">মাগুরা </option>
-                <option value="//www.khulna.gov.bd">খুলনা </option>
-                <option value="//www.bagerhat.gov.bd">বাগেরহাট </option>
-                <option value="//www.jhenaidah.gov.bd">ঝিনাইদহ </option>
-            </select>
-        </div>
-        <div class="two columns" style=" display: inline-block; padding: 5px;"><select class="chzn-select"
-                title="উপজেলা নির্বাচন করতে এখানে ক্লিক করুন">
-                <option value='-'></option>
-                <option value="//mujibnagar.meherpur.gov.bd">মুজিবনগর </option>
-                <option value="//meherpursadar.meherpur.gov.bd">মেহেরপুর সদর </option>
-                <option value="//gangni.meherpur.gov.bd">গাংনী </option>
-            </select>
-        </div>
-        <div id="div-lang" class="four columns" style="padding:4px; text-align: right;">
-            <form action="https://www.meherpur.gov.bd/site/search" style="margin: 0; padding: 0; float: left">
-                <input style="width:185px" id="search" name="key" value="" />
-                <button class="search-btn" type="submit" style="margin: 0; padding: 2px 10px">Go</button>
-            </form>
-        </div>
+        
         <div id="div-lang-sel" class="one columns"
             style="padding:5px;padding-right: 8px; margin: 0px 15px; display:flex;">
             <a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
@@ -218,7 +175,7 @@
                         </div>
                     </li>
                     <li class="col2 mzr-drop"><a title="জেলা প্রশাসন" href="javascript:;">জেলা প্রশাসন</a>
-                        <div class="mzr-content drop-four-columns">
+                        <div class="mzr-content drop-three-columns">
                             <div class="one-col">
                                 <h6>জেলা প্রশাসক</h6>
                                 <ul class="mzr-links">
@@ -274,53 +231,6 @@
                                     <li><a title="অতিরিক্ত জেলা প্রশাসক (শিক্ষা ও আইসিটি)"
                                             href="{{ url('/site/officer_list/অতিরিক্ত-জেলা-প্রশাসক-আইসিটি') }}">অতিরিক্ত
                                             জেলা প্রশাসক (শিক্ষা ও আইসিটি)</a></li>
-                                </ul>
-                            </div>
-                            <div class="one-col">
-                                <h6>কর্মকর্তা ও কর্মচারীবৃন্দ</h6>
-                                <ul class="mzr-links">
-                                    <li><a title="জেলা প্রশাসনের কর্মকর্তাবৃন্দ"
-                                            href="{{ url('/site/officer_list/') }}">জেলা
-                                            প্রশাসনের কর্মকর্তাবৃন্দ</a></li>
-                                    <li><a title="উপজেলা নির্বাহী অফিসার"
-                                            href="{{ url('/site/officer_list/') }}">উপজেলা
-                                            নির্বাহী অফিসার</a></li>
-                                    <li><a title="জেলা প্রশাসনের কর্মচারীবৃন্দ"
-                                            href="{{ url('/site/officer_list/') }}">জেলা
-                                            প্রশাসনের কর্মচারীবৃন্দ</a></li>
-                                    <li><a title="সহকারী কমিশনার (ভূমি)"
-                                            href="{{ url('/site/officer_list/') }}">সহকারী
-                                            কমিশনার (ভূমি)</a></li>
-                                </ul>
-                            </div>
-                            <div class="one-col">
-                                <h6>শাখা সম্পর্কিত</h6>
-                                <ul class="mzr-links">
-                                    <li><a title="জেলা প্রশাসনের শাখা"
-                                            href="site/page/6fab41e4-a4ec-4f28-b3c2-4b9ed7a44f75/%e0%a6%9c%e0%a7%87%e0%a6%b2%e0%a6%be%20%e0%a6%aa%e0%a7%8d%e0%a6%b0%e0%a6%b6%e0%a6%be%e0%a6%b8%e0%a6%a8%e0%a7%87%e0%a6%b0%20%e0%a6%b6%e0%a6%be%e0%a6%96%e0%a6%be.html">জেলা
-                                            প্রশাসনের শাখা</a></li>
-                                    <li><a title="সচরাচর জিজ্ঞাসা"
-                                            href="site/page/52c735f0-1c4b-11e7-8f57-286ed488c766/%e0%a6%b8%e0%a6%9a%e0%a6%b0%e0%a6%be%e0%a6%9a%e0%a6%b0%20%e0%a6%9c%e0%a6%bf%e0%a6%9c%e0%a7%8d%e0%a6%9e%e0%a6%be%e0%a6%b8%e0%a6%be.html">সচরাচর
-                                            জিজ্ঞাসা</a></li>
-                                    <li><a title="শাখাভিত্তিক ফরম"
-                                            href="site/view/forms/%e0%a6%b6%e0%a6%be%e0%a6%96%e0%a6%be%e0%a6%ad%e0%a6%bf%e0%a6%a4%e0%a7%8d%e0%a6%a4%e0%a6%bf%e0%a6%95%20%e0%a6%ab%e0%a6%b0%e0%a6%ae.html">শাখাভিত্তিক
-                                            ফরম</a></li>
-                                    <li><a title="এক্সিকিউটিভ ম্যাজিষ্ট্রেসি কার্যক্রম"
-                                            href="site/page/566bb75c-1c4b-11e7-8f57-286ed488c766/%e0%a6%8f%e0%a6%95%e0%a7%8d%e0%a6%b8%e0%a6%bf%e0%a6%95%e0%a6%bf%e0%a6%89%e0%a6%9f%e0%a6%bf%e0%a6%ad%20%e0%a6%ae%e0%a7%8d%e0%a6%af%e0%a6%be%e0%a6%9c%e0%a6%bf%e0%a6%b7%e0%a7%8d%e0%a6%9f%e0%a7%8d%e0%a6%b0%e0%a7%87%e0%a6%b8%e0%a6%bf%20%e0%a6%95%e0%a6%be%e0%a6%b0%e0%a7%8d%e0%a6%af%e0%a6%95%e0%a7%8d%e0%a6%b0%e0%a6%ae.html">এক্সিকিউটিভ
-                                            ম্যাজিষ্ট্রেসি কার্যক্রম</a></li>
-                                </ul>
-                            </div>
-                            <div class="one-col">
-                                <h6>গুরুত্বপূর্ণ তথ্য</h6>
-                                <ul class="mzr-links">
-                                    <li><a title="ফ্রন্ট ডেস্ক ও ই-সেবা কেন্দ্র"
-                                            href="site/page/201febd8-1c4b-11e7-8f57-286ed488c766/%e0%a6%ab%e0%a7%8d%e0%a6%b0%e0%a6%a8%e0%a7%8d%e0%a6%9f%20%e0%a6%a1%e0%a7%87%e0%a6%b8%e0%a7%8d%e0%a6%95%20%e0%a6%93%20%e0%a6%87-%e0%a6%b8%e0%a7%87%e0%a6%ac%e0%a6%be%20%e0%a6%95%e0%a7%87%e0%a6%a8%e0%a7%8d%e0%a6%a6%e0%a7%8d%e0%a6%b0.html">ফ্রন্ট
-                                            ডেস্ক ও ই-সেবা কেন্দ্র</a></li>
-                                    <li><a title="জেলা প্রশাসনের সেবার তালিকা"
-                                            href="site/page/1f7914a3-1c4b-11e7-8f57-286ed488c766/%e0%a6%9c%e0%a7%87%e0%a6%b2%e0%a6%be%20%e0%a6%aa%e0%a7%8d%e0%a6%b0%e0%a6%b6%e0%a6%be%e0%a6%b8%e0%a6%a8%e0%a7%87%e0%a6%b0%20%e0%a6%b8%e0%a7%87%e0%a6%ac%e0%a6%be%e0%a6%b0%20%e0%a6%a4%e0%a6%be%e0%a6%b2%e0%a6%bf%e0%a6%95%e0%a6%be.html">জেলা
-                                            প্রশাসনের সেবার তালিকা</a></li>
-                                    <li><a title="কী সেবা কীভাবে পাবেন" href="http://services.portal.gov.bd/">কী
-                                            সেবা কীভাবে পাবেন</a></li>
                                 </ul>
                             </div>
                         </div>

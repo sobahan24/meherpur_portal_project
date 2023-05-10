@@ -41,40 +41,6 @@
 
 
 
-
-        <div class="row" id="notice-board">
-            <div class="notice-board-bg">
-                <h2>নোটিশ বোর্ড</h2>
-                <div id="notice-board-ticker">
-                    <ul>
-                        <li>
-                            <a
-                                href="site/notices/fd9c8127-cf81-4a6d-8ed0-026cae6d441d/%e0%a6%85%e0%a6%ab%e0%a6%bf%e0%a6%b8-%e0%a6%86%e0%a6%a6%e0%a7%87%e0%a6%b6.html">অফিস
-                                আদেশ</a>
-                        </li>
-                        <li>
-                            <a
-                                href="site/notices/1123e963-9e25-482e-bff2-086d1aa2fdd2/%e0%a6%85%e0%a6%ab%e0%a6%bf%e0%a6%b8-%e0%a6%86%e0%a6%a6%e0%a7%87%e0%a6%b6.html">অফিস
-                                আদেশ</a>
-                        </li>
-                        <li>
-                            <a
-                                href="site/notices/a8bea89b-42a8-4166-8c59-837452b7d26c/%e0%a6%a6%e0%a7%87%e0%a6%ac%e0%a6%be%e0%a6%82%e0%a6%b6%e0%a7%81-%e0%a6%ac%e0%a6%bf%e0%a6%b6%e0%a7%8d%e0%a6%ac%e0%a6%be%e0%a6%b8-%2c%e0%a6%b8%e0%a6%b9%e0%a6%95%e0%a6%be%e0%a6%b0%e0%a7%80-%e0%a6%95%e0%a6%ae%e0%a6%bf%e0%a6%b6%e0%a6%a8%e0%a6%be%e0%a6%b0-%e0%a6%aa%e0%a6%a6%e0%a7%87-%e0%a6%af%e0%a7%8b%e0%a6%97%e0%a6%a6%e0%a6%be%e0%a6%a8.html">দেবাংশু
-                                বিশ্বাস ,সহকারী কমিশনার পদে যোগদান</a>
-                        </li>
-                        <li>
-                            <a
-                                href="site/notices/f97ca73a-0f4c-42bd-8c45-341e5cf0d960/%e0%a6%ac%e0%a6%bf%e0%a6%9c%e0%a7%8d%e0%a6%9e%e0%a6%aa%e0%a7%8d%e0%a6%a4%e0%a6%bf.html">বিজ্ঞপ্তি</a>
-                        </li>
-                        <li>
-                            <a
-                                href="site/notices/00e4b49c-9a9d-485c-8903-78cd61bb8554/%e0%a6%ac%e0%a6%bf%e0%a6%9c%e0%a7%8d%e0%a6%9e%e0%a6%aa%e0%a7%8d%e0%a6%a4%e0%a6%bf.html">বিজ্ঞপ্তি</a>
-                        </li>
-                    </ul>
-                    <a class="btn right" href="site/view/notices.html">সকল</a>
-                </div>
-            </div>
-        </div>
         <style>
             #notice-board-ticker ul li {
                 list-style: none;
@@ -342,22 +308,6 @@
 
                 </ul>
             </div>
-        </div>
-
-        <div class="column block">
-            <h5 class="bk-org title">
-                লোকেশন ম্যাপ
-            </h5>
-
-            <table border="1" cellpadding="1" cellspacing="1" style="height:300px; width:720px">
-                <tbody>
-                    <tr>
-                        <td style="text-align:center"><iframe frameborder="0" height="300"
-                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d467299.39212902816!2d88.44436625740265!3d23.790971830893543!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f947fe644cb975%3A0xbbab3d5c1a988121!2z4Kah4Ka_4Ka44Ka_IOCmheCmq-Cmv-CmuA!5e0!3m2!1sbn!2sbd!4v1508917544961"
-                                style="border:0" width="600"></iframe></td>
-                    </tr>
-                </tbody>
-            </table>
         </div>
     </div>
 @endsection
