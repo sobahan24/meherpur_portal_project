@@ -18,7 +18,7 @@
             <ul>
                 <li>
                     <h5><a href="#" title="জনাব লিউজা-উল-জান্নাহ">জনাব লিউজা-উল-জান্নাহ</a></h5><br>
-                    <p><img style="max-width:700px;" src="//www.meherpur.gov.bd/sites/default/files/files/www.meherpur.gov.bd/officer_list/8657754f_f5d6_4b9b_b5b5_f35ac25414e1/1f6218e5d62d7220b7bdd9bd29100c9c.png" alt="1f6218e5d62d7220b7bdd9bd29100c9c" width="200" height="240"></p>
+                    <p><img style="max-width:700px;" src="{{ asset('frontend/images/officer_list/লিউজা-উল-জান্নাহ.png') }}" alt="লিউজা-উল-জান্নাহ.png" width="200" height="240"></p>
                 </li>
             </ul>
         </div>

@@ -5,14 +5,14 @@
 @endsection
 
 @section('contant')
-<div id="printable_area"><u>পাতা</u>
+<div id="printable_area">
 
     <h3>উপজেলা ও ইউনিয়ন</h3>
     <div>
         <p></p>
         <p><strong>উপজেলা ও উপজেলাওয়ারী ইউনিয়নের তালিকা</strong></p>
 
-        <table align="center" border="1" cellpadding="0" cellspacing="0" style="height:204px; width:543px">
+        <table border="1" cellpadding="0" cellspacing="0" style="height:204px; text-align:center">
             <tbody>
                 <tr>
                     <td>
@@ -30,7 +30,7 @@
                         <p>১</p>
                     </td>
                     <td>
-                        <p><a href="http://meherpursadar.meherpur.gov.bd/" title="মেহেরপুর সদর">মেহেরপুর সদর</a></p>
+                        <p><a href="#" title="মেহেরপুর সদর">মেহেরপুর সদর</a></p>
                     </td>
                     <td>
                         <p>কুতুবপুর, বুড়িপোতা, আমঝুপি, আমদহ, পিরোজপুর।</p>
@@ -41,7 +41,7 @@
                         <p>২</p>
                     </td>
                     <td>
-                        <p><a href="http://mujibnagar.meherpur.gov.bd/" title="মুজিবনগর">মুজিবনগর</a></p>
+                        <p><a href="#" title="মুজিবনগর">মুজিবনগর</a></p>
                     </td>
                     <td>
                         <p>দারিয়াপুর, মোনখালী, বাগোয়ান, মহাজনপুর।</p>
@@ -52,7 +52,7 @@
                         <p>৩</p>
                     </td>
                     <td>
-                        <p><a href="http://gangni.meherpur.gov.bd/" title="গাংনী">গাংনী</a></p>
+                        <p><a href="#" title="গাংনী">গাংনী</a></p>
                     </td>
                     <td>
                         <p>কাথুলী, তেতুঁলবাড়ীয়া, কাজিপুর, বামন্দি, মটমূড়া, ষোলটাকা, সাহারবাটি, ধানখোলা, রাইপুর।</p>

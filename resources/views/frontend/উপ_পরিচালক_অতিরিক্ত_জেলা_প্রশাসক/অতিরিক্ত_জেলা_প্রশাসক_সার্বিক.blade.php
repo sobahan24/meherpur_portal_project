@@ -18,7 +18,7 @@
             <ul>
                 <li>
                     <h5><a href="#" title="জনাব লিংকন বিশ্বাস">জনাব লিংকন বিশ্বাস</a></h5><br>
-                    <p><img style="max-width:700px;" src="//www.meherpur.gov.bd/sites/default/files/files/www.meherpur.gov.bd/officer_list/dbb2d2ed_911c_4afe_ba40_7a70d5a5844d/b5227a31f55ebc831026c52e742dae6a.png" alt="b5227a31f55ebc831026c52e742dae6a" width="200" height="240"></p>
+                    <p><img style="max-width:700px;" src="{{ asset('frontend/images/officer_list/লিংকন-বিশ্বাস.png') }}" alt="লিংকন বিশ্বাস.png" width="200" height="240"></p>
                 </li>
             </ul>
         </div>

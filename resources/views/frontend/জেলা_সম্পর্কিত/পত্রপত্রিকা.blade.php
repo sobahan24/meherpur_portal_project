@@ -22,7 +22,7 @@
             <tbody>
                 <tr>
                     <td style="width:28px">
-                        <p style="margin-left:-5.4pt; text-align:center"><strong>ক্রম</strong></p>
+                        <p style="margin-left:-5.4pt; text-align:center"><strong>ক্রমিক</strong></p>
                     </td>
                     <td style="width:105px">
                         <p style="margin-left:-2.7pt; text-align:center"><strong>পত্রিকার নাম</strong></p>

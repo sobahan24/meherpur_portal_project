@@ -563,6 +563,7 @@ table.bordered table td:first-child {
 #printable_area > div {
   overflow: hidden;
   text-align: justify;
+  font-size: 14px;
 }
 
 table {
@@ -768,6 +769,7 @@ noscript {
 
 td {
   vertical-align: top;
+  font-size: 14px;
 }
 
 /*======== footer =========*/

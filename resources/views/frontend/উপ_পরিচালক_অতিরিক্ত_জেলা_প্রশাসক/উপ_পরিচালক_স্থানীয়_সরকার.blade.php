@@ -9,7 +9,7 @@
     <div class="profile">
 
         <div class="photo">
-            <img style="max-width:700px;" src="//www.meherpur.gov.bd/sites/default/files/files/meherpur.gov.bd/officer_list/9b42007b_2acb_40e6_9e54_6831d6743539/a6a2bd0c045678127d66976d91ba7f75.png" alt="a6a2bd0c045678127d66976d91ba7f75" width="" height="">
+            <img style="max-width:700px;" src="{{ asset('frontend/images/officer_list/মোজাহিদুল-ইসলাম.png') }}" alt="মোজাহিদুল ইসলাম" width="" height="">
         </div>
         <div class="details">
             <h4 class="name">জনাব মৃধা মোঃ মোজাহিদুল ইসলাম</h4>

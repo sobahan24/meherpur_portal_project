@@ -15,11 +15,11 @@
         <p style="text-align: center; margin-bottom:10px;">প্রধানমন্ত্রী কার্যালয়ের এটুআই প্রোগ্রামের সহযোগিতায় মেহেরপুর জেলা প্রশাসনের আয়োজনে ২৭-২৯  জানুয়ারী ২০১৭ খ্রিঃ তারিখে শহীদ সামসুজ্জোহা পার্ক মেহেরপুরে  District Innovation Fair অনুষ্ঠিত হয় । উক্ত  District Innovation Fair এ Information &amp; Communication Technology তে অবদানের জন্য ৮ টি Category তে  বর্ষসেরা নিম্নোক্ত ১১  জন কে পুরষ্কৃত করা হয় ।</p>
         <p style="text-align: center;"> </p>
 
-        <table border="1" cellpadding="0" cellspacing="0" style="width:97.74%">
+        <table border="1" cellpadding="0" cellspacing="0">
             <tbody style="font-size:13px;">
                 <tr style="font-weight: bold;">
                     <td style="width:6.44%">
-                        <p style="margin-left: -5.4pt; text-align: center;">   ক্রমিক</p>
+                        <p style="text-align: center;">   ক্রমিক</p>
                     </td>
                     <td style="width:50.56%">
                         <p style="text-align: center;">ক্যাটাগরী</p>
@@ -30,7 +30,7 @@
                 </tr>
                 <tr>
                     <td style="height:30px; width:6.44%">
-                        <p style="margin-left: -5.4pt; text-align: center;">       ১</p>
+                        <p style="text-align: center;">       ১</p>
                     </td>
                     <td style="height:30px; width:50.56%">
                         <p style="text-align: center;">জেলা শ্রেষ্ঠ টিম</p>
@@ -43,7 +43,7 @@
                 </tr>
                 <tr>
                     <td style="height:29px; width:6.44%">
-                        <p style="margin-left: -5.4pt; text-align: center;">২</p>
+                        <p style="text-align: center;">২</p>
                     </td>
                     <td style="height:29px; width:50.56%">
                         <p style="text-align: center;">শ্রেষ্ঠ পৌর ও নগর ডিজিটাল সেন্টার</p>
@@ -56,7 +56,7 @@
                 </tr>
                 <tr>
                     <td style="height:36px; width:6.44%">
-                        <p style="margin-left: -5.4pt; text-align: center;">     ৩</p>
+                        <p style="text-align: center;">     ৩</p>
                     </td>
                     <td style="height:36px; width:50.56%">
                         <p style="text-align: center;">বিভাগীয়  পর্যায়ে "শ্রেষ্ঠ নাগরিক সেবার উদ্ভাবন বাস্তবায়ন"</p>
@@ -69,7 +69,7 @@
                 </tr>
                 <tr>
                     <td style="height:36px; width:6.44%">
-                        <p style="margin-left: -5.4pt; text-align: center;">৪</p>
+                        <p style="text-align: center;">৪</p>
                     </td>
                     <td style="height:36px; width:50.56%">
                         <p style="text-align: center;">শ্রেষ্ঠ মাধ্যমিক শিক্ষা প্রতিষ্ঠান</p>
@@ -82,7 +82,7 @@
                 </tr>
                 <tr>
                     <td style="height:42px; width:6.44%">
-                        <p style="margin-left: -5.4pt; text-align: center;">৫</p>
+                        <p style="text-align: center;">৫</p>
                     </td>
                     <td style="height:42px; width:50.56%">
                         <p style="text-align: center;">শ্রেষ্ঠ উচ্চ মাধ্যমিক শিক্ষা প্রতিষ্ঠান</p>
@@ -93,7 +93,7 @@
                 </tr>
                 <tr>
                     <td style="height:41px; width:6.44%">
-                        <p style="margin-left: -5.4pt; text-align: center;">৬</p>
+                        <p style="text-align: center;">৬</p>
                     </td>
                     <td style="height:41px; width:50.56%">
                         <p style="text-align: center;">শ্রেষ্ঠ  শিক্ষা প্রতিষ্ঠান (মাদ্রাসা)</p>
@@ -106,7 +106,7 @@
                 </tr>
                 <tr>
                     <td style="height:45px; width:6.44%">
-                        <p style="margin-left: -5.4pt; text-align: center;">৭</p>
+                        <p style="text-align: center;">৭</p>
                     </td>
                     <td style="height:45px; width:50.56%">
                         <p style="text-align: center;">দ্রুত নাগরিক সমস্যা সমাধানকারী টিম</p>
@@ -117,7 +117,7 @@
                 </tr>
                 <tr>
                     <td style="height:30px; width:6.44%">
-                        <p style="margin-left: -5.4pt; text-align: center;">৮</p>
+                        <p style="text-align: center;">৮</p>
                     </td>
                     <td style="height:30px; width:50.56%">
                         <p style="text-align: center;">শ্রেষ্ঠ ই-সেবা প্রদানকারী দপ্তর</p>
@@ -128,7 +128,7 @@
                 </tr>
                 <tr>
                     <td style="height:36px; width:6.44%">
-                        <p style="margin-left: -5.4pt; text-align: center;">৯</p>
+                        <p style="text-align: center;">৯</p>
                     </td>
                     <td style="height:36px; width:50.56%">
                         <p style="text-align: center;">শ্রেষ্ঠ নথি বাস্তবায়নকারী দপ্তর</p>
@@ -139,7 +139,7 @@
                 </tr>
                 <tr>
                     <td style="height:30px; width:6.44%">
-                        <p style="margin-left: -5.4pt; text-align: center;">১০</p>
+                        <p style="text-align: center;">১০</p>
                     </td>
                     <td style="height:30px; width:50.56%">
                         <p style="text-align: center;">শ্রেষ্ঠ পোর্টালের  দপ্তর</p>
@@ -150,7 +150,7 @@
                 </tr>
                 <tr>
                     <td style="height:29px; width:6.44%">
-                        <p style="margin-left: -5.4pt; text-align: center;">১১</p>
+                        <p style="text-align: center;">১১</p>
                     </td>
                     <td style="height:29px; width:50.56%">
                         <p style="text-align: center;">শ্রেষ্ঠ তরুণ উদ্ভাবক</p>
@@ -161,7 +161,7 @@
                 </tr>
                 <tr>
                     <td style="height:27px; width:6.44%">
-                        <p style="margin-left: -5.4pt; text-align: center;"> </p>
+                        <p style="text-align: center;"> </p>
                     </td>
                     <td style="height:27px; width:50.56%"> </td>
                     <td style="height:27px; width:43%"> </td>

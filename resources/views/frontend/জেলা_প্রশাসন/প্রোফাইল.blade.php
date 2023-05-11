@@ -9,7 +9,7 @@
     <div class="profile">
 
         <div class="photo">
-            <img style="max-width:700px;" src="//www.meherpur.gov.bd/sites/default/files/files/meherpur.gov.bd/officer_list/d8bb181e_1c4b_11e7_8f57_286ed488c766/8d98af2cb67c6ca594e64abe8a81dbd5.png" alt="8d98af2cb67c6ca594e64abe8a81dbd5" width="" height="">
+            <img style="max-width:700px;" src="{{ asset('frontend/images/officer_list/আজিজুল-ইসলাম.png') }}" alt="আজিজুল-ইসলাম.png" width="" height="">
         </div>
         <div class="details">
             <h4 class="name">জনাব মোহাম্মদ আজিজুল ইসলাম</h4>

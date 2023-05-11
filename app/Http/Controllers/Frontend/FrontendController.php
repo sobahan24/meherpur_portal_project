@@ -107,10 +107,6 @@ class FrontendController extends Controller
     {
         return view('frontend.জেলা_প্রশাসন.প্রোফাইল');
     }
-    public function মাসিক_কর্মসূচী()
-    {
-        return view('frontend.জেলা_প্রশাসন.মাসিক_কর্মসূচী');
-    }
     public function পুর্বতন_জেলা_প্রশাসক_ও_মহুকুমা_প্রশাসকগণের_তালিকা()
     {
         return view('frontend.জেলা_প্রশাসন.পুর্বতন_জেলা_প্রশাসক_ও_মহুকুমা_প্রশাসকগণের_তালিকা');
@@ -154,6 +150,42 @@ class FrontendController extends Controller
     public function অতিরিক্ত_জেলা_প্রশাসক_আইসিটি()
     {
         return view('frontend.উপ_পরিচালক_অতিরিক্ত_জেলা_প্রশাসক.অতিরিক্ত_জেলা_প্রশাসক_আইসিটি');
+    }
+    public function পৌরসভা_পরিচিতি()
+    {
+        return view('frontend.স্থানীয়_সরকার.পৌরসভা_পরিচিতি');
+    }
+    public function মেয়রের_বাণী()
+    {
+        return view('frontend.স্থানীয়_সরকার.মেয়রের_বাণী');
+    }
+    public function প্রাক্তন_মেয়র()
+    {
+        return view('frontend.স্থানীয়_সরকার.প্রাক্তন_মেয়র');
+    }
+    public function কাউন্সিলরগন()
+    {
+        return view('frontend.স্থানীয়_সরকার.কাউন্সিলরগন');
+    }
+    public function সাংগঠনিক_কাঠামো()
+    {
+        return view('frontend.স্থানীয়_সরকার.সাংগঠনিক_কাঠামো');
+    }
+    public function কর্মকর্তাবৃন্দ()
+    {
+        return view('frontend.স্থানীয়_সরকার.কর্মকর্তাবৃন্দ');
+    }
+    public function ওয়ার্ডভিত্তিক_এলাকা()
+    {
+        return view('frontend.স্থানীয়_সরকার.ওয়ার্ডভিত্তিক_এলাকা');
+    }
+    public function জেলা_পরিষদ_অফিস()
+    {
+        return view('frontend.স্থানীয়_সরকার.জেলা_পরিষদ_অফিস');
+    }
+    public function জেলা_পরিষদ_সাংগঠনিক_কাঠামো()
+    {
+        return view('frontend.স্থানীয়_সরকার.জেলা_পরিষদ_সাংগঠনিক_কাঠামো');
     }
     
 }

@@ -5,7 +5,7 @@
 @endsection
 
 @section('contant')
-<div id="printable_area"><u>পাতা</u>
+<div id="printable_area">
 
     <h3>জেলার পটভূমি</h3>
     <div>

@@ -10,26 +10,26 @@
     <h3>ইউনিয়ন ডিজিটাল সেন্টারের উদ্যোক্তাদের তালিকা</h3>
     <div>
         <p></p>
-        <table border="" cellpadding="0" cellspacing="0" style="width:98.5%">
+        <table border="" cellpadding="0" cellspacing="0" style="text-align:center">
             <tbody >
-                <tr>
+                <tr style="font-weight: bold;">
                     <td style="height:25px; width:4.44%">
-                        <p style="margin-left:-5.3pt; text-align:center">ক্রমিক</p>
+                        <p style="text-align:center">ক্রমিক</p>
                     </td>
                     <td style="height:25px; width:47.96%">
-                        <p style="margin-left:-5.3pt; text-align:center">নাম, পদবী ও ঠিকানা</p>
+                        <p style="text-align:center">নাম, পদবী ও ঠিকানা</p>
                     </td>
                     <td style="height:25px; width:47.62%">
-                        <p style="margin-left:-5.45pt; text-align:center">ই-মেইল ও মোবাইল নম্বর</p>
+                        <p style="text-align:center">ই-মেইল ও মোবাইল নম্বর</p>
                     </td>
                 </tr>
                 <tr>
                     <td style="height:58px; width:4.44%">
-                        <p style="margin-left:-5.75pt">০১.</p>
+                        <p>০১.</p>
 
-                        <p style="margin-left:-5.75pt"> </p>
+                        <p> </p>
 
-                        <p style="margin-left:-5.75pt"> </p>
+                        <p> </p>
                     </td>
                     <td style="height:58px; width:47.96%">
                         <p>জনাব মিনারুল ইসলাম</p>
@@ -46,11 +46,11 @@
                 </tr>
                 <tr>
                     <td style="height:58px; width:4.44%">
-                        <p style="margin-left:-5.75pt">০২.</p>
+                        <p style="">০২.</p>
 
-                        <p style="margin-left:-5.75pt"> </p>
+                        <p style=""> </p>
 
-                        <p style="margin-left:-5.75pt"> </p>
+                        <p style=""> </p>
                     </td>
                     <td style="height:58px; width:47.96%">
                         <p>জনাব শারমিন আক্তার</p>
@@ -67,11 +67,11 @@
                 </tr>
                 <tr>
                     <td style="height:58px; width:4.44%">
-                        <p style="margin-left:-5.75pt">০৩.</p>
+                        <p style="">০৩.</p>
 
-                        <p style="margin-left:-5.75pt"> </p>
+                        <p style=""> </p>
 
-                        <p style="margin-left:-5.75pt"> </p>
+                        <p style=""> </p>
                     </td>
                     <td style="height:58px; width:47.96%">
                         <p>জনাব মোঃ আশরাফুল ইসলাম</p>
@@ -88,11 +88,11 @@
                 </tr>
                 <tr>
                     <td style="height:58px; width:4.44%">
-                        <p style="margin-left:-5.75pt">০৪.</p>
+                        <p style="">০৪.</p>
 
-                        <p style="margin-left:-5.75pt"> </p>
+                        <p style=""> </p>
 
-                        <p style="margin-left:-5.75pt"> </p>
+                        <p style=""> </p>
                     </td>
                     <td style="height:58px; width:47.96%">
                         <p>মোছাঃ রুপসা খাতুন</p>
@@ -109,11 +109,11 @@
                 </tr>
                 <tr>
                     <td style="height:58px; width:4.44%">
-                        <p style="margin-left:-5.75pt">০৫.</p>
+                        <p style="">০৫.</p>
 
-                        <p style="margin-left:-5.75pt"> </p>
+                        <p style=""> </p>
 
-                        <p style="margin-left:-5.75pt"> </p>
+                        <p style=""> </p>
                     </td>
                     <td style="height:58px; width:47.96%">
                         <p>জনাব মোঃ রেজাউল হক</p>
@@ -130,7 +130,7 @@
                 </tr>
                 <tr>
                     <td style="height:58px; width:4.44%">
-                        <p style="margin-left:-5.75pt">06.</p>
+                        <p style="">06.</p>
                     </td>
                     <td style="height:58px; width:47.96%">
                         <p>মোছাঃ চায়না খাতুন</p>
@@ -147,7 +147,7 @@
                 </tr>
                 <tr>
                     <td style="height:58px; width:4.44%">
-                        <p style="margin-left:-5.75pt">০৭.</p>
+                        <p style="">০৭.</p>
                     </td>
                     <td style="height:58px; width:47.96%">
                         <p>জনাব মোহাম্মাদ কামরুজ্জামান</p>
@@ -164,7 +164,7 @@
                 </tr>
                 <tr>
                     <td style="height:58px; width:4.44%">
-                        <p style="margin-left:-5.75pt">০৮.</p>
+                        <p style="">০৮.</p>
                     </td>
                     <td style="height:58px; width:47.96%">
                         <p>জনাব এসএম ফয়সাল</p>
@@ -181,7 +181,7 @@
                 </tr>
                 <tr>
                     <td style="height:58px; width:4.44%">
-                        <p style="margin-left:-5.75pt">০৯.</p>
+                        <p style="">০৯.</p>
                     </td>
                     <td style="height:58px; width:47.96%">
                         <p>জনাব মোঃ লিটন আলী</p>
@@ -198,7 +198,7 @@
                 </tr>
                 <tr>
                     <td style="height:58px; width:4.44%">
-                        <p style="margin-left:-5.75pt">১০.</p>
+                        <p style="">১০.</p>
                     </td>
                     <td style="height:58px; width:47.96%">
                         <p>জনাব মনিকা আক্তার</p>
@@ -215,11 +215,11 @@
                 </tr>
                 <tr>
                     <td style="height:58px; width:4.44%">
-                        <p style="margin-left:-5.75pt">১১.</p>
+                        <p style="">১১.</p>
 
-                        <p style="margin-left:-5.75pt"> </p>
+                        <p style=""> </p>
 
-                        <p style="margin-left:-5.75pt"> </p>
+                        <p style=""> </p>
                     </td>
                     <td style="height:58px; width:47.96%">
                         <p>জনাব মোঃ মিখাইল হোসেন</p>
@@ -236,11 +236,11 @@
                 </tr>
                 <tr>
                     <td style="height:58px; width:4.44%">
-                        <p style="margin-left:-5.75pt">১২.</p>
+                        <p style="">১২.</p>
 
-                        <p style="margin-left:-5.75pt"> </p>
+                        <p style=""> </p>
 
-                        <p style="margin-left:-5.75pt"> </p>
+                        <p style=""> </p>
                     </td>
                     <td style="height:58px; width:47.96%">
                         <p>জনাব মোছাঃ বিজলী খাতুন</p>
@@ -257,11 +257,11 @@
                 </tr>
                 <tr>
                     <td style="height:58px; width:4.44%">
-                        <p style="margin-left:-5.75pt">১৩.</p>
+                        <p style="">১৩.</p>
 
-                        <p style="margin-left:-5.75pt"> </p>
+                        <p style=""> </p>
 
-                        <p style="margin-left:-5.75pt"> </p>
+                        <p style=""> </p>
                     </td>
                     <td style="height:58px; width:47.96%">
                         <p>জনাব মোঃ আশারফুল ইসলাম</p>
@@ -282,11 +282,11 @@
                 </tr>
                 <tr>
                     <td style="height:58px; width:4.44%">
-                        <p style="margin-left:-5.75pt">১৪.</p>
+                        <p style="">১৪.</p>
 
-                        <p style="margin-left:-5.75pt"> </p>
+                        <p style=""> </p>
 
-                        <p style="margin-left:-5.75pt"> </p>
+                        <p style=""> </p>
                     </td>
                     <td style="height:58px; width:47.96%">
                         <p>মোছাঃ রোজিনা খাতুন</p>
@@ -303,11 +303,11 @@
                 </tr>
                 <tr>
                     <td style="height:58px; width:4.44%">
-                        <p style="margin-left:-5.75pt">১৫.</p>
+                        <p style="">১৫.</p>
 
-                        <p style="margin-left:-5.75pt"> </p>
+                        <p style=""> </p>
 
-                        <p style="margin-left:-5.75pt"> </p>
+                        <p style=""> </p>
                     </td>
                     <td style="height:58px; width:47.96%">
                         <p>জনাব নাহিদ হাসান</p>
@@ -324,7 +324,7 @@
                 </tr>
                 <tr>
                     <td style="height:58px; width:4.44%">
-                        <p style="margin-left:-5.75pt">১6.</p>
+                        <p style="">১6.</p>
                     </td>
                     <td style="height:58px; width:47.96%">
                         <p>জনাব বায়েজিদ মাশরুর</p>
@@ -341,7 +341,7 @@
                 </tr>
                 <tr>
                     <td style="height:58px; width:4.44%">
-                        <p style="margin-left:-5.75pt">১৭.</p>
+                        <p style="">১৭.</p>
                     </td>
                     <td style="height:58px; width:47.96%">
                         <p>জনাব মোঃ সালাউদ্দিন</p>
@@ -358,7 +358,7 @@
                 </tr>
                 <tr>
                     <td style="height:58px; width:4.44%">
-                        <p style="margin-left:-5.75pt">১৮.</p>
+                        <p style="">১৮.</p>
                     </td>
                     <td style="height:58px; width:47.96%">
                         <p>মোছাঃ শাহানাজ পারভীন</p>
@@ -375,7 +375,7 @@
                 </tr>
                 <tr>
                     <td style="height:58px; width:4.44%">
-                        <p style="margin-left:-5.75pt">১৯.</p>
+                        <p style="">১৯.</p>
                     </td>
                     <td style="height:58px; width:47.96%">
                         <p>জনাব মোঃ রাহিনুল ইসলাম</p>
@@ -392,7 +392,7 @@
                 </tr>
                 <tr>
                     <td style="height:58px; width:4.44%">
-                        <p style="margin-left:-5.75pt">২০.</p>
+                        <p style="">২০.</p>
                     </td>
                     <td style="height:58px; width:47.96%">
                         <p>মোছাঃ মৌসুমী খাতুন</p>
@@ -409,11 +409,11 @@
                 </tr>
                 <tr>
                     <td style="height:58px; width:4.44%">
-                        <p style="margin-left:-5.75pt">২১.</p>
+                        <p style="">২১.</p>
 
-                        <p style="margin-left:-5.75pt"> </p>
+                        <p style=""> </p>
 
-                        <p style="margin-left:-5.75pt"> </p>
+                        <p style=""> </p>
                     </td>
                     <td style="height:58px; width:47.96%">
                         <p>জনাব মোঃ রাজু আহম্মেদ</p>
@@ -430,11 +430,11 @@
                 </tr>
                 <tr>
                     <td style="height:58px; width:4.44%">
-                        <p style="margin-left:-5.75pt">২২.</p>
+                        <p style="">২২.</p>
 
-                        <p style="margin-left:-5.75pt"> </p>
+                        <p style=""> </p>
 
-                        <p style="margin-left:-5.75pt"> </p>
+                        <p style=""> </p>
                     </td>
                     <td style="height:58px; width:47.96%">
                         <p>জনাব মোছাঃ শ্যামলী খাতুন</p>
@@ -451,11 +451,11 @@
                 </tr>
                 <tr>
                     <td style="height:58px; width:4.44%">
-                        <p style="margin-left:-5.75pt">২৩.</p>
+                        <p style="">২৩.</p>
 
-                        <p style="margin-left:-5.75pt"> </p>
+                        <p style=""> </p>
 
-                        <p style="margin-left:-5.75pt"> </p>
+                        <p style=""> </p>
                     </td>
                     <td style="height:58px; width:47.96%">
                         <p>জনাব মোঃ সানোয়ার হাসান</p>
@@ -472,11 +472,11 @@
                 </tr>
                 <tr>
                     <td style="height:58px; width:4.44%">
-                        <p style="margin-left:-5.75pt">২৪.</p>
+                        <p style="">২৪.</p>
 
-                        <p style="margin-left:-5.75pt"> </p>
+                        <p style=""> </p>
 
-                        <p style="margin-left:-5.75pt"> </p>
+                        <p style=""> </p>
                     </td>
                     <td style="height:58px; width:47.96%">
                         <p>জনাব মোঃ মাহবুব ইসলাম</p>
@@ -493,11 +493,11 @@
                 </tr>
                 <tr>
                     <td style="height:58px; width:4.44%">
-                        <p style="margin-left:-5.75pt">২৫.</p>
+                        <p style="">২৫.</p>
 
-                        <p style="margin-left:-5.75pt"> </p>
+                        <p style=""> </p>
 
-                        <p style="margin-left:-5.75pt"> </p>
+                        <p style=""> </p>
                     </td>
                     <td style="height:58px; width:47.96%">
                         <p>মোঃ হুমায়ন কবির</p>
@@ -514,7 +514,7 @@
                 </tr>
                 <tr>
                     <td style="height:58px; width:4.44%">
-                        <p style="margin-left:-5.75pt">২6.</p>
+                        <p style="">২6.</p>
                     </td>
                     <td style="height:58px; width:47.96%">
                         <p>জনাব দিপালী</p>
@@ -533,7 +533,7 @@
                 </tr>
                 <tr>
                     <td style="height:58px; width:4.44%">
-                        <p style="margin-left:-5.75pt">২৭.</p>
+                        <p style="">২৭.</p>
                     </td>
                     <td style="height:58px; width:47.96%">
                         <p>জনাব মোঃ মিকাঈল হোসেন</p>
@@ -550,7 +550,7 @@
                 </tr>
                 <tr>
                     <td style="height:58px; width:4.44%">
-                        <p style="margin-left:-5.75pt">২৮.</p>
+                        <p style="">২৮.</p>
                     </td>
                     <td style="height:58px; width:47.96%">
                         <p>জনাব মোছাঃ শারমিন</p>
@@ -567,7 +567,7 @@
                 </tr>
                 <tr>
                     <td style="height:58px; width:4.44%">
-                        <p style="margin-left:-5.75pt">২৯.</p>
+                        <p style="">২৯.</p>
                     </td>
                     <td style="height:58px; width:47.96%">
                         <p>জনাব মোঃ সজিবুল হক</p>
@@ -584,7 +584,7 @@
                 </tr>
                 <tr>
                     <td style="height:58px; width:4.44%">
-                        <p style="margin-left:-5.75pt">৩০.</p>
+                        <p style="">৩০.</p>
                     </td>
                     <td style="height:58px; width:47.96%">
                         <p>জনাব মোছাঃ ময়না আক্তার</p>
@@ -601,11 +601,11 @@
                 </tr>
                 <tr>
                     <td style="height:58px; width:4.44%">
-                        <p style="margin-left:-5.75pt">৩১.</p>
+                        <p style="">৩১.</p>
 
-                        <p style="margin-left:-5.75pt"> </p>
+                        <p style=""> </p>
 
-                        <p style="margin-left:-5.75pt"> </p>
+                        <p style=""> </p>
                     </td>
                     <td style="height:58px; width:47.96%">
                         <p>জনাব মশিউর রহমান</p>
@@ -622,11 +622,11 @@
                 </tr>
                 <tr>
                     <td style="height:58px; width:4.44%">
-                        <p style="margin-left:-5.75pt">৩২.</p>
+                        <p style="">৩২.</p>
 
-                        <p style="margin-left:-5.75pt"> </p>
+                        <p style=""> </p>
 
-                        <p style="margin-left:-5.75pt"> </p>
+                        <p style=""> </p>
                     </td>
                     <td style="height:58px; width:47.96%">
                         <p>জনাব মোছাঃ রোজিনা খাতুন</p>
@@ -643,11 +643,11 @@
                 </tr>
                 <tr>
                     <td style="height:58px; width:4.44%">
-                        <p style="margin-left:-5.75pt">৩৩.</p>
+                        <p style="">৩৩.</p>
 
-                        <p style="margin-left:-5.75pt"> </p>
+                        <p style=""> </p>
 
-                        <p style="margin-left:-5.75pt"> </p>
+                        <p style=""> </p>
                     </td>
                     <td style="height:58px; width:47.96%">
                         <p>জনাব মোঃ মহিদুল ইসলাম</p>
@@ -664,11 +664,11 @@
                 </tr>
                 <tr>
                     <td style="height:58px; width:4.44%">
-                        <p style="margin-left:-5.75pt">৩৪.</p>
+                        <p style="">৩৪.</p>
 
-                        <p style="margin-left:-5.75pt"> </p>
+                        <p style=""> </p>
 
-                        <p style="margin-left:-5.75pt"> </p>
+                        <p style=""> </p>
                     </td>
                     <td style="height:58px; width:47.96%">
                         <p>জনাব মোছাঃ রোকেয়া খাতুন</p>
@@ -685,11 +685,11 @@
                 </tr>
                 <tr>
                     <td style="height:58px; width:4.44%">
-                        <p style="margin-left:-5.75pt">৩৫.</p>
+                        <p style="">৩৫.</p>
 
-                        <p style="margin-left:-5.75pt"> </p>
+                        <p style=""> </p>
 
-                        <p style="margin-left:-5.75pt"> </p>
+                        <p style=""> </p>
                     </td>
                     <td style="height:58px; width:47.96%">
                         <p>জনাব মোঃ জাহিদ হোসেন</p>
@@ -706,7 +706,7 @@
                 </tr>
                 <tr>
                     <td style="height:58px; width:4.44%">
-                        <p style="margin-left:-5.75pt">৩6.</p>
+                        <p style="">৩6.</p>
                     </td>
                     <td style="height:58px; width:47.96%">
                         <p>জনাব মোছা নাছরিন আক্তার</p>
@@ -723,7 +723,7 @@
                 </tr>
                 <tr>
                     <td style="height:58px; width:4.44%">
-                        <p style="margin-left:-5.75pt">৩৭.</p>
+                        <p style="">৩৭.</p>
                     </td>
                     <td style="height:58px; width:47.96%">
                         <p>জনাব মোঃ হাসানুজ্জামান</p>
@@ -740,7 +740,7 @@
                 </tr>
                 <tr>
                     <td style="height:58px; width:4.44%">
-                        <p style="margin-left:-5.75pt">৩৮.</p>
+                        <p style="">৩৮.</p>
                     </td>
                     <td style="height:58px; width:47.96%">
                         <p>জনাব মোছাঃ লতা খাতুন</p>
@@ -757,7 +757,7 @@
                 </tr>
                 <tr>
                     <td style="height:58px; width:4.44%">
-                        <p style="margin-left:-5.75pt">৩৯.</p>
+                        <p style="">৩৯.</p>
                     </td>
                     <td style="height:58px; width:47.96%">
                         <p>জনাব মোঃ সুমন রেজা</p>
@@ -774,7 +774,7 @@
                 </tr>
                 <tr>
                     <td style="height:58px; width:4.44%">
-                        <p style="margin-left:-5.75pt">৪০.</p>
+                        <p style="">৪০.</p>
                     </td>
                     <td style="height:58px; width:47.96%">
                         <p>জনাব মোঃ ইনাফুল হক</p>

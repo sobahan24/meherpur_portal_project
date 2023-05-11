@@ -14,7 +14,7 @@
         <p>ইউনিয়ন পরিষদ চেয়ারম্যানদের মোবাইল নং</p>
         <table border="1" cellpadding="0" cellspacing="0" style="font-size: 12px;">
             <tbody style="text-align: center;">
-                <tr>
+                <tr style="font-weight: bold;">
                     <td style="width:53px">
                         <p style="text-align:center">ক্রমিক</p>
                     </td>
@@ -353,9 +353,9 @@
         <p>ইউনিয়ন পরিষদ সচিবদের মোবাইল নং</p>
         <table border="1" cellpadding="0" cellspacing="0" style="font-size: 12px;">
             <tbody style="text-align: center;">
-                <tr>
+                <tr style="font-weight: bold;">
                     <td style="width:53px">
-                        <p style="text-align:center">ক্রম</p>
+                        <p style="text-align:center">ক্রমিক</p>
                     </td>
                     <td style="width:114px">
                         <p style="text-align:center">উপজেলা</p>
