@@ -34,7 +34,23 @@ Route::get('/জেলা-সম্পর্কিত/উপজেলা-ও-ই
 // ইতিহাস ও ঐতিহ্য
 Route::get('/জেলা-সম্পর্কিত/খেলাধুলা-ও-বিনোদন', [App\Http\Controllers\Frontend\FrontendController::class, 'খেলাধুলা_ও_বিনোদন']);
 Route::get('/জেলা-সম্পর্কিত/জেলার-ঐতিহ্য', [App\Http\Controllers\Frontend\FrontendController::class, 'জেলার_ঐতিহ্য']);
+
+// দর্শনীয়-স্থান
 Route::get('/জেলা-সম্পর্কিত/দর্শনীয়-স্থান', [App\Http\Controllers\Frontend\FrontendController::class, 'দর্শনীয়_স্থান']);
+Route::get('/জেলা-সম্পর্কিত/দর্শনীয়-স্থান/মুজিবনগর-মুক্তিযুদ্ধ-স্মৃতি-কমপ্লেক্স-এবং-আম্রকানন', [App\Http\Controllers\Frontend\FrontendController::class, 'মুজিবনগর_মুক্তিযুদ্ধ_স্মৃতি_কমপ্লেক্স_এবং_আম্রকানন']);
+Route::get('/জেলা-সম্পর্কিত/দর্শনীয়-স্থান/মেহেরপুর-শহীদ-স্মৃতিসৌধ', [App\Http\Controllers\Frontend\FrontendController::class, 'মেহেরপুর_শহীদ_স্মৃতিসৌধ']);
+Route::get('/জেলা-সম্পর্কিত/দর্শনীয়-স্থান/আমদহ-গ্রামের-স্থাপত্য-নিদর্শন', [App\Http\Controllers\Frontend\FrontendController::class, 'আমদহ_গ্রামের_স্থাপত্য_নিদর্শন']);
+Route::get('/জেলা-সম্পর্কিত/দর্শনীয়-স্থান/সিদ্ধেশ্বরী-কালী-মন্দির', [App\Http\Controllers\Frontend\FrontendController::class, 'সিদ্ধেশ্বরী_কালী_মন্দির']);
+Route::get('/জেলা-সম্পর্কিত/দর্শনীয়-স্থান/আমঝুপি-নীলকুঠি', [App\Http\Controllers\Frontend\FrontendController::class, 'আমঝুপি_নীলকুঠি']);
+Route::get('/জেলা-সম্পর্কিত/দর্শনীয়-স্থান/ডিসি-ইকোপার্ক', [App\Http\Controllers\Frontend\FrontendController::class, 'ডিসি_ইকোপার্ক']);
+Route::get('/জেলা-সম্পর্কিত/দর্শনীয়-স্থান/ভবানন্দপুর-মন্দির', [App\Http\Controllers\Frontend\FrontendController::class, 'ভবানন্দপুর_মন্দির']);
+Route::get('/জেলা-সম্পর্কিত/দর্শনীয়-স্থান/মেহেরপুর-পৌর-কবর-স্থান', [App\Http\Controllers\Frontend\FrontendController::class, 'মেহেরপুর_পৌর_কবর_স্থান']);
+Route::get('/জেলা-সম্পর্কিত/দর্শনীয়-স্থান/পৌর-ঈদগাহ', [App\Http\Controllers\Frontend\FrontendController::class, 'পৌর_ঈদগাহ']);
+Route::get('/জেলা-সম্পর্কিত/দর্শনীয়-স্থান/পৌর-হল', [App\Http\Controllers\Frontend\FrontendController::class, 'পৌর_হল']);
+Route::get('/জেলা-সম্পর্কিত/দর্শনীয়-স্থান/বল্লভপুর-চার্চ', [App\Http\Controllers\Frontend\FrontendController::class, 'বল্লভপুর_চার্চ']);
+Route::get('/জেলা-সম্পর্কিত/দর্শনীয়-স্থান/স্বামী-নিগমানন্দ-আশ্রম', [App\Http\Controllers\Frontend\FrontendController::class, 'স্বামী_নিগমানন্দ_আশ্রম']);
+
+
 Route::get('/জেলা-সম্পর্কিত/প্রখ্যাত-ব্যক্তিত্ব', [App\Http\Controllers\Frontend\FrontendController::class, 'প্রখ্যাত_ব্যক্তিত্ব']);
 Route::get('/জেলা-সম্পর্কিত/ভাষা-ও-সংস্কৃতি', [App\Http\Controllers\Frontend\FrontendController::class, 'ভাষা_ও_সংস্কৃতি']);
 Route::get('/জেলা-সম্পর্কিত/মুক্তিযুদ্ধ-ও-মুক্তিযোদ্ধাদের-তালিকা', [App\Http\Controllers\Frontend\FrontendController::class, 'মুক্তিযুদ্ধ_ও_মুক্তিযোদ্ধাদের_তালিকা']);

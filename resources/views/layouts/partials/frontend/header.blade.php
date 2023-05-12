@@ -6,7 +6,7 @@
                 মেহেরপুর তথ্য বাতায়ন
             </a>
         </div>
-        
+
         <div id="div-lang-sel" class="one columns"
             style="padding:5px;padding-right: 8px; margin: 0px 15px; display:flex;">
             <a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
@@ -507,82 +507,7 @@
                             </div>
                         </div>
                     </li> -->
-                    <li class="col5 mzr-drop"><a title="অন্যান্য প্রতিষ্ঠান" href="javascript:;">অন্যান্য
-                            প্রতিষ্ঠান</a>
-                        <div class="mzr-content drop-four-columns">
-                            <div class="one-col">
-                                <h6>শিক্ষা</h6>
-                                <ul class="mzr-links">
-                                    <li><a title="এমপিওভুক্ত শিক্ষা প্রতিষ্ঠানের তালিক"
-                                            href="site/page/d26959c8-e44d-466b-b133-3f5d0b10a235/%e0%a6%8f%e0%a6%ae%e0%a6%aa%e0%a6%bf%e0%a6%93%e0%a6%ad%e0%a7%81%e0%a6%95%e0%a7%8d%e0%a6%a4%20%e0%a6%b6%e0%a6%bf%e0%a6%95%e0%a7%8d%e0%a6%b7%e0%a6%be%20%e0%a6%aa%e0%a7%8d%e0%a6%b0%e0%a6%a4%e0%a6%bf%e0%a6%b7%e0%a7%8d%e0%a6%a0%e0%a6%be%e0%a6%a8%e0%a7%87%e0%a6%b0%20%e0%a6%a4%e0%a6%be%e0%a6%b2%e0%a6%bf%e0%a6%95.html">এমপিওভুক্ত
-                                            শিক্ষা প্রতিষ্ঠানের তালিক</a></li>
-                                    <li><a title="নন এমপিওভুক্ত শিক্ষা প্রতিষ্ঠানের তালিক"
-                                            href="site/page/fc389299-7fcb-4f2a-9320-37731babb0fe/%e0%a6%a8%e0%a6%a8%20%e0%a6%8f%e0%a6%ae%e0%a6%aa%e0%a6%bf%e0%a6%93%e0%a6%ad%e0%a7%81%e0%a6%95%e0%a7%8d%e0%a6%a4%20%e0%a6%b6%e0%a6%bf%e0%a6%95%e0%a7%8d%e0%a6%b7%e0%a6%be%20%e0%a6%aa%e0%a7%8d%e0%a6%b0%e0%a6%a4%e0%a6%bf%e0%a6%b7%e0%a7%8d%e0%a6%a0%e0%a6%be%e0%a6%a8%e0%a7%87%e0%a6%b0%20%e0%a6%a4%e0%a6%be%e0%a6%b2%e0%a6%bf%e0%a6%95.html">নন
-                                            এমপিওভুক্ত শিক্ষা প্রতিষ্ঠানের তালিক</a></li>
-                                    <li><a title="প্রাথমিক বিদ্যালয়"
-                                            href="site/page/1be5c009-1c4b-11e7-8f57-286ed488c766/%e0%a6%aa%e0%a7%8d%e0%a6%b0%e0%a6%be%e0%a6%a5%e0%a6%ae%e0%a6%bf%e0%a6%95%20%e0%a6%ac%e0%a6%bf%e0%a6%a6%e0%a7%8d%e0%a6%af%e0%a6%be%e0%a6%b2%e0%a7%9f.html">প্রাথমিক
-                                            বিদ্যালয়</a></li>
-                                    <li><a title="মাধ্যমিক বিদ্যালয়"
-                                            href="site/page/1be58baf-1c4b-11e7-8f57-286ed488c766/%e0%a6%ae%e0%a6%be%e0%a6%a7%e0%a7%8d%e0%a6%af%e0%a6%ae%e0%a6%bf%e0%a6%95%20%e0%a6%ac%e0%a6%bf%e0%a6%a6%e0%a7%8d%e0%a6%af%e0%a6%be%e0%a6%b2%e0%a7%9f.html">মাধ্যমিক
-                                            বিদ্যালয়</a></li>
-                                    <li><a title="নিম্ন মাধ্যমিক বিদ্যালয়"
-                                            href="site/page/1be5a3ec-1c4b-11e7-8f57-286ed488c766/%e0%a6%a8%e0%a6%bf%e0%a6%ae%e0%a7%8d%e0%a6%a8%20%e0%a6%ae%e0%a6%be%e0%a6%a7%e0%a7%8d%e0%a6%af%e0%a6%ae%e0%a6%bf%e0%a6%95%20%e0%a6%ac%e0%a6%bf%e0%a6%a6%e0%a7%8d%e0%a6%af%e0%a6%be%e0%a6%b2%e0%a7%9f.html">নিম্ন
-                                            মাধ্যমিক বিদ্যালয়</a></li>
-                                    <li><a title="জেলার সকল শিক্ষা প্রতিষ্ঠানে"
-                                            href="site/page/e0c4f467-2e04-43cf-b9aa-ac5e519930e1/%e0%a6%9c%e0%a7%87%e0%a6%b2%e0%a6%be%e0%a6%b0%20%e0%a6%b8%e0%a6%95%e0%a6%b2%20%e0%a6%b6%e0%a6%bf%e0%a6%95%e0%a7%8d%e0%a6%b7%e0%a6%be%20%e0%a6%aa%e0%a7%8d%e0%a6%b0%e0%a6%a4%e0%a6%bf%e0%a6%b7%e0%a7%8d%e0%a6%a0%e0%a6%be%e0%a6%a8%e0%a7%87.html">জেলার
-                                            সকল শিক্ষা প্রতিষ্ঠানে</a></li>
-                                </ul>
-                            </div>
-                            <div class="one-col">
-                                <h6>সংস্থা/সংগঠন</h6>
-                                <ul class="mzr-links">
-                                    <li><a title="বাংলাদেশ রেড ক্রিসেট সোসাইটি, মেহেরপুর ইউনিট"
-                                            href="site/page/1be60a79-1c4b-11e7-8f57-286ed488c766/%e0%a6%ac%e0%a6%be%e0%a6%82%e0%a6%b2%e0%a6%be%e0%a6%a6%e0%a7%87%e0%a6%b6%20%e0%a6%b0%e0%a7%87%e0%a6%a1%20%e0%a6%95%e0%a7%8d%e0%a6%b0%e0%a6%bf%e0%a6%b8%e0%a7%87%e0%a6%9f%20%e0%a6%b8%e0%a7%8b%e0%a6%b8%e0%a6%be%e0%a6%87%e0%a6%9f%e0%a6%bf%2c%20%e0%a6%ae%e0%a7%87%e0%a6%b9%e0%a7%87%e0%a6%b0%e0%a6%aa%e0%a7%81%e0%a6%b0%20%e0%a6%87%e0%a6%89%e0%a6%a8%e0%a6%bf%e0%a6%9f.html">বাংলাদেশ
-                                            রেড ক্রিসেট সোসাইটি, মেহেরপুর ইউনিট</a></li>
-                                    <li><a title="জেলা ক্রীড়া সংস্থা, মেহেরপুর।"
-                                            href="site/page/1fda4c13-1c4b-11e7-8f57-286ed488c766/%e0%a6%9c%e0%a7%87%e0%a6%b2%e0%a6%be%20%e0%a6%95%e0%a7%8d%e0%a6%b0%e0%a7%80%e0%a6%a1%e0%a6%bc%e0%a6%be%20%e0%a6%b8%e0%a6%82%e0%a6%b8%e0%a7%8d%e0%a6%a5%e0%a6%be%2c%20%e0%a6%ae%e0%a7%87%e0%a6%b9%e0%a7%87%e0%a6%b0%e0%a6%aa%e0%a7%81%e0%a6%b0%e0%a5%a4.html">জেলা
-                                            ক্রীড়া সংস্থা, মেহেরপুর।</a></li>
-                                    <li><a title="জেলা মহিলা ক্রীড়া সংস্থা, মেহেরপুর।"
-                                            href="site/page/1fda4cb7-1c4b-11e7-8f57-286ed488c766/%e0%a6%9c%e0%a7%87%e0%a6%b2%e0%a6%be%20%e0%a6%ae%e0%a6%b9%e0%a6%bf%e0%a6%b2%e0%a6%be%20%e0%a6%95%e0%a7%8d%e0%a6%b0%e0%a7%80%e0%a6%a1%e0%a6%bc%e0%a6%be%20%e0%a6%b8%e0%a6%82%e0%a6%b8%e0%a7%8d%e0%a6%a5%e0%a6%be%2c%20%e0%a6%ae%e0%a7%87%e0%a6%b9%e0%a7%87%e0%a6%b0%e0%a6%aa%e0%a7%81%e0%a6%b0%e0%a5%a4.html">জেলা
-                                            মহিলা ক্রীড়া সংস্থা, মেহেরপুর।</a></li>
-                                    <li><a title="ফুটবল এসোসিয়েশন"
-                                            href="site/page/1fda4fa2-1c4b-11e7-8f57-286ed488c766/%e0%a6%ab%e0%a7%81%e0%a6%9f%e0%a6%ac%e0%a6%b2%20%e0%a6%8f%e0%a6%b8%e0%a7%8b%e0%a6%b8%e0%a6%bf%e0%a6%af%e0%a6%bc%e0%a7%87%e0%a6%b6%e0%a6%a8.html">ফুটবল
-                                            এসোসিয়েশন</a></li>
-                                    <li><a title="পাবলিক লাইব্রেরি"
-                                            href="site/page/1fda5162-1c4b-11e7-8f57-286ed488c766/%e0%a6%aa%e0%a6%be%e0%a6%ac%e0%a6%b2%e0%a6%bf%e0%a6%95%20%e0%a6%b2%e0%a6%be%e0%a6%87%e0%a6%ac%e0%a7%8d%e0%a6%b0%e0%a7%87%e0%a6%b0%e0%a6%bf.html">পাবলিক
-                                            লাইব্রেরি</a></li>
-                                </ul>
-                            </div>
-                            <div class="one-col">
-                                <h6>বেসরকারি প্রতিষ্ঠান</h6>
-                                <ul class="mzr-links">
-                                    <li><a title="এনজিও সমূহের নাম"
-                                            href="site/page/1b2809ef-1c4b-11e7-8f57-286ed488c766/%e0%a6%8f%e0%a6%a8%e0%a6%9c%e0%a6%bf%e0%a6%93%20%e0%a6%b8%e0%a6%ae%e0%a7%82%e0%a6%b9%e0%a7%87%e0%a6%b0%20%e0%a6%a8%e0%a6%be%e0%a6%ae.html">এনজিও
-                                            সমূহের নাম</a></li>
-                                    <li><a title="সরকারী ব্যাংকসমূহ"
-                                            href="site/page/1be5d5c5-1c4b-11e7-8f57-286ed488c766/%e0%a6%b8%e0%a6%b0%e0%a6%95%e0%a6%be%e0%a6%b0%e0%a7%80%20%e0%a6%ac%e0%a7%8d%e0%a6%af%e0%a6%be%e0%a6%82%e0%a6%95%e0%a6%b8%e0%a6%ae%e0%a7%82%e0%a6%b9.html">সরকারী
-                                            ব্যাংকসমূহ</a></li>
-                                    <li><a title="বীমা"
-                                            href="site/page/1be5b628-1c4b-11e7-8f57-286ed488c766/%e0%a6%ac%e0%a7%80%e0%a6%ae%e0%a6%be.html">বীমা</a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="one-col">
-                                <h6>ধর্মীয় প্রতিষ্ঠান</h6>
-                                <ul class="mzr-links">
-                                    <li><a title="মেহেরপুর জেলার মসজিদ"
-                                            href="site/view/religious_institutes/%e0%a6%ae%e0%a7%87%e0%a6%b9%e0%a7%87%e0%a6%b0%e0%a6%aa%e0%a7%81%e0%a6%b0%20%e0%a6%9c%e0%a7%87%e0%a6%b2%e0%a6%be%e0%a6%b0%20%e0%a6%ae%e0%a6%b8%e0%a6%9c%e0%a6%bf%e0%a6%a6.html">মেহেরপুর
-                                            জেলার মসজিদ</a></li>
-                                    <li><a title="মন্দিরসমূহ"
-                                            href="site/page/1fce2231-1c4b-11e7-8f57-286ed488c766/%e0%a6%ae%e0%a6%a8%e0%a7%8d%e0%a6%a6%e0%a6%bf%e0%a6%b0%e0%a6%b8%e0%a6%ae%e0%a7%82%e0%a6%b9.html">মন্দিরসমূহ</a>
-                                    </li>
-                                    <li><a title="গীর্জাসমূহ"
-                                            href="site/page/1feafba2-1c4b-11e7-8f57-286ed488c766/%e0%a6%97%e0%a7%80%e0%a6%b0%e0%a7%8d%e0%a6%9c%e0%a6%be%e0%a6%b8%e0%a6%ae%e0%a7%82%e0%a6%b9.html">গীর্জাসমূহ</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </li>
+
                     <li class="col6 mzr-drop"><a title="গ্যালারি" href="javascript:;">গ্যালারি</a>
                         <div class="mzr-content drop-two-columns">
                             <div class="one-col">
