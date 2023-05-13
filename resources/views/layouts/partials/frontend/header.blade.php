@@ -31,10 +31,10 @@
                                     </a>
                                     <div class="dropdown-content">
                                             <li class="nav-item dropdown" style="display: flex; margin-bottom:0px;">
-                                                    <a href="">Profile</a>
+                                                    <a href="#">Profile</a>
                                             </li>
                                             <li class="nav-item dropdown" style="display: flex; margin-bottom:0px;">
-                                                    <a href="">Dashboard</a>
+                                                    <a href="{{ url('/dashboard') }}">Dashboard</a>
                                             </li>
                                             <li class="nav-item dropdown" style="display: flex; margin-bottom:0px;">
 

@@ -2,7 +2,8 @@
 
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
-
+use App\Http\Controllers\Frontend\FrontendController;
+use App\Http\Controllers\Backend\AdminController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -125,7 +126,9 @@ Route::get('/স্থানীয়-সরকার/জেলা-পরিষ�
 
 // backend start
 Route::middleware(['auth','isAdmin'])->group(function () {
-    Route::get('/dashboard', function () {
-        return "This is Admin Panel";
-     });
+    Route::get('/dashboard', [App\Http\Controllers\Backend\AdminController::class, 'index']);
+
+
+
+
 });
