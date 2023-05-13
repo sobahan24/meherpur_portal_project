@@ -22,7 +22,7 @@ Auth::routes();
 
 // Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
-Route::get('/', [App\Http\Controllers\Frontend\FrontendController::class, 'index'])->name('home');
+Route::get('/', [App\Http\Controllers\Frontend\FrontendController::class, 'index']);
 
 // জেলা পরিচিতি
 Route::get('/জেলা-সম্পর্কিত/এক-নজরে', [App\Http\Controllers\Frontend\FrontendController::class, 'এক_নজরে']);

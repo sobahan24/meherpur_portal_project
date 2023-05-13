@@ -1,285 +1,274 @@
     {{-- topbar start --}}
-    <div class="sixteen columns topbar"
-        style="background-color: #8bc643; box-shadow: 0 1px 5px #999999; height:auto;border-bottom:4px solid #683091;">
-        <div class="np three columns" style=" display: inline-block;">
-            <a style="color: white;height:100%;display:table;padding: 7px;font-size:.9em;" href="{{ url('/') }}">
-                মেহেরপুর তথ্য বাতায়ন
-            </a>
-        </div>
+    <div class="sixteen columns topbar" style="background-color: #8bc643; box-shadow: 0 1px 5px #999999; height:auto;border-bottom:4px solid #683091;">
+            <div class="np three columns" style=" display: inline-block;">
+                    <a style="color: white; height:100%; display:table; padding: 7px; font-size:15px; font-weight: bolder;" href="{{ url('/') }}">
+                            মেহেরপুর তথ্য বাতায়ন
+                    </a>
+            </div>
 
-        <div id="div-lang-sel" class="one columns"
-            style="padding:5px;padding-right: 8px; margin: 0px 15px; display:flex;">
-            <a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
-            <a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a>
-        </div>
+            <div id="div-lang-sel" class="one columns" style="padding:5px;padding-right: 8px; margin: 0px 15px; display:flex;">
+                    <!-- <a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
+                    <a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a> -->
+
+                    <ul class="navbar-nav ms-auto" style="display: flex; margin-bottom:0px;">
+                            <!-- Authentication Links -->
+                            @guest
+                            @if (Route::has('login'))
+                            <li class="nav-item" style="margin-bottom:0px;">
+                                    <a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
+                            </li>
+                            @endif
+
+                            @if (Route::has('register'))
+                            <li class="nav-item" style="margin-bottom:0px;">
+                                    <a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a>
+                            </li>
+                            @endif
+                            @else
+                            <li class="nav-item dropdown"  style="display: flex; margin-bottom:0px;">
+                                    <a >
+                                            {{ Auth::user()->name }}
+                                    </a>
+
+                                    <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                                            <a class="dropdown-item" href="{{ route('logout') }}" onclick="event.preventDefault();
+                                                     document.getElementById('logout-form').submit();">
+                                                    {{ __('Logout') }}
+                                            </a>
+
+                                            <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+                                                    @csrf
+                                            </form>
+                                    </div>
+                            </li>
+                            @endguest
+                    </ul>
+
+
+            </div>
     </div>
     {{-- topbar end --}}
 
     <div class="sixteen columns slider">
 
-        {{-- banner start --}}
-        @include('layouts.partials.frontend.slider')
-        {{-- banner end --}}
+            {{-- banner start --}}
+            @include('layouts.partials.frontend.slider')
+            {{-- banner end --}}
 
-        <div class="responsive-slogan">
-            <span id="site-name-res">
-                <a title="Home" href="{{ url('/') }}">
-                    মেহেরপুর জেলা
-                </a>
-            </span>
-            <span id="slogan-res">
-            </span>
-        </div>
-
-        <div class="header-site-info" id="header-site-info">
-            <div>
-
-                <div class="clearfix" id="site-name-wrapper">
-                    <span id="site-name">
-                        <a title="Home" href="{{ url('/') }}">
-                            মেহেরপুর জেলা </a>
+            <div class="responsive-slogan">
+                    <span id="site-name-res">
+                            <a title="Home" href="{{ url('/') }}">
+                                    মেহেরপুর জেলা
+                            </a>
                     </span>
-                    <span id="slogan">
+                    <span id="slogan-res">
                     </span>
-
-                </div>
             </div>
-        </div>
+
+            <div class="header-site-info" id="header-site-info">
+                    <div>
+
+                            <div class="clearfix" id="site-name-wrapper">
+                                    <span id="site-name">
+                                            <a title="Home" href="{{ url('/') }}">
+                                                    মেহেরপুর জেলা </a>
+                                    </span>
+                                    <span id="slogan">
+                                    </span>
+
+                            </div>
+                    </div>
+            </div>
     </div>
     <script>
-        /* Responsive Design*/
-        $(document).ready(function() {
-            var wi = $(window).width();
-            if (wi < 980) {
-                $('#jmenu .show-menu').click(function() {
-                    //$('.mzr-responsive').show();
-                    $(".mzr-responsive").slideToggle(700, "linear", function() {});
-                });
+            /* Responsive Design*/
+            $(document).ready(function() {
+                    var wi = $(window).width();
+                    if (wi < 980) {
+                            $('#jmenu .show-menu').click(function() {
+                                    //$('.mzr-responsive').show();
+                                    $(".mzr-responsive").slideToggle(700, "linear", function() {});
+                            });
 
-                $(".mzr-drop> a").click(function() {
+                            $(".mzr-drop> a").click(function() {
 
-                    $(".mzr-drop> a").siblings().addClass('sibling-toggle');
+                                    $(".mzr-drop> a").siblings().addClass('sibling-toggle');
 
-                    $(this).parent().find(".mzr-content").removeClass('sibling-toggle').addClass(
-                        'slide-visible').slideToggle(700, "linear", function() {});
-                    return false;
-                });
-            }
-            $('.submenu').addClass('sub-menu');
-            $('.mzr-drop').addClass('focusin-drop');
-            $('.mzr-drop').addClass('focusClassDrop');
+                                    $(this).parent().find(".mzr-content").removeClass('sibling-toggle').addClass(
+                                            'slide-visible').slideToggle(700, "linear", function() {});
+                                    return false;
+                            });
+                    }
+                    $('.submenu').addClass('sub-menu');
+                    $('.mzr-drop').addClass('focusin-drop');
+                    $('.mzr-drop').addClass('focusClassDrop');
 
-        });
+            });
     </script>
 
 
     {{-- menu start --}}
     <div class="sixteen columns" id="jmenu">
-        <div class="sixteen columns">
-            <a href="javascript:;" class="show-menu menu-head"> মেনু নির্বাচন করুন</a>
-            <div role="navigation" id="dawgdrops">
-                <ul class="meganizr mzr-slide mzr-responsive">
-                    <!-- Build The Menu -->
-                    <li class="col0"><a title="Home" href="{{ url('/') }}"
-                            style="background-image: url('{{ asset('frontend/images/home_dark.png') }}');margin-top:5px;"></a>
-                    </li>
-                    <li class="col1 mzr-drop"><a title="জেলা সম্পর্কিত" href="javascript:;">জেলা
-                            সম্পর্কিত</a>
-                        <div class="mzr-content drop-four-columns">
-                            <div class="one-col">
-                                <h6>জেলা পরিচিতি</h6>
-                                <ul class="mzr-links">
-                                    <li><a title="এক নজরে জেলা"
-                                            href="{{ url('/জেলা-সম্পর্কিত/এক-নজরে') }}">এক
-                                            নজরে জেলা</a></li>
-                                    <li><a title="জেলার পটভুমি"
-                                            href="{{ url('/জেলা-সম্পর্কিত/পটভুমি') }}">জেলার
-                                            পটভুমি</a></li>
-                                    <li><a title="ভৌগলিক পরিচিতি"
-                                            href="{{ url('/জেলা-সম্পর্কিত/ভৌগলিক-পরিচিতি') }}">ভৌগলিক
-                                            পরিচিতি</a></li>
-                                    <li><a title="মানচিত্রে জেলা"
-                                            href="{{ url('/জেলা-সম্পর্কিত/মানচিত্রে-জেলা') }}">মানচিত্রে
-                                            জেলা</a></li>
-                                    <li><a title="উপজেলা ও ইউনিয়ন"
-                                            href="{{ url('/জেলা-সম্পর্কিত/উপজেলা-ও-ইউনিয়ন') }}">উপজেলা
-                                            ও ইউনিয়ন</a></li>
-                                </ul>
-                            </div>
-                            <div class="one-col">
-                                <h6>ইতিহাস ও ঐতিহ্য</h6>
-                                <ul class="mzr-links">
-                                    <li><a title="খেলাধুলা ও বিনোদন"
-                                            href="{{ url('/জেলা-সম্পর্কিত/খেলাধুলা-ও-বিনোদন') }}">খেলাধুলা
-                                            ও বিনোদন</a></li>
-                                    <li><a title="জেলার ঐতিহ্য"
-                                            href="{{ url('/জেলা-সম্পর্কিত/জেলার-ঐতিহ্য') }}">জেলার
-                                            ঐতিহ্য</a></li>
-                                    <li><a title="দর্শনীয় স্থান"
-                                            href="{{ url('/জেলা-সম্পর্কিত/দর্শনীয়-স্থান') }}">দর্শনীয়
-                                            স্থান</a></li>
-                                    <li><a title="প্রখ্যাত ব্যক্তিত্ব"
-                                            href="{{ url('/জেলা-সম্পর্কিত/প্রখ্যাত-ব্যক্তিত্ব') }}">প্রখ্যাত
-                                            ব্যক্তিত্ব</a></li>
-                                    <li><a title="ভাষা ও সংস্কৃতি"
-                                            href="{{ url('/জেলা-সম্পর্কিত/ভাষা-ও-সংস্কৃতি') }}">ভাষা
-                                            ও সংস্কৃতি</a></li>
-                                    <li><a title="মুক্তিযুদ্ধ ও মুক্তিযোদ্ধাদের তালিকা"
-                                            href="{{ url('/জেলা-সম্পর্কিত/মুক্তিযুদ্ধ-ও-মুক্তিযোদ্ধাদের-তালিকা') }}">মুক্তিযুদ্ধ
-                                            ও মুক্তিযোদ্ধাদের তালিকা</a></li>
-                                </ul>
-                            </div>
-                            <div class="one-col">
-                                <h6>ভৌগোলিক ও অর্থনৈতিক</h6>
-                                <ul class="mzr-links">
-                                    <li><a title="হোটেল ও আবাসন"
-                                            href="{{ url('/জেলা-সম্পর্কিত/হোটেল-ও-আবাসন') }}">হোটেল
-                                            ও আবাসন</a></li>
-                                    <li><a title="ভৌগোলিক অবস্থান,গঠন ও আয়তন"
-                                            href="{{ url('/জেলা-সম্পর্কিত/অবস্থান-গঠন-ও-আয়তন') }}">ভৌগোলিক
-                                            অবস্থান,গঠন ও আয়তন</a></li>
-                                    <li><a title="শিল্প ও বাণিজ্য"
-                                            href="{{ url('/জেলা-সম্পর্কিত/শিল্প-ও-বাণিজ্য') }}">শিল্প
-                                            ও বাণিজ্য</a></li>
-                                    <li><a title="নদ-নদী"
-                                            href="{{ url('/জেলা-সম্পর্কিত/নদ-নদী') }}">নদ-নদী</a>
+            <div class="sixteen columns">
+                    <a href="javascript:;" class="show-menu menu-head"> মেনু নির্বাচন করুন</a>
+                    <div role="navigation" id="dawgdrops">
+                            <ul class="meganizr mzr-slide mzr-responsive">
+                                    <!-- Build The Menu -->
+                                    <li class="col0"><a title="Home" href="{{ url('/') }}" style="margin-top:5px; background-image: url('{{ asset('frontend/images/home_dark.png') }}')"></a>
                                     </li>
-                                    <li><a title="হাটবাজার"
-                                            href="{{ url('/জেলা-সম্পর্কিত/হাটবাজার') }}">হাটবাজার</a>
+                                    <li class="col1 mzr-drop"><a title="জেলা সম্পর্কিত" href="javascript:;">জেলা
+                                                    সম্পর্কিত</a>
+                                            <div class="mzr-content drop-four-columns">
+                                                    <div class="one-col">
+                                                            <h6>জেলা পরিচিতি</h6>
+                                                            <ul class="mzr-links">
+                                                                    <li><a title="এক নজরে জেলা" href="{{ url('/জেলা-সম্পর্কিত/এক-নজরে') }}">এক
+                                                                                    নজরে জেলা</a></li>
+                                                                    <li><a title="জেলার পটভুমি" href="{{ url('/জেলা-সম্পর্কিত/পটভুমি') }}">জেলার
+                                                                                    পটভুমি</a></li>
+                                                                    <li><a title="ভৌগলিক পরিচিতি" href="{{ url('/জেলা-সম্পর্কিত/ভৌগলিক-পরিচিতি') }}">ভৌগলিক
+                                                                                    পরিচিতি</a></li>
+                                                                    <li><a title="মানচিত্রে জেলা" href="{{ url('/জেলা-সম্পর্কিত/মানচিত্রে-জেলা') }}">মানচিত্রে
+                                                                                    জেলা</a></li>
+                                                                    <li><a title="উপজেলা ও ইউনিয়ন" href="{{ url('/জেলা-সম্পর্কিত/উপজেলা-ও-ইউনিয়ন') }}">উপজেলা
+                                                                                    ও ইউনিয়ন</a></li>
+                                                            </ul>
+                                                    </div>
+                                                    <div class="one-col">
+                                                            <h6>ইতিহাস ও ঐতিহ্য</h6>
+                                                            <ul class="mzr-links">
+                                                                    <li><a title="খেলাধুলা ও বিনোদন" href="{{ url('/জেলা-সম্পর্কিত/খেলাধুলা-ও-বিনোদন') }}">খেলাধুলা
+                                                                                    ও বিনোদন</a></li>
+                                                                    <li><a title="জেলার ঐতিহ্য" href="{{ url('/জেলা-সম্পর্কিত/জেলার-ঐতিহ্য') }}">জেলার
+                                                                                    ঐতিহ্য</a></li>
+                                                                    <li><a title="দর্শনীয় স্থান" href="{{ url('/জেলা-সম্পর্কিত/দর্শনীয়-স্থান') }}">দর্শনীয়
+                                                                                    স্থান</a></li>
+                                                                    <li><a title="প্রখ্যাত ব্যক্তিত্ব" href="{{ url('/জেলা-সম্পর্কিত/প্রখ্যাত-ব্যক্তিত্ব') }}">প্রখ্যাত
+                                                                                    ব্যক্তিত্ব</a></li>
+                                                                    <li><a title="ভাষা ও সংস্কৃতি" href="{{ url('/জেলা-সম্পর্কিত/ভাষা-ও-সংস্কৃতি') }}">ভাষা
+                                                                                    ও সংস্কৃতি</a></li>
+                                                                    <li><a title="মুক্তিযুদ্ধ ও মুক্তিযোদ্ধাদের তালিকা" href="{{ url('/জেলা-সম্পর্কিত/মুক্তিযুদ্ধ-ও-মুক্তিযোদ্ধাদের-তালিকা') }}">মুক্তিযুদ্ধ
+                                                                                    ও মুক্তিযোদ্ধাদের তালিকা</a></li>
+                                                            </ul>
+                                                    </div>
+                                                    <div class="one-col">
+                                                            <h6>ভৌগোলিক ও অর্থনৈতিক</h6>
+                                                            <ul class="mzr-links">
+                                                                    <li><a title="হোটেল ও আবাসন" href="{{ url('/জেলা-সম্পর্কিত/হোটেল-ও-আবাসন') }}">হোটেল
+                                                                                    ও আবাসন</a></li>
+                                                                    <li><a title="ভৌগোলিক অবস্থান,গঠন ও আয়তন" href="{{ url('/জেলা-সম্পর্কিত/অবস্থান-গঠন-ও-আয়তন') }}">ভৌগোলিক
+                                                                                    অবস্থান,গঠন ও আয়তন</a></li>
+                                                                    <li><a title="শিল্প ও বাণিজ্য" href="{{ url('/জেলা-সম্পর্কিত/শিল্প-ও-বাণিজ্য') }}">শিল্প
+                                                                                    ও বাণিজ্য</a></li>
+                                                                    <li><a title="নদ-নদী" href="{{ url('/জেলা-সম্পর্কিত/নদ-নদী') }}">নদ-নদী</a>
+                                                                    </li>
+                                                                    <li><a title="হাটবাজার" href="{{ url('/জেলা-সম্পর্কিত/হাটবাজার') }}">হাটবাজার</a>
+                                                                    </li>
+                                                                    <li><a title="যোগাযোগ ব্যবস্থা" href="{{ url('/জেলা-সম্পর্কিত/যোগাযোগ-ব্যবস্থা') }}">যোগাযোগ
+                                                                                    ব্যবস্থা</a></li>
+                                                            </ul>
+                                                    </div>
+                                                    <div class="one-col">
+                                                            <h6>অন্যান্য</h6>
+                                                            <ul class="mzr-links">
+                                                                    <li><a title="জন প্রতিনিধি" href="{{ url('/জেলা-সম্পর্কিত/জন-প্রতিনিধি') }}">জন
+                                                                                    প্রতিনিধি</a></li>
+                                                                    <li><a title="ইউপি চেয়ারম্যান ও সচিবগণের নামের তালিকা" href="{{ url('/জেলা-সম্পর্কিত/ইউপি-চেয়ারম্যান-ও-সচিবগণের-নামের-তালিকা') }}">ইউপি
+                                                                                    চেয়ারম্যান ও সচিবগণের নামের তালিকা</a></li>
+                                                                    <li><a title="ইউনিয়ন ডিজিটাল সেন্টারের উদ্যোক্তাদের তালিকা" href="{{ url('/জেলা-সম্পর্কিত/ইউনিয়ন-ডিজিটাল-সেন্টারের-উদ্যোক্তাদের-তালিকা') }}">ইউনিয়ন
+                                                                                    ডিজিটাল সেন্টারের উদ্যোক্তাদের তালিকা</a></li>
+                                                                    <li><a title="পত্রপত্রিকা" href="{{ url('/জেলা-সম্পর্কিত/পত্রপত্রিকা') }}">পত্রপত্রিকা</a>
+                                                                    </li>
+                                                                    <li><a title="ICT তে বর্ষসেরা পুরস্কার প্রাপ্তদের তালিকা" href="{{ url('/জেলা-সম্পর্কিত/ICT-তে-বর্ষসেরা-পুরস্কার-প্রাপ্তদের-তালিকা') }}">ICT
+                                                                                    তে বর্ষসেরা পুরস্কার প্রাপ্তদের তালিকা</a></li>
+                                                            </ul>
+                                                    </div>
+                                            </div>
                                     </li>
-                                    <li><a title="যোগাযোগ ব্যবস্থা"
-                                            href="{{ url('/জেলা-সম্পর্কিত/যোগাযোগ-ব্যবস্থা') }}">যোগাযোগ
-                                            ব্যবস্থা</a></li>
-                                </ul>
-                            </div>
-                            <div class="one-col">
-                                <h6>অন্যান্য</h6>
-                                <ul class="mzr-links">
-                                    <li><a title="জন প্রতিনিধি"
-                                            href="{{ url('/জেলা-সম্পর্কিত/জন-প্রতিনিধি') }}">জন
-                                            প্রতিনিধি</a></li>
-                                    <li><a title="ইউপি চেয়ারম্যান ও সচিবগণের নামের তালিকা"
-                                            href="{{ url('/জেলা-সম্পর্কিত/ইউপি-চেয়ারম্যান-ও-সচিবগণের-নামের-তালিকা') }}">ইউপি
-                                            চেয়ারম্যান ও সচিবগণের নামের তালিকা</a></li>
-                                    <li><a title="ইউনিয়ন ডিজিটাল সেন্টারের উদ্যোক্তাদের তালিকা"
-                                            href="{{ url('/জেলা-সম্পর্কিত/ইউনিয়ন-ডিজিটাল-সেন্টারের-উদ্যোক্তাদের-তালিকা') }}">ইউনিয়ন
-                                            ডিজিটাল সেন্টারের উদ্যোক্তাদের তালিকা</a></li>
-                                    <li><a title="পত্রপত্রিকা"
-                                            href="{{ url('/জেলা-সম্পর্কিত/পত্রপত্রিকা') }}">পত্রপত্রিকা</a>
+                                    <li class="col2 mzr-drop"><a title="জেলা প্রশাসন" href="javascript:;">জেলা প্রশাসন</a>
+                                            <div class="mzr-content drop-three-columns">
+                                                    <div class="one-col">
+                                                            <h6>জেলা প্রশাসক</h6>
+                                                            <ul class="mzr-links">
+                                                                    <li><a title="জেলা প্রশাসকের বার্তা" href="{{ url('/জেলা-প্রশাসন/জেলা-প্রশাসকের-বার্তা') }}">জেলা
+                                                                                    প্রশাসকের বার্তা</a></li>
+                                                                    <li><a title="প্রোফাইল" href="{{ url('/জেলা-প্রশাসন/প্রোফাইল') }}">প্রোফাইল</a>
+                                                                    </li>
+                                                                    <li><a title="পুর্বতন জেলা প্রশাসক ও মহুকুমা প্রশাসকগণের তালিকা" href="{{ url('/জেলা-প্রশাসন/পুর্বতন-জেলা-প্রশাসক-ও-মহুকুমা-প্রশাসকগণের-তালিকা') }}">পুর্বতন
+                                                                                    জেলা প্রশাসক ও মহুকুমা প্রশাসকগণের তালিকা</a></li>
+                                                            </ul>
+                                                    </div>
+                                                    <div class="one-col">
+                                                            <h6>জেলা প্রশাসকের কার্যালয়</h6>
+                                                            <ul class="mzr-links">
+                                                                    <li><a title="জেলা প্রশাসনের পটভূমি" href="{{ url('/জেলা-প্রশাসন/জেলা-প্রশাসনের-পটভূমি') }}">জেলা
+                                                                                    প্রশাসনের পটভূমি</a></li>
+                                                                    <li><a title="সার্কিট হাউজ" href="{{ url('/জেলা-প্রশাসন/সার্কিট-হাউজ') }}">সার্কিট
+                                                                                    হাউজ</a></li>
+                                                                    <li><a title="যোগাযোগ" href="{{ url('/জেলা-প্রশাসন/যোগাযোগ') }}">যোগাযোগ</a>
+                                                                    </li>
+                                                                    <li><a title="সাংগনিক কাঠামো" href="{{ url('/জেলা-প্রশাসন/সাংগনিক-কাঠামো') }}">সাংগনিক
+                                                                                    কাঠামো</a></li>
+                                                                    <li><a title="সম্পদ ও লজিস্টিকস" href="{{ url('/জেলা-প্রশাসন/সম্পদ-ও-লজিস্টিকস') }}">সম্পদ
+                                                                                    ও লজিস্টিকস</a></li>
+                                                            </ul>
+                                                    </div>
+                                                    <div class="one-col">
+                                                            <h6>উপ-পরিচালক/অতিরিক্ত জেলা প্রশাসক</h6>
+                                                            <ul class="mzr-links">
+                                                                    <li><a title="উপপরিচালক, স্থানীয় সরকার" href="{{ url('/জেলা-প্রশাসন/উপ-পরিচালক-স্থানীয়-সরকার') }}">উপপরিচালক,
+                                                                                    স্থানীয় সরকার</a></li>
+                                                                    <li><a title="অতিরিক্ত জেলা প্রশাসক (রাজস্ব)" href="{{ url('/জেলা-প্রশাসন/অতিরিক্ত-জেলা-প্রশাসক-রাজস্ব') }}">অতিরিক্ত
+                                                                                    জেলা প্রশাসক (রাজস্ব)</a></li>
+                                                                    <li><a title="অতিরিক্ত জেলাপ্রশাসক (সার্বিক)" href="{{ url('/জেলা-প্রশাসন/অতিরিক্ত-জেলা-প্রশাসক-সার্বিক') }}">অতিরিক্ত
+                                                                                    জেলাপ্রশাসক (সার্বিক)</a></li>
+                                                                    <li><a title="অতিরিক্ত জেলা ম্যাজিস্ট্রেট" href="{{ url('/জেলা-প্রশাসন/অতিরিক্ত-জেলা-ম্যাজিস্ট্রেট') }}">অতিরিক্ত
+                                                                                    জেলা ম্যাজিস্ট্রেট</a></li>
+                                                                    <li><a title="অতিরিক্ত জেলা প্রশাসক (শিক্ষা ও আইসিটি)" href="{{ url('/জেলা-প্রশাসন/অতিরিক্ত-জেলা-প্রশাসক-আইসিটি') }}">অতিরিক্ত
+                                                                                    জেলা প্রশাসক (শিক্ষা ও আইসিটি)</a></li>
+                                                            </ul>
+                                                    </div>
+                                            </div>
                                     </li>
-                                    <li><a title="ICT তে বর্ষসেরা পুরস্কার প্রাপ্তদের তালিকা"
-                                            href="{{ url('/জেলা-সম্পর্কিত/ICT-তে-বর্ষসেরা-পুরস্কার-প্রাপ্তদের-তালিকা') }}">ICT
-                                            তে বর্ষসেরা পুরস্কার প্রাপ্তদের তালিকা</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="col2 mzr-drop"><a title="জেলা প্রশাসন" href="javascript:;">জেলা প্রশাসন</a>
-                        <div class="mzr-content drop-three-columns">
-                            <div class="one-col">
-                                <h6>জেলা প্রশাসক</h6>
-                                <ul class="mzr-links">
-                                    <li><a title="জেলা প্রশাসকের বার্তা"
-                                            href="{{ url('/জেলা-প্রশাসন/জেলা-প্রশাসকের-বার্তা') }}">জেলা
-                                            প্রশাসকের বার্তা</a></li>
-                                    <li><a title="প্রোফাইল"
-                                            href="{{ url('/জেলা-প্রশাসন/প্রোফাইল') }}">প্রোফাইল</a>
+                                    <li class="col3 mzr-drop"><a title="স্থানীয় সরকার" href="javascript:;">স্থানীয়
+                                                    সরকার</a>
+                                            <div class="mzr-content drop-three-columns">
+                                                    <div class="one-col">
+                                                            <h6> মেহেরপুর পৌরসভা</h6>
+                                                            <ul class="mzr-links">
+                                                                    <li><a title="পৌরসভা পরিচিতি" href="{{ url('/স্থানীয়-সরকার/পৌরসভা-পরিচিতি') }}">পৌরসভা
+                                                                                    পরিচিতি</a></li>
+                                                                    <li><a title="মেয়রের বাণী" href="{{ url('/স্থানীয়-সরকার/মেয়রের-বাণী') }}">মেয়রের
+                                                                                    বাণী</a></li>
+                                                                    <li><a title="প্রাক্তন মেয়র/প্রশাসক" href="{{ url('/স্থানীয়-সরকার/প্রাক্তন-মেয়র') }}">প্রাক্তন
+                                                                                    মেয়র/প্রশাসক</a></li>
+                                                                    <li><a title="কাউন্সিলরগন" href="{{ url('/স্থানীয়-সরকার/কাউন্সিলরগন') }}">কাউন্সিলরগন</a>
+                                                                    </li>
+                                                            </ul>
+                                                    </div>
+                                                    <div class="one-col">
+                                                            <h6> পৌরসভার সংগঠন</h6>
+                                                            <ul class="mzr-links">
+                                                                    <li><a title="সাংগঠনিক কাঠামো" href="{{ url('/স্থানীয়-সরকার/সাংগঠনিক-কাঠামো') }}">সাংগঠনিক
+                                                                                    কাঠামো</a></li>
+                                                                    <li><a title="কর্মকর্তাবৃন্দ" href="{{ url('/স্থানীয়-সরকার/কর্মকর্তাবৃন্দ') }}">কর্মকর্তাবৃন্দ / কর্মচারীবৃন্দ</a>
+                                                                    </li>
+                                                                    <li><a title="ওয়ার্ডভিত্তিক এলাকা" href="{{ url('/স্থানীয়-সরকার/ওয়ার্ডভিত্তিক-এলাকা') }}">ওয়ার্ডভিত্তিক
+                                                                                    এলাকা</a></li>
+                                                            </ul>
+                                                    </div>
+                                                    <div class="one-col">
+                                                            <h6>জেলা পরিষদ</h6>
+                                                            <ul class="mzr-links">
+                                                                    <li><a title="জেলা পরিষদ অফিস" href="{{ url('/স্থানীয়-সরকার/জেলা-পরিষদ-অফিস') }}">জেলা
+                                                                                    পরিষদ অফিস</a></li>
+                                                                    <li><a title="সাংগঠনিক কাঠামো" href="{{ url('/স্থানীয়-সরকার/জেলা-পরিষদ-সাংগঠনিক-কাঠামো') }}">সাংগঠনিক
+                                                                                    কাঠামো</a></li>
+                                                            </ul>
+                                                    </div>
+                                            </div>
                                     </li>
-                                    <li><a title="পুর্বতন জেলা প্রশাসক ও মহুকুমা প্রশাসকগণের তালিকা"
-                                            href="{{ url('/জেলা-প্রশাসন/পুর্বতন-জেলা-প্রশাসক-ও-মহুকুমা-প্রশাসকগণের-তালিকা') }}">পুর্বতন
-                                            জেলা প্রশাসক ও মহুকুমা প্রশাসকগণের তালিকা</a></li>
-                                </ul>
-                            </div>
-                            <div class="one-col">
-                                <h6>জেলা প্রশাসকের কার্যালয়</h6>
-                                <ul class="mzr-links">
-                                    <li><a title="জেলা প্রশাসনের পটভূমি"
-                                            href="{{ url('/জেলা-প্রশাসন/জেলা-প্রশাসনের-পটভূমি') }}">জেলা
-                                            প্রশাসনের পটভূমি</a></li>
-                                    <li><a title="সার্কিট হাউজ"
-                                            href="{{ url('/জেলা-প্রশাসন/সার্কিট-হাউজ') }}">সার্কিট
-                                            হাউজ</a></li>
-                                    <li><a title="যোগাযোগ"
-                                            href="{{ url('/জেলা-প্রশাসন/যোগাযোগ') }}">যোগাযোগ</a>
-                                    </li>
-                                    <li><a title="সাংগনিক কাঠামো"
-                                            href="{{ url('/জেলা-প্রশাসন/সাংগনিক-কাঠামো') }}">সাংগনিক
-                                            কাঠামো</a></li>
-                                    <li><a title="সম্পদ ও লজিস্টিকস"
-                                            href="{{ url('/জেলা-প্রশাসন/সম্পদ-ও-লজিস্টিকস') }}">সম্পদ
-                                            ও লজিস্টিকস</a></li>
-                                </ul>
-                            </div>
-                            <div class="one-col">
-                                <h6>উপ-পরিচালক/অতিরিক্ত জেলা প্রশাসক</h6>
-                                <ul class="mzr-links">
-                                    <li><a title="উপপরিচালক, স্থানীয় সরকার"
-                                            href="{{ url('/জেলা-প্রশাসন/উপ-পরিচালক-স্থানীয়-সরকার') }}">উপপরিচালক,
-                                            স্থানীয় সরকার</a></li>
-                                    <li><a title="অতিরিক্ত জেলা প্রশাসক (রাজস্ব)"
-                                            href="{{ url('/জেলা-প্রশাসন/অতিরিক্ত-জেলা-প্রশাসক-রাজস্ব') }}">অতিরিক্ত
-                                            জেলা প্রশাসক (রাজস্ব)</a></li>
-                                    <li><a title="অতিরিক্ত জেলাপ্রশাসক (সার্বিক)"
-                                            href="{{ url('/জেলা-প্রশাসন/অতিরিক্ত-জেলা-প্রশাসক-সার্বিক') }}">অতিরিক্ত
-                                            জেলাপ্রশাসক (সার্বিক)</a></li>
-                                    <li><a title="অতিরিক্ত জেলা ম্যাজিস্ট্রেট"
-                                            href="{{ url('/জেলা-প্রশাসন/অতিরিক্ত-জেলা-ম্যাজিস্ট্রেট') }}">অতিরিক্ত
-                                            জেলা ম্যাজিস্ট্রেট</a></li>
-                                    <li><a title="অতিরিক্ত জেলা প্রশাসক (শিক্ষা ও আইসিটি)"
-                                            href="{{ url('/জেলা-প্রশাসন/অতিরিক্ত-জেলা-প্রশাসক-আইসিটি') }}">অতিরিক্ত
-                                            জেলা প্রশাসক (শিক্ষা ও আইসিটি)</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="col3 mzr-drop"><a title="স্থানীয় সরকার" href="javascript:;">স্থানীয়
-                            সরকার</a>
-                        <div class="mzr-content drop-three-columns">
-                            <div class="one-col">
-                                <h6> মেহেরপুর পৌরসভা</h6>
-                                <ul class="mzr-links">
-                                    <li><a title="পৌরসভা পরিচিতি"
-                                            href="{{ url('/স্থানীয়-সরকার/পৌরসভা-পরিচিতি') }}">পৌরসভা
-                                            পরিচিতি</a></li>
-                                    <li><a title="মেয়রের বাণী"
-                                            href="{{ url('/স্থানীয়-সরকার/মেয়রের-বাণী') }}">মেয়রের
-                                            বাণী</a></li>
-                                    <li><a title="প্রাক্তন মেয়র/প্রশাসক"
-                                            href="{{ url('/স্থানীয়-সরকার/প্রাক্তন-মেয়র') }}">প্রাক্তন
-                                            মেয়র/প্রশাসক</a></li>
-                                    <li><a title="কাউন্সিলরগন"
-                                            href="{{ url('/স্থানীয়-সরকার/কাউন্সিলরগন') }}">কাউন্সিলরগন</a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="one-col">
-                                <h6> পৌরসভার সংগঠন</h6>
-                                <ul class="mzr-links">
-                                    <li><a title="সাংগঠনিক কাঠামো"
-                                            href="{{ url('/স্থানীয়-সরকার/সাংগঠনিক-কাঠামো') }}">সাংগঠনিক
-                                            কাঠামো</a></li>
-                                    <li><a title="কর্মকর্তাবৃন্দ"
-                                            href="{{ url('/স্থানীয়-সরকার/কর্মকর্তাবৃন্দ') }}">কর্মকর্তাবৃন্দ / কর্মচারীবৃন্দ</a>
-                                    </li>
-                                    <li><a title="ওয়ার্ডভিত্তিক এলাকা"
-                                            href="{{ url('/স্থানীয়-সরকার/ওয়ার্ডভিত্তিক-এলাকা') }}">ওয়ার্ডভিত্তিক
-                                            এলাকা</a></li>
-                                </ul>
-                            </div>
-                            <div class="one-col">
-                                <h6>জেলা পরিষদ</h6>
-                                <ul class="mzr-links">
-                                    <li><a title="জেলা পরিষদ অফিস"
-                                            href="{{ url('/স্থানীয়-সরকার/জেলা-পরিষদ-অফিস') }}">জেলা
-                                            পরিষদ অফিস</a></li>
-                                    <li><a title="সাংগঠনিক কাঠামো"
-                                            href="{{ url('/স্থানীয়-সরকার/জেলা-পরিষদ-সাংগঠনিক-কাঠামো') }}">সাংগঠনিক
-                                            কাঠামো</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </li>
-                    <!-- <li class="col4 mzr-drop"><a title="সরকারি অফিস" href="javascript:;">সরকারি অফিস</a>
+                                    <!-- <li class="col4 mzr-drop"><a title="সরকারি অফিস" href="javascript:;">সরকারি অফিস</a>
                         <div class="mzr-content drop-four-columns">
                             <div class="one-col">
                                 <h6>আইন-শৃঙ্খলা ও নিরাপত্তা বিষয়ক</h6>
@@ -508,27 +497,25 @@
                         </div>
                     </li> -->
 
-                    <li class="col6 mzr-drop"><a title="গ্যালারি" href="javascript:;">গ্যালারি</a>
-                        <div class="mzr-content drop-two-columns">
-                            <div class="one-col">
-                                <h6></h6>
-                                <ul class="mzr-links">
-                                    <li><a title="ফটোগ্যালারি"
-                                            href="site/view/photogallery/%e0%a6%ab%e0%a6%9f%e0%a7%8b%e0%a6%97%e0%a7%8d%e0%a6%af%e0%a6%be%e0%a6%b2%e0%a6%be%e0%a6%b0%e0%a6%bf.html">ফটোগ্যালারি</a>
+                                    <li class="col6 mzr-drop"><a title="গ্যালারি" href="javascript:;">গ্যালারি</a>
+                                            <div class="mzr-content drop-two-columns">
+                                                    <div class="one-col">
+                                                            <h6></h6>
+                                                            <ul class="mzr-links">
+                                                                    <li><a title="ফটোগ্যালারি" href="site/view/photogallery/%e0%a6%ab%e0%a6%9f%e0%a7%8b%e0%a6%97%e0%a7%8d%e0%a6%af%e0%a6%be%e0%a6%b2%e0%a6%be%e0%a6%b0%e0%a6%bf.html">ফটোগ্যালারি</a>
+                                                                    </li>
+                                                            </ul>
+                                                    </div>
+                                                    <div class="one-col">
+                                                            <h6></h6>
+                                                            <ul class="mzr-links">
+                                                                    <li><a title="ভিডিও গ্যালারি" href="site/view/video-gallery/%e0%a6%ad%e0%a6%bf%e0%a6%a1%e0%a6%bf%e0%a6%93%20%e0%a6%97%e0%a7%8d%e0%a6%af%e0%a6%be%e0%a6%b2%e0%a6%be%e0%a6%b0%e0%a6%bf.html">ভিডিও
+                                                                                    গ্যালারি</a></li>
+                                                            </ul>
+                                                    </div>
+                                            </div>
                                     </li>
-                                </ul>
-                            </div>
-                            <div class="one-col">
-                                <h6></h6>
-                                <ul class="mzr-links">
-                                    <li><a title="ভিডিও গ্যালারি"
-                                            href="site/view/video-gallery/%e0%a6%ad%e0%a6%bf%e0%a6%a1%e0%a6%bf%e0%a6%93%20%e0%a6%97%e0%a7%8d%e0%a6%af%e0%a6%be%e0%a6%b2%e0%a6%be%e0%a6%b0%e0%a6%bf.html">ভিডিও
-                                            গ্যালারি</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </li>
-                    <!-- <li class="col7 mzr-drop"><a title="ই-সেবা" href="javascript:;">ই-সেবা</a>
+                                    <!-- <li class="col7 mzr-drop"><a title="ই-সেবা" href="javascript:;">ই-সেবা</a>
                         <div class="mzr-content drop-two-columns">
                             <div class="one-col">
                                 <h6> জেলা ই সেবা কেন্দ্র</h6>
@@ -569,8 +556,8 @@
                             </div>
                         </div>
                     </li> -->
-                </ul>
+                            </ul>
+                    </div>
             </div>
-        </div>
     </div>
     {{-- menu end --}}
