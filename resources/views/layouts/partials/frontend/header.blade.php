@@ -25,22 +25,68 @@
                             </li>
                             @endif
                             @else
-                            <li class="nav-item dropdown"  style="display: flex; margin-bottom:0px;">
-                                    <a >
-                                            {{ Auth::user()->name }}
+                            <div class="dropdown">
+                                    <a>
+                                            {{ Auth::user()->name }}<img src="{{ asset('frontend/images/dropdown.png') }}" alt="" style="margin-left: -4px;">
                                     </a>
+                                    <div class="dropdown-content">
+                                            <li class="nav-item dropdown" style="display: flex; margin-bottom:0px;">
+                                                    <a href="">Profile</a>
+                                            </li>
+                                            <li class="nav-item dropdown" style="display: flex; margin-bottom:0px;">
+                                                    <a href="">Dashboard</a>
+                                            </li>
+                                            <li class="nav-item dropdown" style="display: flex; margin-bottom:0px;">
 
-                                    <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
-                                            <a class="dropdown-item" href="{{ route('logout') }}" onclick="event.preventDefault();
+                                                    <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                                                            <a class="dropdown-item" href="{{ route('logout') }}" onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();">
-                                                    {{ __('Logout') }}
-                                            </a>
+                                                                    {{ __('Logout') }}
+                                                            </a>
 
-                                            <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
-                                                    @csrf
-                                            </form>
+                                                            <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+                                                                    @csrf
+                                                            </form>
+                                                    </div>
+                                            </li>
+
                                     </div>
-                            </li>
+                            </div>
+                            <!-- dropdown CSS start -->
+                            <style>
+                                    .dropdown {
+                                            position: relative;
+                                            display: inline-block;
+                                    }
+
+                                    .dropdown-content {
+                                            display: none;
+                                            position: absolute;
+                                            background-color: #8bc643;
+                                            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+                                            padding: 5px;
+                                            right: 0;
+                                            z-index: 1;
+                                            border-top: 1px solid #683091;
+                                    }
+
+                                    .dropdown-content li {
+                                            border-bottom: 1px solid #683091;
+                                            padding: 3px 0px;
+                                            font-size: 14px;
+                                    }
+
+                                    .dropdown-content li a{
+                                            text-align: right;
+                                    }
+
+                                    .dropdown:hover .dropdown-content {
+                                            display: block;
+                                    }
+                            </style>
+                            <!-- dropdown CSS end -->
+
+
                             @endguest
                     </ul>
 
