@@ -17,7 +17,7 @@ Meherpur | Users
                     <th scope="col">ID</th>
                     <th scope="col">Name</th>
                     <th scope="col">Email</th>
-                    <th scope="col">Roll</th>
+                    <th scope="col">User Role</th>
                     <th scope="col">Action</th>
                 </tr>
             </thead>
@@ -31,7 +31,7 @@ Meherpur | Users
                     <td>
                         <a href="{{ url('view-users/'.$item->id) }}" class="btn btn-sm btn-primary">View</a>
                         <a href="{{ url('edit-user/'.$item->id) }}" class="btn btn-sm btn-success">Edit</a>
-                        <a href="{{ url('view-users/'.$item->id) }}" class="btn btn-sm btn-danger">Delete</a>
+                        <a href="{{ url('delete-user/'.$item->id) }}" class="btn btn-sm btn-danger">Delete</a>
                     </td>
                 </tr>
                 @endforeach

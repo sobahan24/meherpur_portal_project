@@ -25,11 +25,17 @@ Auth::routes();
 
 Route::get('/', [App\Http\Controllers\Frontend\FrontendController::class, 'index']);
 
-// User Profile Route Start
-Route::get('/user/profile/{id}', [App\Http\Controllers\Frontend\ProfileController::class, 'view']);
+
+Route::middleware(['auth'])->group(function () {
+
+    // User Profile Route Start
+    Route::get('/user-profile/{id}', [App\Http\Controllers\Frontend\ProfileController::class, 'viewProfile']);
+    Route::post('/update-profile/{id}', [App\Http\Controllers\Frontend\ProfileController::class, 'updateProfile']);
 
 
-// User Profile Route End
+});
+
+
 
 
 
@@ -139,6 +145,7 @@ Route::middleware(['auth','isAdmin'])->group(function () {
     Route::get('/view-users/{id}', [App\Http\Controllers\Backend\UserController::class, 'viewUser']);
     Route::get('/edit-user/{id}', [App\Http\Controllers\Backend\UserController::class, 'editUser']);
     Route::post('/update-user/{id}', [App\Http\Controllers\Backend\UserController::class, 'updateUser']);
+    Route::get('/delete-user/{id}', [App\Http\Controllers\Backend\UserController::class, 'destroyUser']);
 
 
 

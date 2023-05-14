@@ -19,7 +19,7 @@ Meherpur | User Details
                     <div class="card-body userView">
                         <div class="row">
                             <div class="col-md-4">
-                                <label for="">Role:</label>
+                                <label for="">User Role:</label>
                                 <div class="p-2 border">{{ $users->role_as == '0' ? 'User' : 'Admin' }}</div>
                             </div>
                             <div class="col-md-4">

@@ -11,7 +11,7 @@ Meherpur | User Edit
         <div class="col-md-12">
             <div class="card">
                 <div class="card-header">
-                    <h2>User Roll Edit
+                    <h2>User Role Edit
                         <a href="{{ url('users') }}" class="btn btn-primary float-right">Back</a>
                     </h2>
                     <hr>
@@ -21,10 +21,10 @@ Meherpur | User Edit
                     <form action="{{ url('update-user/'.$users->id) }}" method="POST">
                         @csrf
                         <div class="row checkout-form">
-                            
+
 
                             <div class="col-md-12">
-                                <label for="firstName">User Roll</label>
+                                <label for="firstName">User Role</label>
                                 <select class="form-select" name="role_as">
                                     <option {{ $users->role_as == '0' ? 'selected' : '' }} value="0">User</option>
                                     <option {{ $users->role_as == '1' ? 'selected' : '' }} value="1">Admin</option>
