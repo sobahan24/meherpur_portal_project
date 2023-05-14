@@ -25,6 +25,14 @@ Auth::routes();
 
 Route::get('/', [App\Http\Controllers\Frontend\FrontendController::class, 'index']);
 
+// User Profile Route Start
+Route::get('/user/profile/{id}', [App\Http\Controllers\Frontend\ProfileController::class, 'view']);
+
+
+// User Profile Route End
+
+
+
 // জেলা পরিচিতি
 Route::get('/জেলা-সম্পর্কিত/এক-নজরে', [App\Http\Controllers\Frontend\FrontendController::class, 'এক_নজরে']);
 Route::get('/জেলা-সম্পর্কিত/পটভুমি', [App\Http\Controllers\Frontend\FrontendController::class, 'পটভুমি']);
@@ -127,6 +135,10 @@ Route::get('/স্থানীয়-সরকার/জেলা-পরিষ�
 // backend start
 Route::middleware(['auth','isAdmin'])->group(function () {
     Route::get('/dashboard', [App\Http\Controllers\Backend\AdminController::class, 'index']);
+    Route::get('/users', [App\Http\Controllers\Backend\UserController::class, 'index']);
+    Route::get('/view-users/{id}', [App\Http\Controllers\Backend\UserController::class, 'viewUser']);
+    Route::get('/edit-user/{id}', [App\Http\Controllers\Backend\UserController::class, 'editUser']);
+    Route::post('/update-user/{id}', [App\Http\Controllers\Backend\UserController::class, 'updateUser']);
 
 
 

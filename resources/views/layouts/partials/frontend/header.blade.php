@@ -31,7 +31,7 @@
                                     </a>
                                     <div class="dropdown-content">
                                             <li class="nav-item dropdown" style="display: flex; margin-bottom:0px;">
-                                                    <a href="#">Profile</a>
+                                                    <a href="{{ url('/user/profile') }}" target="_blank">Profile</a>
                                             </li>
                                             <li class="nav-item dropdown" style="display: flex; margin-bottom:0px;">
                                                     <a href="{{ url('/dashboard') }}">Dashboard</a>
