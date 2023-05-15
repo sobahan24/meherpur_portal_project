@@ -140,9 +140,27 @@ Route::get('/স্থানীয়-সরকার/জেলা-পরিষ�
 // backend start
 Route::middleware(['auth', 'isAdmin'])->group(function () {
     Route::get('/dashboard', [App\Http\Controllers\Backend\AdminController::class, 'index']);
+
+    // User Route start
     Route::get('/users', [App\Http\Controllers\Backend\UserController::class, 'index']);
     Route::get('/view-users/{id}', [App\Http\Controllers\Backend\UserController::class, 'viewUser']);
     Route::get('/edit-user/{id}', [App\Http\Controllers\Backend\UserController::class, 'editUser']);
     Route::post('/update-user/{id}', [App\Http\Controllers\Backend\UserController::class, 'updateUser']);
     Route::get('/delete-user/{id}', [App\Http\Controllers\Backend\UserController::class, 'destroyUser']);
+
+
+    // Tourist Route Start
+    Route::get('/tourist-spot', [App\Http\Controllers\Backend\TouristController::class, 'index']);
+    Route::get('/edit-tourist-spot/{id}', [App\Http\Controllers\Backend\TouristController::class, 'edit']);
+    Route::post('/update-tourist-spot/{id}', [App\Http\Controllers\Backend\TouristController::class, 'update']);
+    Route::get('/delete-tourist-spot/{id}', [App\Http\Controllers\Backend\TouristController::class, 'destroy']);
+
+
+
+
+
+
+
+
+
 });

@@ -16,7 +16,7 @@ return new class extends Migration
         Schema::create('tourist_spots', function (Blueprint $table) {
             $table->id();
             $table->string('name');
-            $table->string('image')->nullable();
+            $table->string('image');
             $table->longText('biboron');
             $table->longText('abashan');
             $table->longText('thikana');

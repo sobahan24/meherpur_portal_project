@@ -17,13 +17,22 @@
             <p>Dashboard</p>
           </a>
         </li>
-        
+
         <li class="nav-item {{ Request::is('users') ? 'active':'' }}">
           <a class="nav-link" href="{{ url('users') }}">
             <i class="material-icons">person</i>
             <p>Users</p>
           </a>
         </li>
+
+
+        <li class="nav-item {{ Request::is('tourist-spot') ? 'active':'' }}">
+          <a class="nav-link" href="{{ url('tourist-spot') }}">
+            <i class="material-icons">T</i>
+            <p>Tourist Spot</p>
+          </a>
+        </li>
+
       </ul>
     </div>
   </div>

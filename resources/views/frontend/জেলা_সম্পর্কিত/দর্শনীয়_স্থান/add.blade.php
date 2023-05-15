@@ -10,11 +10,11 @@
     <h3>নতুন তথ্য সংযোজন</h3>
     <div style="border: 1px solid #e9e2e2; padding:5px">
         <a href="{{ url('/জেলা-সম্পর্কিত/দর্শনীয়-স্থান') }}" class="btn-view" style="float:right">Back</a>
-        <form action="{{ url('/জেলা-সম্পর্কিত/দর্শনীয়-স্থান/insert') }}" method="POST" style="padding: 10px; background: #dedede24;">
+        <form action="{{ url('/জেলা-সম্পর্কিত/দর্শনীয়-স্থান/insert') }}" method="POST" enctype="multipart/form-data" style="padding: 10px; background: #dedede24;">
             @csrf
             <div class="mb-3">
                 <label style="margin-top: 10px;">স্থানের নামঃ</label>
-                <input type="name" name="name" style="width: -webkit-fill-available; height: 25px;">
+                <input type="text" name="name" style="width: -webkit-fill-available; height: 25px;">
             </div>
             <div class="mb-3">
                 <label style="margin-top: 10px;">ছবিঃ</label>

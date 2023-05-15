@@ -13,7 +13,7 @@
 <div id="printable_area">
     <h3>{{ $touristSpot->name }}</h3>
 
-    <img style="max-width:800px;" src="{{ asset('frontend/images/tourist_spot/Mukjoddo-smrity-complex.jpg') }}" alt="Mukjoddo smrity complex" width="" height="">
+    <img style="max-width:800px;" src="{{ asset('assets/uploads/touristSpot/'.$touristSpot->image) }}" alt="{{ $touristSpot->name.' image here' }}" width="720px" height="300px">
     <div>
         <p><strong><u> সংক্ষিপ্ত বিবরণ</u></strong> <strong>:</strong>
             {{ $touristSpot->biboron }}
