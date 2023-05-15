@@ -26,11 +26,24 @@ Auth::routes();
 Route::get('/', [App\Http\Controllers\Frontend\FrontendController::class, 'index']);
 
 
+// দর্শনীয়-স্থান
+Route::get('/জেলা-সম্পর্কিত/দর্শনীয়-স্থান', [App\Http\Controllers\Frontend\TouristController::class, 'দর্শনীয়_স্থান']);
+Route::get('/জেলা-সম্পর্কিত/দর্শনীয়-স্থান/{name}/{id}', [App\Http\Controllers\Frontend\TouristController::class, 'viewSpot']);
+
+
 Route::middleware(['auth'])->group(function () {
 
     // User Profile Route Start
     Route::get('/user-profile/{id}', [App\Http\Controllers\Frontend\ProfileController::class, 'viewProfile']);
     Route::post('/update-profile/{id}', [App\Http\Controllers\Frontend\ProfileController::class, 'updateProfile']);
+
+
+    // দর্শনীয়-স্থান
+    Route::get('/জেলা-সম্পর্কিত/দর্শনীয়-স্থান/add-new', [App\Http\Controllers\Frontend\TouristController::class, 'addNewSpot']);
+    Route::post('/জেলা-সম্পর্কিত/দর্শনীয়-স্থান/insert', [App\Http\Controllers\Frontend\TouristController::class, 'insertNewSpot']);
+
+
+
 
 
 });
@@ -50,20 +63,6 @@ Route::get('/জেলা-সম্পর্কিত/উপজেলা-ও-ই
 Route::get('/জেলা-সম্পর্কিত/খেলাধুলা-ও-বিনোদন', [App\Http\Controllers\Frontend\FrontendController::class, 'খেলাধুলা_ও_বিনোদন']);
 Route::get('/জেলা-সম্পর্কিত/জেলার-ঐতিহ্য', [App\Http\Controllers\Frontend\FrontendController::class, 'জেলার_ঐতিহ্য']);
 
-// দর্শনীয়-স্থান
-Route::get('/জেলা-সম্পর্কিত/দর্শনীয়-স্থান', [App\Http\Controllers\Frontend\FrontendController::class, 'দর্শনীয়_স্থান']);
-Route::get('/জেলা-সম্পর্কিত/দর্শনীয়-স্থান/মুজিবনগর-মুক্তিযুদ্ধ-স্মৃতি-কমপ্লেক্স-এবং-আম্রকানন', [App\Http\Controllers\Frontend\FrontendController::class, 'মুজিবনগর_মুক্তিযুদ্ধ_স্মৃতি_কমপ্লেক্স_এবং_আম্রকানন']);
-Route::get('/জেলা-সম্পর্কিত/দর্শনীয়-স্থান/মেহেরপুর-শহীদ-স্মৃতিসৌধ', [App\Http\Controllers\Frontend\FrontendController::class, 'মেহেরপুর_শহীদ_স্মৃতিসৌধ']);
-Route::get('/জেলা-সম্পর্কিত/দর্শনীয়-স্থান/আমদহ-গ্রামের-স্থাপত্য-নিদর্শন', [App\Http\Controllers\Frontend\FrontendController::class, 'আমদহ_গ্রামের_স্থাপত্য_নিদর্শন']);
-Route::get('/জেলা-সম্পর্কিত/দর্শনীয়-স্থান/সিদ্ধেশ্বরী-কালী-মন্দির', [App\Http\Controllers\Frontend\FrontendController::class, 'সিদ্ধেশ্বরী_কালী_মন্দির']);
-Route::get('/জেলা-সম্পর্কিত/দর্শনীয়-স্থান/আমঝুপি-নীলকুঠি', [App\Http\Controllers\Frontend\FrontendController::class, 'আমঝুপি_নীলকুঠি']);
-Route::get('/জেলা-সম্পর্কিত/দর্শনীয়-স্থান/ডিসি-ইকোপার্ক', [App\Http\Controllers\Frontend\FrontendController::class, 'ডিসি_ইকোপার্ক']);
-Route::get('/জেলা-সম্পর্কিত/দর্শনীয়-স্থান/ভবানন্দপুর-মন্দির', [App\Http\Controllers\Frontend\FrontendController::class, 'ভবানন্দপুর_মন্দির']);
-Route::get('/জেলা-সম্পর্কিত/দর্শনীয়-স্থান/মেহেরপুর-পৌর-কবর-স্থান', [App\Http\Controllers\Frontend\FrontendController::class, 'মেহেরপুর_পৌর_কবর_স্থান']);
-Route::get('/জেলা-সম্পর্কিত/দর্শনীয়-স্থান/পৌর-ঈদগাহ', [App\Http\Controllers\Frontend\FrontendController::class, 'পৌর_ঈদগাহ']);
-Route::get('/জেলা-সম্পর্কিত/দর্শনীয়-স্থান/পৌর-হল', [App\Http\Controllers\Frontend\FrontendController::class, 'পৌর_হল']);
-Route::get('/জেলা-সম্পর্কিত/দর্শনীয়-স্থান/বল্লভপুর-চার্চ', [App\Http\Controllers\Frontend\FrontendController::class, 'বল্লভপুর_চার্চ']);
-Route::get('/জেলা-সম্পর্কিত/দর্শনীয়-স্থান/স্বামী-নিগমানন্দ-আশ্রম', [App\Http\Controllers\Frontend\FrontendController::class, 'স্বামী_নিগমানন্দ_আশ্রম']);
 
 
 Route::get('/জেলা-সম্পর্কিত/প্রখ্যাত-ব্যক্তিত্ব', [App\Http\Controllers\Frontend\FrontendController::class, 'প্রখ্যাত_ব্যক্তিত্ব']);
@@ -139,15 +138,11 @@ Route::get('/স্থানীয়-সরকার/জেলা-পরিষ�
 
 
 // backend start
-Route::middleware(['auth','isAdmin'])->group(function () {
+Route::middleware(['auth', 'isAdmin'])->group(function () {
     Route::get('/dashboard', [App\Http\Controllers\Backend\AdminController::class, 'index']);
     Route::get('/users', [App\Http\Controllers\Backend\UserController::class, 'index']);
     Route::get('/view-users/{id}', [App\Http\Controllers\Backend\UserController::class, 'viewUser']);
     Route::get('/edit-user/{id}', [App\Http\Controllers\Backend\UserController::class, 'editUser']);
     Route::post('/update-user/{id}', [App\Http\Controllers\Backend\UserController::class, 'updateUser']);
     Route::get('/delete-user/{id}', [App\Http\Controllers\Backend\UserController::class, 'destroyUser']);
-
-
-
-
 });
