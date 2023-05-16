@@ -1,13 +1,13 @@
 @extends('layouts.frontend')
 
 @section('title')
-মেহেরপুর জেলা | দর্শনীয়_স্থান | সংযোজন
+মেহেরপুর জেলা | দর্শনীয় স্থান | সংযোজন
 @endsection
 
 @section('contant')
 
 <div id="printable_area">
-    <h3>নতুন তথ্য সংযোজন</h3>
+    <h3>দর্শনীয় স্থানের তথ্য সংযোজন</h3>
     <div style="border: 1px solid #e9e2e2; padding:5px">
         <a href="{{ url('/জেলা-সম্পর্কিত/দর্শনীয়-স্থান') }}" class="btn-view" style="float:right">Back</a>
         <form action="{{ url('/জেলা-সম্পর্কিত/দর্শনীয়-স্থান/insert') }}" method="POST" enctype="multipart/form-data" style="padding: 10px; background: #dedede24;">
@@ -39,18 +39,4 @@
 
 
 
-<script type="text/javascript">
-    function print_content() {
-        var html_content = $("#printable_area").html();
-
-        newwindow = window.open();
-        newdocument = newwindow.document;
-        newdocument.write(html_content);
-        newdocument.close();
-
-        newwindow.print();
-
-        return false;
-    }
-</script>
 @endsection

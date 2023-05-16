@@ -28,7 +28,7 @@ Route::get('/', [App\Http\Controllers\Frontend\FrontendController::class, 'index
 
 // দর্শনীয়-স্থান
 Route::get('/জেলা-সম্পর্কিত/দর্শনীয়-স্থান', [App\Http\Controllers\Frontend\TouristController::class, 'দর্শনীয়_স্থান']);
-Route::get('/জেলা-সম্পর্কিত/দর্শনীয়-স্থান/{name}/{id}', [App\Http\Controllers\Frontend\TouristController::class, 'viewSpot']);
+Route::get('/জেলা-সম্পর্কিত/দর্শনীয়-স্থান/{name}/{id}', [App\Http\Controllers\Frontend\TouristController::class, 'singleViewSpot']);
 
 // প্রখ্যাত-ব্যক্তিত্ব
 Route::get('/জেলা-সম্পর্কিত/প্রখ্যাত-ব্যক্তিত্ব', [App\Http\Controllers\Frontend\FamousPersonController::class, 'প্রখ্যাত_ব্যক্তিত্ব']);
@@ -50,6 +50,9 @@ Route::middleware(['auth'])->group(function () {
     // দর্শনীয়-স্থান
     Route::get('/জেলা-সম্পর্কিত/দর্শনীয়-স্থান/add-new', [App\Http\Controllers\Frontend\TouristController::class, 'addNewSpot']);
     Route::post('/জেলা-সম্পর্কিত/দর্শনীয়-স্থান/insert', [App\Http\Controllers\Frontend\TouristController::class, 'insertNewSpot']);
+    Route::get('/জেলা-সম্পর্কিত/দর্শনীয়-স্থান/edit/{name}/{id}', [App\Http\Controllers\Frontend\TouristController::class, 'editSpot']);
+    Route::post('/জেলা-সম্পর্কিত/দর্শনীয়-স্থান/update/{id}', [App\Http\Controllers\Frontend\TouristController::class, 'updateSpot']);
+    Route::get('/জেলা-সম্পর্কিত/দর্শনীয়-স্থান/{id}', [App\Http\Controllers\Frontend\TouristController::class, 'destroySpot']);
 
     // প্রখ্যাত-ব্যক্তিত্ব
     Route::get('/জেলা-সম্পর্কিত/প্রখ্যাত-ব্যক্তিত্ব/add-new', [App\Http\Controllers\Frontend\FamousPersonController::class, 'add']);
@@ -57,6 +60,16 @@ Route::middleware(['auth'])->group(function () {
     Route::get('/জেলা-সম্পর্কিত/প্রখ্যাত-ব্যক্তিত্ব/edit/{name}/{id}', [App\Http\Controllers\Frontend\FamousPersonController::class, 'edit']);
     Route::Post('/জেলা-সম্পর্কিত/প্রখ্যাত-ব্যক্তিত্ব/update/{id}', [App\Http\Controllers\Frontend\FamousPersonController::class, 'update']);
     Route::get('/জেলা-সম্পর্কিত/প্রখ্যাত-ব্যক্তিত্ব/{id}', [App\Http\Controllers\Frontend\FamousPersonController::class, 'destroy']);
+
+    // মুক্তিযোদ্ধাদের-তালিকা
+    Route::get('/জেলা-সম্পর্কিত/মুক্তিযোদ্ধাদের-তালিকা/add-new', [App\Http\Controllers\Frontend\muktizoddhaController::class, 'add']);
+    Route::post('/জেলা-সম্পর্কিত/মুক্তিযোদ্ধাদের-তালিকা/insert', [App\Http\Controllers\Frontend\muktizoddhaController::class, 'insert']);
+    Route::get('/জেলা-সম্পর্কিত/মুক্তিযোদ্ধাদের-তালিকা/edit/{name}/{id}', [App\Http\Controllers\Frontend\muktizoddhaController::class, 'edit']);
+    Route::Post('/জেলা-সম্পর্কিত/মুক্তিযোদ্ধাদের-তালিকা/update/{id}', [App\Http\Controllers\Frontend\muktizoddhaController::class, 'update']);
+    Route::get('/জেলা-সম্পর্কিত/মুক্তিযোদ্ধাদের-তালিকা/{id}', [App\Http\Controllers\Frontend\muktizoddhaController::class, 'destroy']);
+
+
+
 
 
 
@@ -142,8 +155,6 @@ Route::get('/স্থানীয়-সরকার/জেলা-পরিষ�
 
 
 
-// menu 4
-
 
 
 
@@ -163,11 +174,6 @@ Route::middleware(['auth', 'isAdmin'])->group(function () {
     Route::get('/delete-user/{id}', [App\Http\Controllers\Backend\UserController::class, 'destroyUser']);
 
 
-    // Tourist Route Start
-    Route::get('/tourist-spot', [App\Http\Controllers\Backend\TouristController::class, 'index']);
-    Route::get('/edit-tourist-spot/{id}', [App\Http\Controllers\Backend\TouristController::class, 'edit']);
-    Route::post('/update-tourist-spot/{id}', [App\Http\Controllers\Backend\TouristController::class, 'update']);
-    Route::get('/delete-tourist-spot/{id}', [App\Http\Controllers\Backend\TouristController::class, 'destroy']);
 
 
 

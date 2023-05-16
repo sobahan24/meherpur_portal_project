@@ -6,7 +6,7 @@
 
 @section('contant')
 <div id="printable_area">
-    <h3>নতুন তথ্য সংযোজন</h3>
+    <h3>প্রখ্যাত ব্যক্তির তথ্য সংযোজন</h3>
     <div style="border: 1px solid #e9e2e2; padding:5px">
         <a href="{{ url('/জেলা-সম্পর্কিত/প্রখ্যাত-ব্যক্তিত্ব') }}" class="btn-view" style="float:right; color:#fff">Back</a>
         <form action="{{ url('/জেলা-সম্পর্কিত/প্রখ্যাত-ব্যক্তিত্ব/insert') }}" method="POST" enctype="multipart/form-data" style="padding: 10px; background: #dedede24;">

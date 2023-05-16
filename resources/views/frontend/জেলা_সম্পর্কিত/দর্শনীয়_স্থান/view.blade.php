@@ -1,7 +1,4 @@
 
-
-
-
 @extends('layouts.frontend')
 
 @section('title')
@@ -15,11 +12,11 @@
 
     <img style="max-width:800px;" src="{{ asset('assets/uploads/touristSpot/'.$touristSpot->image) }}" alt="{{ $touristSpot->name.' image here' }}" width="720px" height="300px">
     <div>
-        <p><strong><u> সংক্ষিপ্ত বিবরণ</u></strong> <strong>:</strong>
+        <p><strong><u> সংক্ষিপ্ত বিবরণ</u>:</strong>
             {{ $touristSpot->biboron }}
         </p>
 
-        <p style="margin-top: 10px"><strong><u>আবাসন ব্যবস্থা</u></strong><span> </span><strong>:</strong>
+        <p style="margin-top: 10px"><strong><u>আবাসন ব্যবস্থা</u>:</strong>
             <span style="background-color:rgb(255, 255, 255);">
             {{ $touristSpot->abashan }}
             </span>

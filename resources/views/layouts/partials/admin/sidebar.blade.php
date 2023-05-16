@@ -25,14 +25,6 @@
           </a>
         </li>
 
-
-        <li class="nav-item {{ Request::is('tourist-spot') ? 'active':'' }}">
-          <a class="nav-link" href="{{ url('tourist-spot') }}">
-            <i class="material-icons">T</i>
-            <p>Tourist Spot</p>
-          </a>
-        </li>
-
       </ul>
     </div>
   </div>

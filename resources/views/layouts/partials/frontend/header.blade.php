@@ -33,9 +33,11 @@
                                             <li class="nav-item dropdown" style="display: flex; margin-bottom:0px;">
                                                     <a href="{{ url('/user-profile/'.Auth::user()->id) }}" target="_blank">Profile</a>
                                             </li>
-                                            <li class="nav-item dropdown" style="display: flex; margin-bottom:0px;">
+                                            @can('status')
+                                                <li class="nav-item dropdown" style="display: flex; margin-bottom:0px;">
                                                     <a href="{{ url('/dashboard') }}">Dashboard</a>
-                                            </li>
+                                                </li>
+                                            @endcan
                                             <li class="nav-item dropdown" style="display: flex; margin-bottom:0px;">
 
                                                     <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
@@ -193,8 +195,7 @@
                                                                                     ব্যক্তিত্ব</a></li>
                                                                     <li><a title="ভাষা ও সংস্কৃতি" href="{{ url('/জেলা-সম্পর্কিত/ভাষা-ও-সংস্কৃতি') }}">ভাষা
                                                                                     ও সংস্কৃতি</a></li>
-                                                                    <li><a title="মুক্তিযুদ্ধ ও মুক্তিযোদ্ধাদের তালিকা" href="{{ url('/জেলা-সম্পর্কিত/মুক্তিযোদ্ধাদের-তালিকা') }}">মুক্তিযুদ্ধ
-                                                                                    ও মুক্তিযোদ্ধাদের তালিকা</a></li>
+                                                                    <li><a title="মুক্তিযুদ্ধ ও মুক্তিযোদ্ধাদের তালিকা" href="{{ url('/জেলা-সম্পর্কিত/মুক্তিযোদ্ধাদের-তালিকা') }}">মুক্তিযোদ্ধাদের তালিকা</a></li>
                                                             </ul>
                                                     </div>
                                                     <div class="one-col">

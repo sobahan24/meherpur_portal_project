@@ -12,16 +12,19 @@
         মেহেরপুর জেলার সকল মুক্তিযোদ্ধাদের তালিকা
     </h3>
 
-    <a href="{{ url('/জেলা-সম্পর্কিত/প্রখ্যাত-ব্যক্তিত্ব/add-new') }}" class="btn-edit" style="float:right; color:#fff; margin-bottom:4px">এড নিউ ডাটা</a>
+    @can('add')
+        <a href="{{ url('/জেলা-সম্পর্কিত/মুক্তিযোদ্ধাদের-তালিকা/add-new') }}" class="btn-edit" style="float:right; color:#fff; margin-bottom:4px">এড নিউ ডাটা</a>
+    @endcan
 
-    
- 
     <table class="table table-advanced" style="text-align: center;">
         <thead style="font-weight: bold;">
             <tr>
                 <td>ক্রমিক</td>
                 <td>নাম</td>
                 <td>উপজেলা</td>
+                @can('status')
+                    <td>স্ট্যাটাস</td>
+                @endcan
                 <td>একশন</td>
             </tr>
         </thead>
@@ -31,10 +34,17 @@
                 <td>{{ $loop->iteration }}</td>
                 <td>{{ $item->name }}</td>
                 <td>{{ $item->upozila }}</td>
+                @can('status')
+                    <td>{{ ($item->status == '0') ? 'Hided' : 'Displayed' }}</td>
+                @endcan
                 <td>
                     <a href="{{ url('/জেলা-সম্পর্কিত/মুক্তিযোদ্ধাদের-তালিকা/'.$item->name.'/'.$item->id) }}" class="btn-view" style="color:#fff" target="_blank">বিস্তারিত</a>
-                    <a href="{{ url('/জেলা-সম্পর্কিত/মুক্তিযোদ্ধাদের-তালিকা/edit/'.$item->name.'/'.$item->id) }}" class="btn-edit" style="color:#fff">এডিট</a>
-                    <a href="{{ url('/জেলা-সম্পর্কিত/মুক্তিযোদ্ধাদের-তালিকা/'.$item->id) }}" class="btn-delete" style="color:#fff">ডিলেট</a>
+                    @can('edit')
+                        <a href="{{ url('/জেলা-সম্পর্কিত/মুক্তিযোদ্ধাদের-তালিকা/edit/'.$item->name.'/'.$item->id) }}" class="btn-edit" style="color:#fff">এডিট</a>
+                    @endcan
+                    @can('delete')
+                        <a href="{{ url('/জেলা-সম্পর্কিত/মুক্তিযোদ্ধাদের-তালিকা/'.$item->id) }}" class="btn-delete" style="color:#fff">ডিলেট</a>
+                    @endcan
                 </td>
             </tr>
             @endforeach
