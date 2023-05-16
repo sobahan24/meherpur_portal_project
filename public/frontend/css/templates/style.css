@@ -134,6 +134,13 @@ a:visited {
   border-radius: 15%;
   font-size: 12px;
 }
+.btn-delete {
+  padding: 5px 10px;
+  background: #f72032;
+  color: #fff;
+  border-radius: 15%;
+  font-size: 12px;
+}
 
 #contents {
   margin: 20px 0;

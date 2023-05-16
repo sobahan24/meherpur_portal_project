@@ -30,6 +30,15 @@ Route::get('/', [App\Http\Controllers\Frontend\FrontendController::class, 'index
 Route::get('/জেলা-সম্পর্কিত/দর্শনীয়-স্থান', [App\Http\Controllers\Frontend\TouristController::class, 'দর্শনীয়_স্থান']);
 Route::get('/জেলা-সম্পর্কিত/দর্শনীয়-স্থান/{name}/{id}', [App\Http\Controllers\Frontend\TouristController::class, 'viewSpot']);
 
+// প্রখ্যাত-ব্যক্তিত্ব
+Route::get('/জেলা-সম্পর্কিত/প্রখ্যাত-ব্যক্তিত্ব', [App\Http\Controllers\Frontend\FamousPersonController::class, 'প্রখ্যাত_ব্যক্তিত্ব']);
+Route::get('/জেলা-সম্পর্কিত/প্রখ্যাত-ব্যক্তিত্ব/{name}/{id}', [App\Http\Controllers\Frontend\FamousPersonController::class, 'singelView']);
+
+// মুক্তিযোদ্ধাদের-তালিকা
+Route::get('/জেলা-সম্পর্কিত/মুক্তিযোদ্ধাদের-তালিকা', [App\Http\Controllers\Frontend\muktizoddhaController::class, 'মুক্তিযোদ্ধাদের_তালিকা']);
+Route::get('/জেলা-সম্পর্কিত/মুক্তিযোদ্ধাদের-তালিকা/{name}/{id}', [App\Http\Controllers\Frontend\muktizoddhaController::class, 'singelView']);
+
+
 
 Route::middleware(['auth'])->group(function () {
 
@@ -41,6 +50,13 @@ Route::middleware(['auth'])->group(function () {
     // দর্শনীয়-স্থান
     Route::get('/জেলা-সম্পর্কিত/দর্শনীয়-স্থান/add-new', [App\Http\Controllers\Frontend\TouristController::class, 'addNewSpot']);
     Route::post('/জেলা-সম্পর্কিত/দর্শনীয়-স্থান/insert', [App\Http\Controllers\Frontend\TouristController::class, 'insertNewSpot']);
+
+    // প্রখ্যাত-ব্যক্তিত্ব
+    Route::get('/জেলা-সম্পর্কিত/প্রখ্যাত-ব্যক্তিত্ব/add-new', [App\Http\Controllers\Frontend\FamousPersonController::class, 'add']);
+    Route::post('/জেলা-সম্পর্কিত/প্রখ্যাত-ব্যক্তিত্ব/insert', [App\Http\Controllers\Frontend\FamousPersonController::class, 'insert']);
+    Route::get('/জেলা-সম্পর্কিত/প্রখ্যাত-ব্যক্তিত্ব/edit/{name}/{id}', [App\Http\Controllers\Frontend\FamousPersonController::class, 'edit']);
+    Route::Post('/জেলা-সম্পর্কিত/প্রখ্যাত-ব্যক্তিত্ব/update/{id}', [App\Http\Controllers\Frontend\FamousPersonController::class, 'update']);
+    Route::get('/জেলা-সম্পর্কিত/প্রখ্যাত-ব্যক্তিত্ব/{id}', [App\Http\Controllers\Frontend\FamousPersonController::class, 'destroy']);
 
 
 
@@ -65,9 +81,7 @@ Route::get('/জেলা-সম্পর্কিত/জেলার-ঐতি�
 
 
 
-Route::get('/জেলা-সম্পর্কিত/প্রখ্যাত-ব্যক্তিত্ব', [App\Http\Controllers\Frontend\FrontendController::class, 'প্রখ্যাত_ব্যক্তিত্ব']);
 Route::get('/জেলা-সম্পর্কিত/ভাষা-ও-সংস্কৃতি', [App\Http\Controllers\Frontend\FrontendController::class, 'ভাষা_ও_সংস্কৃতি']);
-Route::get('/জেলা-সম্পর্কিত/মুক্তিযুদ্ধ-ও-মুক্তিযোদ্ধাদের-তালিকা', [App\Http\Controllers\Frontend\FrontendController::class, 'মুক্তিযুদ্ধ_ও_মুক্তিযোদ্ধাদের_তালিকা']);
 
 // ভৌগোলিক ও অর্থনৈতিক
 Route::get('/জেলা-সম্পর্কিত/হোটেল-ও-আবাসন', [App\Http\Controllers\Frontend\FrontendController::class, 'হোটেল_ও_আবাসন']);
