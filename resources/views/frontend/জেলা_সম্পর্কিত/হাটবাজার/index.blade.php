@@ -13,7 +13,7 @@
     </h3>
 
     @can('add')
-    <a href="{{ url('/জেলা-সম্পর্কিত/হোটেল-ও-আবাসন/add-new') }}" class="btn-edit" style="float:right; color:#fff; margin-bottom:4px">এড নিউ ডাটা</a>
+    <a href="{{ url('/জেলা-সম্পর্কিত/হাটবাজার/add-new') }}" class="btn-edit" style="float:right; color:#fff; margin-bottom:4px">এড নিউ ডাটা</a>
     @endcan
     <table class="table table-advanced" style="text-align: center;">
         <!-- <h4 style="background: #b9b3b326; padding: 5px 2px; margin-top: 45px; font-weight:bold">হোটেল ও আবাসনের ধরণ: সরকারী</h4> -->

@@ -40,7 +40,7 @@ class FrontendController extends Controller
     {
         return view('frontend.জেলা_সম্পর্কিত.জেলার_ঐতিহ্য');
     }
-    
+
     public function ভাষা_ও_সংস্কৃতি()
     {
         return view('frontend.জেলা_সম্পর্কিত.ভাষা_ও_সংস্কৃতি');
@@ -65,21 +65,9 @@ class FrontendController extends Controller
     {
         return view('frontend.জেলা_সম্পর্কিত.যোগাযোগ_ব্যবস্থা');
     }
-    public function জন_প্রতিনিধি()
-    {
-        return view('frontend.জেলা_সম্পর্কিত.জন_প্রতিনিধি');
-    }
-    public function ইউপি_চেয়ারম্যান_ও_সচিবগণের_নামের_তালিকা()
-    {
-        return view('frontend.জেলা_সম্পর্কিত.ইউপি_চেয়ারম্যান_ও_সচিবগণের_নামের_তালিকা');
-    }
     public function ইউনিয়ন_ডিজিটাল_সেন্টারের_উদ্যোক্তাদের_তালিকা()
     {
         return view('frontend.জেলা_সম্পর্কিত.ইউনিয়ন_ডিজিটাল_সেন্টারের_উদ্যোক্তাদের_তালিকা');
-    }
-    public function পত্রপত্রিকা()
-    {
-        return view('frontend.জেলা_সম্পর্কিত.পত্রপত্রিকা');
     }
     public function ICT_তে_বর্ষসেরা_পুরস্কার_প্রাপ্তদের_তালিকা()
     {

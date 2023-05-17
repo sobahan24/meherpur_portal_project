@@ -42,6 +42,15 @@ Route::get('/জেলা-সম্পর্কিত/হোটেল-ও-আব
 Route::get('/জেলা-সম্পর্কিত/হাটবাজার', [App\Http\Controllers\Frontend\HatBazarController::class, 'হাটবাজার']);
 Route::get('/জেলা-সম্পর্কিত/হাটবাজার/{name}/{id}', [App\Http\Controllers\Frontend\HatBazarController::class, 'singelView']);
 
+// জন প্রতিনিধি
+Route::get('/জেলা-সম্পর্কিত/জন-প্রতিনিধি', [App\Http\Controllers\Frontend\ProtinidhiController::class, 'জন_প্রতিনিধি']);
+
+// ইউপি-চেয়ারম্যানগণের-নামের-তালিকা
+Route::get('/জেলা-সম্পর্কিত/ইউপি-চেয়ারম্যানগণের-নামের-তালিকা', [App\Http\Controllers\Frontend\ChairmanController::class, 'ইউপি_চেয়ারম্যানগণের_নামের_তালিকা']);
+Route::get('/জেলা-সম্পর্কিত/ইউপি-সচিবগণের-নামের-তালিকা', [App\Http\Controllers\Frontend\SashibController::class, 'ইউপি_সচিবগণের_নামের_তালিকা']);
+
+
+
 
 Route::middleware(['auth'])->group(function () {
 
@@ -78,6 +87,34 @@ Route::middleware(['auth'])->group(function () {
     Route::Post('/জেলা-সম্পর্কিত/হোটেল-ও-আবাসন/update/{id}', [App\Http\Controllers\Frontend\HotelAbashanController::class, 'update']);
     Route::get('/জেলা-সম্পর্কিত/হোটেল-ও-আবাসন/{id}', [App\Http\Controllers\Frontend\HotelAbashanController::class, 'destroy']);
 
+    // হাটবাজার
+    Route::get('/জেলা-সম্পর্কিত/হাটবাজার/add-new', [App\Http\Controllers\Frontend\HatBazarController::class, 'add']);
+    Route::post('/জেলা-সম্পর্কিত/হাটবাজার/insert', [App\Http\Controllers\Frontend\HatBazarController::class, 'insert']);
+    Route::get('/জেলা-সম্পর্কিত/হাটবাজার/edit/{name}/{id}', [App\Http\Controllers\Frontend\HatBazarController::class, 'edit']);
+    Route::Post('/জেলা-সম্পর্কিত/হাটবাজার/update/{id}', [App\Http\Controllers\Frontend\HatBazarController::class, 'update']);
+    Route::get('/জেলা-সম্পর্কিত/হাটবাজার/{id}', [App\Http\Controllers\Frontend\HatBazarController::class, 'destroy']);
+
+    // জন প্রতিনিধি
+    Route::get('/জেলা-সম্পর্কিত/জন-প্রতিনিধি/add-new', [App\Http\Controllers\Frontend\ProtinidhiController::class, 'add']);
+    Route::post('/জেলা-সম্পর্কিত/জন-প্রতিনিধি/insert', [App\Http\Controllers\Frontend\ProtinidhiController::class, 'insert']);
+    Route::get('/জেলা-সম্পর্কিত/জন-প্রতিনিধি/edit/{name}/{id}', [App\Http\Controllers\Frontend\ProtinidhiController::class, 'edit']);
+    Route::Post('/জেলা-সম্পর্কিত/জন-প্রতিনিধি/update/{id}', [App\Http\Controllers\Frontend\ProtinidhiController::class, 'update']);
+    Route::get('/জেলা-সম্পর্কিত/জন-প্রতিনিধি/{id}', [App\Http\Controllers\Frontend\ProtinidhiController::class, 'destroy']);
+
+    // ইউপি-চেয়ারম্যানগণের-নামের-তালিকা
+    Route::get('/জেলা-সম্পর্কিত/ইউপি-চেয়ারম্যানগণের-নামের-তালিকা/add-new', [App\Http\Controllers\Frontend\ChairmanController::class, 'add']);
+    Route::post('/জেলা-সম্পর্কিত/ইউপি-চেয়ারম্যানগণের-নামের-তালিকা/insert', [App\Http\Controllers\Frontend\ChairmanController::class, 'insert']);
+    Route::get('/জেলা-সম্পর্কিত/ইউপি-চেয়ারম্যানগণের-নামের-তালিকা/edit/{name}/{id}', [App\Http\Controllers\Frontend\ChairmanController::class, 'edit']);
+    Route::Post('/জেলা-সম্পর্কিত/ইউপি-চেয়ারম্যানগণের-নামের-তালিকা/update/{id}', [App\Http\Controllers\Frontend\ChairmanController::class, 'update']);
+    Route::get('/জেলা-সম্পর্কিত/ইউপি-চেয়ারম্যানগণের-নামের-তালিকা/{id}', [App\Http\Controllers\Frontend\ChairmanController::class, 'destroy']);
+
+    // ইউপি-সচিবগণের-নামের-তালিকা
+    Route::get('/জেলা-সম্পর্কিত/ইউপি-সচিবগণের-নামের-তালিকা/add-new', [App\Http\Controllers\Frontend\SashibController::class, 'add']);
+    Route::post('/জেলা-সম্পর্কিত/ইউপি-সচিবগণের-নামের-তালিকা/insert', [App\Http\Controllers\Frontend\SashibController::class, 'insert']);
+    Route::get('/জেলা-সম্পর্কিত/ইউপি-সচিবগণের-নামের-তালিকা/edit/{name}/{id}', [App\Http\Controllers\Frontend\SashibController::class, 'edit']);
+    Route::Post('/জেলা-সম্পর্কিত/ইউপি-সচিবগণের-নামের-তালিকা/update/{id}', [App\Http\Controllers\Frontend\SashibController::class, 'update']);
+    Route::get('/জেলা-সম্পর্কিত/ইউপি-সচিবগণের-নামের-তালিকা/{id}', [App\Http\Controllers\Frontend\SashibController::class, 'destroy']);
+
 
 
 
@@ -113,10 +150,7 @@ Route::get('/জেলা-সম্পর্কিত/নদ-নদী', [App\Ht
 Route::get('/জেলা-সম্পর্কিত/যোগাযোগ-ব্যবস্থা', [App\Http\Controllers\Frontend\FrontendController::class, 'যোগাযোগ_ব্যবস্থা']);
 
 // অন্যান্য
-Route::get('/জেলা-সম্পর্কিত/জন-প্রতিনিধি', [App\Http\Controllers\Frontend\FrontendController::class, 'জন_প্রতিনিধি']);
-Route::get('/জেলা-সম্পর্কিত/ইউপি-চেয়ারম্যান-ও-সচিবগণের-নামের-তালিকা', [App\Http\Controllers\Frontend\FrontendController::class, 'ইউপি_চেয়ারম্যান_ও_সচিবগণের_নামের_তালিকা']);
 Route::get('/জেলা-সম্পর্কিত/ইউনিয়ন-ডিজিটাল-সেন্টারের-উদ্যোক্তাদের-তালিকা', [App\Http\Controllers\Frontend\FrontendController::class, 'ইউনিয়ন_ডিজিটাল_সেন্টারের_উদ্যোক্তাদের_তালিকা']);
-Route::get('/জেলা-সম্পর্কিত/পত্রপত্রিকা', [App\Http\Controllers\Frontend\FrontendController::class, 'পত্রপত্রিকা']);
 Route::get('/জেলা-সম্পর্কিত/ICT-তে-বর্ষসেরা-পুরস্কার-প্রাপ্তদের-তালিকা', [App\Http\Controllers\Frontend\FrontendController::class, 'ICT_তে_বর্ষসেরা_পুরস্কার_প্রাপ্তদের_তালিকা']);
 
 
