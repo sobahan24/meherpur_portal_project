@@ -31,15 +31,15 @@
                 <div style="width: 50%; float:left">
                     <label style="margin-top: 10px;">উপজেলা:</label>
                     <select class="form-select" name="upozila" style="height: 40px; width:-webkit-fill-available; margin-right:4px">
-                        <option  value="মেহেরপুর সদর" {{ $muktizoddha->status == 'মেহেরপুর সদর' ? 'selected' : '' }}>মেহেরপুর সদর</option>
-                        <option  value="মুজিবনগর" {{ $muktizoddha->status == 'মুজিবনগর' ? 'selected' : '' }}>মুজিবনগর</option>
-                        <option  value="গাংনী" {{ $muktizoddha->status == 'গাংনী' ? 'selected' : '' }}>গাংনী</option>
+                        <option  value="মেহেরপুর সদর" {{ $muktizoddha->upozila == 'মেহেরপুর সদর' ? 'selected' : '' }}>মেহেরপুর সদর</option>
+                        <option  value="মুজিবনগর" {{ $muktizoddha->upozila == 'মুজিবনগর' ? 'selected' : '' }}>মুজিবনগর</option>
+                        <option  value="গাংনী" {{ $muktizoddha->upozila == 'গাংনী' ? 'selected' : '' }}>গাংনী</option>
                     </select>
                 </div>
                 <div style="width: 50%; float:right">
                     <label style="margin-top: 10px;">জেলা:</label>
                     <select class="form-select" name="zila" style="height: 40px; width:-webkit-fill-available;">
-                        <option  value="মেহেরপুর" {{ $muktizoddha->status == 'মেহেরপুর' ? 'selected' : '' }}>মেহেরপুর</option>
+                        <option  value="মেহেরপুর" {{ $muktizoddha->upozila == 'মেহেরপুর' ? 'selected' : '' }}>মেহেরপুর</option>
                     </select>
                 </div>
             </div>
@@ -50,7 +50,7 @@
             @can('status')
                 <div class="mb-3">
                     <label style="margin-top: 10px;">স্ট্যাটাস:</label>
-                    <select class="form-select" name="status">
+                    <select class="form-select" name="status" style="height: 40px;">
                         <option  value="0" {{ $muktizoddha->status == '0' ? 'selected' : '' }} >Hided</option>
                         <option  value="1" {{ $muktizoddha->status == '1' ? 'selected' : '' }} >Displayed</option>
                     </select>

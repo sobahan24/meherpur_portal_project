@@ -41,17 +41,9 @@ class FrontendController extends Controller
         return view('frontend.জেলা_সম্পর্কিত.জেলার_ঐতিহ্য');
     }
     
-    public function প্রখ্যাত_ব্যক্তিত্ব()
-    {
-        return view('frontend.জেলা_সম্পর্কিত.প্রখ্যাত_ব্যক্তিত্ব');
-    }
     public function ভাষা_ও_সংস্কৃতি()
     {
         return view('frontend.জেলা_সম্পর্কিত.ভাষা_ও_সংস্কৃতি');
-    }
-    public function মুক্তিযুদ্ধ_ও_মুক্তিযোদ্ধাদের_তালিকা()
-    {
-        return view('frontend.জেলা_সম্পর্কিত.মুক্তিযুদ্ধ_ও_মুক্তিযোদ্ধাদের_তালিকা');
     }
     public function হোটেল_ও_আবাসন()
     {
@@ -68,10 +60,6 @@ class FrontendController extends Controller
     public function নদ_নদী()
     {
         return view('frontend.জেলা_সম্পর্কিত.নদ_নদী');
-    }
-    public function হাটবাজার()
-    {
-        return view('frontend.জেলা_সম্পর্কিত.হাটবাজার');
     }
     public function যোগাযোগ_ব্যবস্থা()
     {

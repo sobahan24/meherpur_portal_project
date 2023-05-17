@@ -15,10 +15,6 @@ use App\Http\Controllers\Backend\AdminController;
 |
 */
 
-// Route::get('/', function () {
-//     return view('welcome');
-// });
-
 Auth::routes();
 
 // Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
@@ -38,6 +34,13 @@ Route::get('/জেলা-সম্পর্কিত/প্রখ্যাত-�
 Route::get('/জেলা-সম্পর্কিত/মুক্তিযোদ্ধাদের-তালিকা', [App\Http\Controllers\Frontend\muktizoddhaController::class, 'মুক্তিযোদ্ধাদের_তালিকা']);
 Route::get('/জেলা-সম্পর্কিত/মুক্তিযোদ্ধাদের-তালিকা/{name}/{id}', [App\Http\Controllers\Frontend\muktizoddhaController::class, 'singelView']);
 
+// হোটেল ও আবাসন
+Route::get('/জেলা-সম্পর্কিত/হোটেল-ও-আবাসন', [App\Http\Controllers\Frontend\HotelAbashanController::class, 'হোটেল_ও_আবাসন']);
+Route::get('/জেলা-সম্পর্কিত/হোটেল-ও-আবাসন/{name}/{id}', [App\Http\Controllers\Frontend\HotelAbashanController::class, 'singelView']);
+
+// হাটবাজার
+Route::get('/জেলা-সম্পর্কিত/হাটবাজার', [App\Http\Controllers\Frontend\HatBazarController::class, 'হাটবাজার']);
+Route::get('/জেলা-সম্পর্কিত/হাটবাজার/{name}/{id}', [App\Http\Controllers\Frontend\HatBazarController::class, 'singelView']);
 
 
 Route::middleware(['auth'])->group(function () {
@@ -68,6 +71,13 @@ Route::middleware(['auth'])->group(function () {
     Route::Post('/জেলা-সম্পর্কিত/মুক্তিযোদ্ধাদের-তালিকা/update/{id}', [App\Http\Controllers\Frontend\muktizoddhaController::class, 'update']);
     Route::get('/জেলা-সম্পর্কিত/মুক্তিযোদ্ধাদের-তালিকা/{id}', [App\Http\Controllers\Frontend\muktizoddhaController::class, 'destroy']);
 
+    // হোটেল ও আবাসন
+    Route::get('/জেলা-সম্পর্কিত/হোটেল-ও-আবাসন/add-new', [App\Http\Controllers\Frontend\HotelAbashanController::class, 'add']);
+    Route::post('/জেলা-সম্পর্কিত/হোটেল-ও-আবাসন/insert', [App\Http\Controllers\Frontend\HotelAbashanController::class, 'insert']);
+    Route::get('/জেলা-সম্পর্কিত/হোটেল-ও-আবাসন/edit/{name}/{id}', [App\Http\Controllers\Frontend\HotelAbashanController::class, 'edit']);
+    Route::Post('/জেলা-সম্পর্কিত/হোটেল-ও-আবাসন/update/{id}', [App\Http\Controllers\Frontend\HotelAbashanController::class, 'update']);
+    Route::get('/জেলা-সম্পর্কিত/হোটেল-ও-আবাসন/{id}', [App\Http\Controllers\Frontend\HotelAbashanController::class, 'destroy']);
+
 
 
 
@@ -97,11 +107,9 @@ Route::get('/জেলা-সম্পর্কিত/জেলার-ঐতি�
 Route::get('/জেলা-সম্পর্কিত/ভাষা-ও-সংস্কৃতি', [App\Http\Controllers\Frontend\FrontendController::class, 'ভাষা_ও_সংস্কৃতি']);
 
 // ভৌগোলিক ও অর্থনৈতিক
-Route::get('/জেলা-সম্পর্কিত/হোটেল-ও-আবাসন', [App\Http\Controllers\Frontend\FrontendController::class, 'হোটেল_ও_আবাসন']);
 Route::get('/জেলা-সম্পর্কিত/অবস্থান-গঠন-ও-আয়তন', [App\Http\Controllers\Frontend\FrontendController::class, 'অবস্থান_গঠন_ও_আয়তন']);
 Route::get('/জেলা-সম্পর্কিত/শিল্প-ও-বাণিজ্য', [App\Http\Controllers\Frontend\FrontendController::class, 'শিল্প_ও_বাণিজ্য']);
 Route::get('/জেলা-সম্পর্কিত/নদ-নদী', [App\Http\Controllers\Frontend\FrontendController::class, 'নদ_নদী']);
-Route::get('/জেলা-সম্পর্কিত/হাটবাজার', [App\Http\Controllers\Frontend\FrontendController::class, 'হাটবাজার']);
 Route::get('/জেলা-সম্পর্কিত/যোগাযোগ-ব্যবস্থা', [App\Http\Controllers\Frontend\FrontendController::class, 'যোগাযোগ_ব্যবস্থা']);
 
 // অন্যান্য
