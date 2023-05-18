@@ -28,16 +28,6 @@ class UserController extends Controller
     {
         $users = User::find($id);
         $users->role_as = $request->input('role_as');
-        // $users->name = $request->input('name');
-        // $users->lname = $request->input('lname');
-        // $users->email = $request->input('email');
-        // $users->phone = $request->input('phone');
-        // $users->address1 = $request->input('address1');
-        // $users->address2 = $request->input('address2');
-        // $users->city = $request->input('city');
-        // $users->state = $request->input('state');
-        // $users->country = $request->input('country');
-        // $users->zip = $request->input('zip');
         $users->update();
         return redirect('/users')->with('status', "User Updated Successfully");
     }

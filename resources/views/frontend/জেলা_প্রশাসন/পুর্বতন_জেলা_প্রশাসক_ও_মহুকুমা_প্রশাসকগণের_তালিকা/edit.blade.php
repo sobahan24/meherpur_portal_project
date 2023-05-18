@@ -9,7 +9,7 @@
     <h3>জেলা প্রশাসকগণের তথ্য আপডেট করুণ</h3>
     <div style="border: 1px solid #e9e2e2; padding:5px">
         <a href="{{ url('/জেলা-প্রশাসন/পুর্বতন-জেলা-প্রশাসক-ও-মহুকুমা-প্রশাসকগণের-তালিকা') }}" class="btn-view" style="float:right; color:#fff">Back</a>
-        <form action="{{ url('/জেলা-প্রশাসন/পুর্বতন-জেলা-প্রশাসক-ও-মহুকুমা-প্রশাসকগণের-তালিকা/update/.$ZilaProsasok->id') }}" method="POST" enctype="multipart/form-data" style="padding: 10px; background: #dedede24;">
+        <form action="{{ url('/জেলা-প্রশাসন/পুর্বতন-জেলা-প্রশাসক-ও-মহুকুমা-প্রশাসকগণের-তালিকা/update/'.$ZilaProsasok->id) }}" method="POST" enctype="multipart/form-data" style="padding: 10px; background: #dedede24;">
             @csrf
             <div class="mb-3">
                 <label style="margin-top: 10px;">নাম:</label>

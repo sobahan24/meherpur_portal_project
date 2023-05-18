@@ -40,7 +40,7 @@ class ZilaProsasokController extends Controller
             return view('frontend.জেলা_প্রশাসন.পুর্বতন_জেলা_প্রশাসক_ও_মহুকুমা_প্রশাসকগণের_তালিকা.index', compact('ZilaProsasok'));
         }
     }
-    
+
     public function add()
     {
         $this->authorize('add');

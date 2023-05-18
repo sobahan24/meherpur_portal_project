@@ -18,7 +18,7 @@
         <p class="email"><span><strong>ইমেইল :</strong></span> <a href="mailto:{{ $ZilaProsasok->email }}" title="{{ $ZilaProsasok->email }}">{{ $ZilaProsasok->email }}</a></p>
         <p class="fax"><span><strong>ফ্যাক্স :</strong></span> অফিস {{ $ZilaProsasok->faxOffice }}, বাসা {{ $ZilaProsasok->faxHome }}</p>
         <p class="batch"><span><strong>ব্যাচ (বিসিএস) :</strong></span> {{ $ZilaProsasok->batch }}</p>
-        <p class="joining_date"><span><strong>কর্মকাল :</strong></span> {{ $ZilaProsasok->kormokal }}</p>
+        <p class="joining_date"><span><strong>বর্তমান কর্মস্থলে যোগদানের তারিখ :</strong></span> {{ $ZilaProsasok->kormokal }}</p>
     </div>
 </div>
 

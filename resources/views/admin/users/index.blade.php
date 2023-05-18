@@ -27,7 +27,7 @@ Meherpur | Users
                     <th>{{ $loop->iteration }}</th>
                     <td>{{ $item->name }}</td>
                     <td>{{ $item->email }}</td>
-                    <td>{{ ($item->role_as == '1') ? 'admin' : 'user' }}</td>
+                    <td>{{ ($item->role_as == '1') ? 'admin' : 'Editor' }}</td>
                     <td>
                         <a href="{{ url('view-users/'.$item->id) }}" class="btn btn-sm btn-primary">View</a>
                         <a href="{{ url('edit-user/'.$item->id) }}" class="btn btn-sm btn-success">Edit</a>

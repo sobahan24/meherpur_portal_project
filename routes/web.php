@@ -69,76 +69,97 @@ Route::middleware(['auth'])->group(function () {
 
 
     // দর্শনীয়-স্থান
-    Route::get('/জেলা-সম্পর্কিত/দর্শনীয়-স্থান/add-new', [App\Http\Controllers\Frontend\TouristController::class, 'addNewSpot']);
-    Route::post('/জেলা-সম্পর্কিত/দর্শনীয়-স্থান/insert', [App\Http\Controllers\Frontend\TouristController::class, 'insertNewSpot']);
-    Route::get('/জেলা-সম্পর্কিত/দর্শনীয়-স্থান/edit/{name}/{id}', [App\Http\Controllers\Frontend\TouristController::class, 'editSpot']);
-    Route::post('/জেলা-সম্পর্কিত/দর্শনীয়-স্থান/update/{id}', [App\Http\Controllers\Frontend\TouristController::class, 'updateSpot']);
-    Route::get('/জেলা-সম্পর্কিত/দর্শনীয়-স্থান/{id}', [App\Http\Controllers\Frontend\TouristController::class, 'destroySpot']);
+    Route::prefix('/জেলা-সম্পর্কিত/দর্শনীয়-স্থান')->group(function () {
+        Route::get('/add-new', [App\Http\Controllers\Frontend\TouristController::class, 'addNewSpot']);
+        Route::post('/insert', [App\Http\Controllers\Frontend\TouristController::class, 'insertNewSpot']);
+        Route::get('/edit/{name}/{id}', [App\Http\Controllers\Frontend\TouristController::class, 'editSpot']);
+        Route::post('/update/{id}', [App\Http\Controllers\Frontend\TouristController::class, 'updateSpot']);
+        Route::get('/{id}', [App\Http\Controllers\Frontend\TouristController::class, 'destroySpot']);
+    });
 
     // প্রখ্যাত-ব্যক্তিত্ব
-    Route::get('/জেলা-সম্পর্কিত/প্রখ্যাত-ব্যক্তিত্ব/add-new', [App\Http\Controllers\Frontend\FamousPersonController::class, 'add']);
-    Route::post('/জেলা-সম্পর্কিত/প্রখ্যাত-ব্যক্তিত্ব/insert', [App\Http\Controllers\Frontend\FamousPersonController::class, 'insert']);
-    Route::get('/জেলা-সম্পর্কিত/প্রখ্যাত-ব্যক্তিত্ব/edit/{name}/{id}', [App\Http\Controllers\Frontend\FamousPersonController::class, 'edit']);
-    Route::Post('/জেলা-সম্পর্কিত/প্রখ্যাত-ব্যক্তিত্ব/update/{id}', [App\Http\Controllers\Frontend\FamousPersonController::class, 'update']);
-    Route::get('/জেলা-সম্পর্কিত/প্রখ্যাত-ব্যক্তিত্ব/{id}', [App\Http\Controllers\Frontend\FamousPersonController::class, 'destroy']);
+    Route::prefix('/জেলা-সম্পর্কিত/প্রখ্যাত-ব্যক্তিত্ব')->group(function () {
+        Route::get('/add-new', [App\Http\Controllers\Frontend\FamousPersonController::class, 'add']);
+        Route::post('/insert', [App\Http\Controllers\Frontend\FamousPersonController::class, 'insert']);
+        Route::get('/edit/{name}/{id}', [App\Http\Controllers\Frontend\FamousPersonController::class, 'edit']);
+        Route::Post('/update/{id}', [App\Http\Controllers\Frontend\FamousPersonController::class, 'update']);
+        Route::get('/{id}', [App\Http\Controllers\Frontend\FamousPersonController::class, 'destroy']);
+    });
 
     // মুক্তিযোদ্ধাদের-তালিকা
-    Route::get('/জেলা-সম্পর্কিত/মুক্তিযোদ্ধাদের-তালিকা/add-new', [App\Http\Controllers\Frontend\muktizoddhaController::class, 'add']);
-    Route::post('/জেলা-সম্পর্কিত/মুক্তিযোদ্ধাদের-তালিকা/insert', [App\Http\Controllers\Frontend\muktizoddhaController::class, 'insert']);
-    Route::get('/জেলা-সম্পর্কিত/মুক্তিযোদ্ধাদের-তালিকা/edit/{name}/{id}', [App\Http\Controllers\Frontend\muktizoddhaController::class, 'edit']);
-    Route::Post('/জেলা-সম্পর্কিত/মুক্তিযোদ্ধাদের-তালিকা/update/{id}', [App\Http\Controllers\Frontend\muktizoddhaController::class, 'update']);
-    Route::get('/জেলা-সম্পর্কিত/মুক্তিযোদ্ধাদের-তালিকা/{id}', [App\Http\Controllers\Frontend\muktizoddhaController::class, 'destroy']);
+    Route::prefix('/জেলা-সম্পর্কিত/মুক্তিযোদ্ধাদের-তালিকা')->group(function () {
+        Route::get('/add-new', [App\Http\Controllers\Frontend\muktizoddhaController::class, 'add']);
+        Route::post('/insert', [App\Http\Controllers\Frontend\muktizoddhaController::class, 'insert']);
+        Route::get('/edit/{name}/{id}', [App\Http\Controllers\Frontend\muktizoddhaController::class, 'edit']);
+        Route::Post('/update/{id}', [App\Http\Controllers\Frontend\muktizoddhaController::class, 'update']);
+        Route::get('/{id}', [App\Http\Controllers\Frontend\muktizoddhaController::class, 'destroy']);
+    });
 
     // হোটেল ও আবাসন
-    Route::get('/জেলা-সম্পর্কিত/হোটেল-ও-আবাসন/add-new', [App\Http\Controllers\Frontend\HotelAbashanController::class, 'add']);
-    Route::post('/জেলা-সম্পর্কিত/হোটেল-ও-আবাসন/insert', [App\Http\Controllers\Frontend\HotelAbashanController::class, 'insert']);
-    Route::get('/জেলা-সম্পর্কিত/হোটেল-ও-আবাসন/edit/{name}/{id}', [App\Http\Controllers\Frontend\HotelAbashanController::class, 'edit']);
-    Route::Post('/জেলা-সম্পর্কিত/হোটেল-ও-আবাসন/update/{id}', [App\Http\Controllers\Frontend\HotelAbashanController::class, 'update']);
-    Route::get('/জেলা-সম্পর্কিত/হোটেল-ও-আবাসন/{id}', [App\Http\Controllers\Frontend\HotelAbashanController::class, 'destroy']);
+    Route::prefix('/জেলা-সম্পর্কিত/হোটেল-ও-আবাসন')->group(function () {
+        Route::get('/add-new', [App\Http\Controllers\Frontend\HotelAbashanController::class, 'add']);
+        Route::post('/insert', [App\Http\Controllers\Frontend\HotelAbashanController::class, 'insert']);
+        Route::get('/edit/{name}/{id}', [App\Http\Controllers\Frontend\HotelAbashanController::class, 'edit']);
+        Route::Post('/update/{id}', [App\Http\Controllers\Frontend\HotelAbashanController::class, 'update']);
+        Route::get('/{id}', [App\Http\Controllers\Frontend\HotelAbashanController::class, 'destroy']);
+    });
 
     // হাটবাজার
-    Route::get('/জেলা-সম্পর্কিত/হাটবাজার/add-new', [App\Http\Controllers\Frontend\HatBazarController::class, 'add']);
-    Route::post('/জেলা-সম্পর্কিত/হাটবাজার/insert', [App\Http\Controllers\Frontend\HatBazarController::class, 'insert']);
-    Route::get('/জেলা-সম্পর্কিত/হাটবাজার/edit/{name}/{id}', [App\Http\Controllers\Frontend\HatBazarController::class, 'edit']);
-    Route::Post('/জেলা-সম্পর্কিত/হাটবাজার/update/{id}', [App\Http\Controllers\Frontend\HatBazarController::class, 'update']);
-    Route::get('/জেলা-সম্পর্কিত/হাটবাজার/{id}', [App\Http\Controllers\Frontend\HatBazarController::class, 'destroy']);
+    Route::prefix('/জেলা-সম্পর্কিত/হাটবাজার')->group(function () {
+        Route::get('/add-new', [App\Http\Controllers\Frontend\HatBazarController::class, 'add']);
+        Route::post('/insert', [App\Http\Controllers\Frontend\HatBazarController::class, 'insert']);
+        Route::get('/edit/{name}/{id}', [App\Http\Controllers\Frontend\HatBazarController::class, 'edit']);
+        Route::Post('/update/{id}', [App\Http\Controllers\Frontend\HatBazarController::class, 'update']);
+        Route::get('/{id}', [App\Http\Controllers\Frontend\HatBazarController::class, 'destroy']);
+    });
 
     // জন প্রতিনিধি
-    Route::get('/জেলা-সম্পর্কিত/জন-প্রতিনিধি/add-new', [App\Http\Controllers\Frontend\ProtinidhiController::class, 'add']);
-    Route::post('/জেলা-সম্পর্কিত/জন-প্রতিনিধি/insert', [App\Http\Controllers\Frontend\ProtinidhiController::class, 'insert']);
-    Route::get('/জেলা-সম্পর্কিত/জন-প্রতিনিধি/edit/{name}/{id}', [App\Http\Controllers\Frontend\ProtinidhiController::class, 'edit']);
-    Route::Post('/জেলা-সম্পর্কিত/জন-প্রতিনিধি/update/{id}', [App\Http\Controllers\Frontend\ProtinidhiController::class, 'update']);
-    Route::get('/জেলা-সম্পর্কিত/জন-প্রতিনিধি/{id}', [App\Http\Controllers\Frontend\ProtinidhiController::class, 'destroy']);
+    Route::prefix('/জেলা-সম্পর্কিত/জন-প্রতিনিধি')->group(function () {
+        Route::get('/add-new', [App\Http\Controllers\Frontend\ProtinidhiController::class, 'add']);
+        Route::post('/insert', [App\Http\Controllers\Frontend\ProtinidhiController::class, 'insert']);
+        Route::get('/edit/{name}/{id}', [App\Http\Controllers\Frontend\ProtinidhiController::class, 'edit']);
+        Route::Post('/update/{id}', [App\Http\Controllers\Frontend\ProtinidhiController::class, 'update']);
+        Route::get('/{id}', [App\Http\Controllers\Frontend\ProtinidhiController::class, 'destroy']);
+    });
 
     // ইউপি-চেয়ারম্যানগণের-নামের-তালিকা
-    Route::get('/জেলা-সম্পর্কিত/ইউপি-চেয়ারম্যানগণের-নামের-তালিকা/add-new', [App\Http\Controllers\Frontend\ChairmanController::class, 'add']);
-    Route::post('/জেলা-সম্পর্কিত/ইউপি-চেয়ারম্যানগণের-নামের-তালিকা/insert', [App\Http\Controllers\Frontend\ChairmanController::class, 'insert']);
-    Route::get('/জেলা-সম্পর্কিত/ইউপি-চেয়ারম্যানগণের-নামের-তালিকা/edit/{name}/{id}', [App\Http\Controllers\Frontend\ChairmanController::class, 'edit']);
-    Route::Post('/জেলা-সম্পর্কিত/ইউপি-চেয়ারম্যানগণের-নামের-তালিকা/update/{id}', [App\Http\Controllers\Frontend\ChairmanController::class, 'update']);
-    Route::get('/জেলা-সম্পর্কিত/ইউপি-চেয়ারম্যানগণের-নামের-তালিকা/{id}', [App\Http\Controllers\Frontend\ChairmanController::class, 'destroy']);
+    Route::prefix('/জেলা-সম্পর্কিত/ইউপি-চেয়ারম্যানগণের-নামের-তালিকা')->group(function () {
+        Route::get('/add-new', [App\Http\Controllers\Frontend\ChairmanController::class, 'add']);
+        Route::post('/insert', [App\Http\Controllers\Frontend\ChairmanController::class, 'insert']);
+        Route::get('/edit/{name}/{id}', [App\Http\Controllers\Frontend\ChairmanController::class, 'edit']);
+        Route::Post('/update/{id}', [App\Http\Controllers\Frontend\ChairmanController::class, 'update']);
+        Route::get('/{id}', [App\Http\Controllers\Frontend\ChairmanController::class, 'destroy']);
+    });
 
     // ইউপি-সচিবগণের-নামের-তালিকা
-    Route::get('/জেলা-সম্পর্কিত/ইউপি-সচিবগণের-নামের-তালিকা/add-new', [App\Http\Controllers\Frontend\SashibController::class, 'add']);
-    Route::post('/জেলা-সম্পর্কিত/ইউপি-সচিবগণের-নামের-তালিকা/insert', [App\Http\Controllers\Frontend\SashibController::class, 'insert']);
-    Route::get('/জেলা-সম্পর্কিত/ইউপি-সচিবগণের-নামের-তালিকা/edit/{name}/{id}', [App\Http\Controllers\Frontend\SashibController::class, 'edit']);
-    Route::Post('/জেলা-সম্পর্কিত/ইউপি-সচিবগণের-নামের-তালিকা/update/{id}', [App\Http\Controllers\Frontend\SashibController::class, 'update']);
-    Route::get('/জেলা-সম্পর্কিত/ইউপি-সচিবগণের-নামের-তালিকা/{id}', [App\Http\Controllers\Frontend\SashibController::class, 'destroy']);
-    
-    // ইউনিয়ন-ডিজিটাল-সেন্টারের-উদ্যোক্তাদের-তালিকা
-    Route::get('/জেলা-সম্পর্কিত/ইউনিয়ন-ডিজিটাল-সেন্টারের-উদ্যোক্তাদের-তালিকা/add-new', [App\Http\Controllers\Frontend\UddoktaController::class, 'add']);
-    Route::post('/জেলা-সম্পর্কিত/ইউনিয়ন-ডিজিটাল-সেন্টারের-উদ্যোক্তাদের-তালিকা/insert', [App\Http\Controllers\Frontend\UddoktaController::class, 'insert']);
-    Route::get('/জেলা-সম্পর্কিত/ইউনিয়ন-ডিজিটাল-সেন্টারের-উদ্যোক্তাদের-তালিকা/edit/{name}/{id}', [App\Http\Controllers\Frontend\UddoktaController::class, 'edit']);
-    Route::Post('/জেলা-সম্পর্কিত/ইউনিয়ন-ডিজিটাল-সেন্টারের-উদ্যোক্তাদের-তালিকা/update/{id}', [App\Http\Controllers\Frontend\UddoktaController::class, 'update']);
-    Route::get('/জেলা-সম্পর্কিত/ইউনিয়ন-ডিজিটাল-সেন্টারের-উদ্যোক্তাদের-তালিকা/{id}', [App\Http\Controllers\Frontend\UddoktaController::class, 'destroy']);
-   
-    // জেলা প্রশাসক-তালিকা
-    Route::get('/জেলা-প্রশাসন/পুর্বতন-জেলা-প্রশাসক-ও-মহুকুমা-প্রশাসকগণের-তালিকা/add-new', [App\Http\Controllers\Frontend\ZilaProsasokController::class, 'add']);
-    Route::post('/জেলা-প্রশাসন/পুর্বতন-জেলা-প্রশাসক-ও-মহুকুমা-প্রশাসকগণের-তালিকা/insert', [App\Http\Controllers\Frontend\ZilaProsasokController::class, 'insert']);
-    Route::get('/জেলা-প্রশাসন/পুর্বতন-জেলা-প্রশাসক-ও-মহুকুমা-প্রশাসকগণের-তালিকা/edit/{name}/{id}', [App\Http\Controllers\Frontend\ZilaProsasokController::class, 'edit']);
-    Route::Post('/জেলা-প্রশাসন/পুর্বতন-জেলা-প্রশাসক-ও-মহুকুমা-প্রশাসকগণের-তালিকা/update/{id}', [App\Http\Controllers\Frontend\ZilaProsasokController::class, 'update']);
-    Route::get('/জেলা-প্রশাসন/পুর্বতন-জেলা-প্রশাসক-ও-মহুকুমা-প্রশাসকগণের-তালিকা/{id}', [App\Http\Controllers\Frontend\ZilaProsasokController::class, 'destroy']);
+    Route::prefix('/জেলা-সম্পর্কিত/ইউপি-সচিবগণের-নামের-তালিকা')->group(function () {
+        Route::get('/add-new', [App\Http\Controllers\Frontend\SashibController::class, 'add']);
+        Route::post('/insert', [App\Http\Controllers\Frontend\SashibController::class, 'insert']);
+        Route::get('/edit/{name}/{id}', [App\Http\Controllers\Frontend\SashibController::class, 'edit']);
+        Route::Post('/update/{id}', [App\Http\Controllers\Frontend\SashibController::class, 'update']);
+        Route::get('/{id}', [App\Http\Controllers\Frontend\SashibController::class, 'destroy']);
+    });
 
-    
+    // ইউনিয়ন-ডিজিটাল-সেন্টারের-উদ্যোক্তাদের-তালিকা
+    Route::prefix('/জেলা-সম্পর্কিত/ইউনিয়ন-ডিজিটাল-সেন্টারের-উদ্যোক্তাদের-তালিকা')->group(function () {
+        Route::get('/add-new', [App\Http\Controllers\Frontend\UddoktaController::class, 'add']);
+        Route::post('/insert', [App\Http\Controllers\Frontend\UddoktaController::class, 'insert']);
+        Route::get('/edit/{name}/{id}', [App\Http\Controllers\Frontend\UddoktaController::class, 'edit']);
+        Route::Post('/update/{id}', [App\Http\Controllers\Frontend\UddoktaController::class, 'update']);
+        Route::get('/{id}', [App\Http\Controllers\Frontend\UddoktaController::class, 'destroy']);
+    });
+
+    // জেলা প্রশাসক-তালিকা
+    Route::prefix('/জেলা-প্রশাসন/পুর্বতন-জেলা-প্রশাসক-ও-মহুকুমা-প্রশাসকগণের-তালিকা')->group(function () {
+        Route::get('/add-new', [App\Http\Controllers\Frontend\ZilaProsasokController::class, 'add']);
+        Route::post('/insert', [App\Http\Controllers\Frontend\ZilaProsasokController::class, 'insert']);
+        Route::get('/edit/{name}/{id}', [App\Http\Controllers\Frontend\ZilaProsasokController::class, 'edit']);
+        Route::Post('/update/{id}', [App\Http\Controllers\Frontend\ZilaProsasokController::class, 'update']);
+        Route::get('/{id}', [App\Http\Controllers\Frontend\ZilaProsasokController::class, 'destroy']);
+    });
+
+
+
 
 
 

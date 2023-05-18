@@ -20,7 +20,7 @@ Meherpur | User Details
                         <div class="row">
                             <div class="col-md-4">
                                 <label for="">User Role:</label>
-                                <div class="p-2 border">{{ $users->role_as == '0' ? 'User' : 'Admin' }}</div>
+                                <div class="p-2 border">{{ $users->role_as == '0' ? 'Editor' : 'Admin' }}</div>
                             </div>
                             <div class="col-md-4">
                                 <label for="">First Name:</label>
