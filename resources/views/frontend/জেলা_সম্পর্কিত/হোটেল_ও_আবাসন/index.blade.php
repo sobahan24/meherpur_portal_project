@@ -21,7 +21,6 @@
             <tr>
                 <td class="td_bold">ক্রমিক</td>
                 <td class="td_bold">নাম</td>
-                <td class="td_bold">পরিচালনাকারীর নাম</td>
                 <td class="td_bold">ঠিকানা</td>
                 <td class="td_bold">মোবাইল</td>
                 @can('status')
@@ -36,7 +35,6 @@
             <tr>
                 <td>{{ $loop->iteration }}</td>
                 <td>{{ $item->name }}</td>
-                <td>{{ $item->ownerName }}</td>
                 <td>{{ $item->address }}</td>
                 <td>{{ $item->mobile }}</td>
                 @can('status')

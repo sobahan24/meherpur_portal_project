@@ -44,11 +44,12 @@
                 <td>{{ $item->kormokal }}</td>
                 <td>
                 <img src="{{ asset('assets/uploads/ZilaProsasok/'.$item->image) }}" alt="Image Here" width="80px" height="80px">
-                    
+
                 </td>
                 @can('status')
                 <td>{{ ($item->status == '0') ? 'Hided' : 'Displayed' }}</td>
                 @endcan
+                @can('add')
                 <td>
                     @can('edit')
                     <a href="{{ url('/জেলা-প্রশাসন/পুর্বতন-জেলা-প্রশাসক-ও-মহুকুমা-প্রশাসকগণের-তালিকা/edit/'.$item->name.'/'.$item->id) }}" class="btn-edit" style="color:#fff">এডিট</a>
@@ -57,6 +58,7 @@
                     <a href="{{ url('/জেলা-প্রশাসন/পুর্বতন-জেলা-প্রশাসক-ও-মহুকুমা-প্রশাসকগণের-তালিকা/'.$item->id) }}" class="btn-delete" style="color:#fff">ডিলেট</a>
                     @endcan
                 </td>
+                @endcan
             </tr>
             @endforeach
         </tbody>

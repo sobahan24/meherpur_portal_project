@@ -45,6 +45,7 @@
                 @can('status')
                     <td>{{ ($item->status == '0') ? 'Hided' : 'Displayed' }}</td>
                 @endcan
+                @can('add')
                 <td>
                     @can('edit')
                         <a href="{{ url('/জেলা-সম্পর্কিত/জন-প্রতিনিধি/edit/'.$item->name.'/'.$item->id) }}" class="btn-edit" style="color:#fff">এডিট</a>
@@ -53,6 +54,7 @@
                         <a href="{{ url('/জেলা-সম্পর্কিত/জন-প্রতিনিধি/'.$item->id) }}" class="btn-delete" style="color:#fff">ডিলেট</a>
                     @endcan
                 </td>
+                @endcan
             </tr>
             @endforeach
         </tbody>
