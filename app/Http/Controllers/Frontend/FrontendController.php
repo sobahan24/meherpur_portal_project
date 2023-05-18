@@ -65,26 +65,7 @@ class FrontendController extends Controller
     {
         return view('frontend.জেলা_সম্পর্কিত.যোগাযোগ_ব্যবস্থা');
     }
-    public function ইউনিয়ন_ডিজিটাল_সেন্টারের_উদ্যোক্তাদের_তালিকা()
-    {
-        return view('frontend.জেলা_সম্পর্কিত.ইউনিয়ন_ডিজিটাল_সেন্টারের_উদ্যোক্তাদের_তালিকা');
-    }
-    public function ICT_তে_বর্ষসেরা_পুরস্কার_প্রাপ্তদের_তালিকা()
-    {
-        return view('frontend.জেলা_সম্পর্কিত.ICT_তে_বর্ষসেরা_পুরস্কার_প্রাপ্তদের_তালিকা');
-    }
-    public function জেলা_প্রশাসকের_বার্তা()
-    {
-        return view('frontend.জেলা_প্রশাসন.জেলা_প্রশাসকের_বার্তা');
-    }
-    public function প্রোফাইল()
-    {
-        return view('frontend.জেলা_প্রশাসন.প্রোফাইল');
-    }
-    public function পুর্বতন_জেলা_প্রশাসক_ও_মহুকুমা_প্রশাসকগণের_তালিকা()
-    {
-        return view('frontend.জেলা_প্রশাসন.পুর্বতন_জেলা_প্রশাসক_ও_মহুকুমা_প্রশাসকগণের_তালিকা');
-    }
+    
     public function জেলা_প্রশাসনের_পটভূমি()
     {
         return view('frontend.জেলা_প্রশাসন.জেলা_প্রশাসনের_পটভূমি');

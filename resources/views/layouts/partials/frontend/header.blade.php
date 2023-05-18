@@ -34,9 +34,9 @@
                                                     <a href="{{ url('/user-profile/'.Auth::user()->id) }}" target="_blank">Profile</a>
                                             </li>
                                             @can('status')
-                                                <li class="nav-item dropdown" style="display: flex; margin-bottom:0px;">
+                                            <li class="nav-item dropdown" style="display: flex; margin-bottom:0px;">
                                                     <a href="{{ url('/dashboard') }}">Dashboard</a>
-                                                </li>
+                                            </li>
                                             @endcan
                                             <li class="nav-item dropdown" style="display: flex; margin-bottom:0px;">
 
@@ -78,7 +78,7 @@
                                             font-size: 14px;
                                     }
 
-                                    .dropdown-content li a{
+                                    .dropdown-content li a {
                                             text-align: right;
                                     }
 
@@ -226,9 +226,6 @@
                                                                                     সচিবগণের নামের তালিকা</a></li>
                                                                     <li><a title="ইউনিয়ন ডিজিটাল সেন্টারের উদ্যোক্তাদের তালিকা" href="{{ url('/জেলা-সম্পর্কিত/ইউনিয়ন-ডিজিটাল-সেন্টারের-উদ্যোক্তাদের-তালিকা') }}">ইউনিয়ন
                                                                                     ডিজিটাল সেন্টারের উদ্যোক্তাদের তালিকা</a></li>
-
-                                                                    <li><a title="ICT তে বর্ষসেরা পুরস্কার প্রাপ্তদের তালিকা" href="{{ url('/জেলা-সম্পর্কিত/ICT-তে-বর্ষসেরা-পুরস্কার-প্রাপ্তদের-তালিকা') }}">ICT
-                                                                                    তে বর্ষসেরা পুরস্কার প্রাপ্তদের তালিকা</a></li>
                                                             </ul>
                                                     </div>
                                             </div>
@@ -238,9 +235,9 @@
                                                     <div class="one-col">
                                                             <h6>জেলা প্রশাসক</h6>
                                                             <ul class="mzr-links">
-                                                                    <li><a title="জেলা প্রশাসকের বার্তা" href="{{ url('/জেলা-প্রশাসন/জেলা-প্রশাসকের-বার্তা') }}">জেলা
+                                                                    <li><a title="জেলা প্রশাসকের বার্তা" href="{{ url('/জেলা-প্রশাসন/বর্তমান-জেলা-প্রশাসকের-বার্তা') }}">জেলা
                                                                                     প্রশাসকের বার্তা</a></li>
-                                                                    <li><a title="প্রোফাইল" href="{{ url('/জেলা-প্রশাসন/প্রোফাইল') }}">প্রোফাইল</a>
+                                                                    <li><a title="প্রোফাইল" href="{{ url('/জেলা-প্রশাসন/বর্তমান-জেলা-প্রশাসকের-প্রোফাইল') }}">প্রোফাইল</a>
                                                                     </li>
                                                                     <li><a title="পুর্বতন জেলা প্রশাসক ও মহুকুমা প্রশাসকগণের তালিকা" href="{{ url('/জেলা-প্রশাসন/পুর্বতন-জেলা-প্রশাসক-ও-মহুকুমা-প্রশাসকগণের-তালিকা') }}">পুর্বতন
                                                                                     জেলা প্রশাসক ও মহুকুমা প্রশাসকগণের তালিকা</a></li>
